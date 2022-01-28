@@ -168,11 +168,11 @@
       },
       "ELEVATION": {
         "generate_derivative": false,
-        "numerical_handling": "REGULAR",
+        "numerical_handling": "QUANTILE_BIN",
         "missing_handling": "IMPUTE",
         "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
-        "keep_regular": false,
+        "keep_regular": true,
         "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
@@ -181,7 +181,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning"
         },
@@ -380,7 +380,7 @@
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "min_samples": 10,
-        "max_nb_categories": 100,
+        "max_nb_categories": 5,
         "max_cat_safety": 200,
         "nb_bins_hashing": 1048576,
         "hash_whole_categories": true,
@@ -400,7 +400,7 @@
         "role": "INPUT",
         "type": "CATEGORY",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Text"
         },
@@ -2419,8 +2419,8 @@
         "name": "Custom algo fraud-monitoring_my-model",
         "params": {
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
             0.2
@@ -2428,7 +2428,7 @@
           "loss": [
             "linear"
           ],
-          "random_state": 1337.0
+          "random_state": 1337
         },
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
@@ -2441,22 +2441,22 @@
         "name": "AdaBoostRegressor-Caroline",
         "params": {
           "n_estimators": [
-            50.0,
-            100.0
+            50,
+            100
           ],
           "learning_rate": [
-            1.0
+            1
           ],
           "loss": [
             "linear"
           ],
           "base_estimator": "decisiontree",
-          "max_depth_tree": 3.0,
-          "min_samples_split_tree": 2.0,
-          "min_samples_leaf_tree": 1.0,
-          "max_depth_gbm": -1.0,
-          "n_estimators_gbm": 100.0,
-          "min_child_samples_gbm": 20.0,
+          "max_depth_tree": 3,
+          "min_samples_split_tree": 2,
+          "min_samples_leaf_tree": 1,
+          "max_depth_gbm": -1,
+          "n_estimators_gbm": 100,
+          "min_child_samples_gbm": 20,
           "learning_rate_gbm": 0.1
         },
         "supportsSampleWeights": false,
@@ -2502,7 +2502,7 @@
       "nContainers": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
