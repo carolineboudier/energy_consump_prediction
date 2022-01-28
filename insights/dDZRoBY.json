@@ -1,0 +1,70 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "bivariate_box_plot",
+      "maxValues": 5,
+      "groupOthers": true,
+      "binningMode": "AUTO",
+      "customBinningBoundaries": [],
+      "xColumn": {
+        "name": "State_Factor",
+        "type": "CATEGORICAL"
+      },
+      "yColumn": {
+        "name": "site_eui",
+        "type": "CONTINUOUS"
+      },
+      "id": "YYgIaBX"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "training_data_sql",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 1,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Box Plot on State_Factor \u0026 site_eui ",
+  "dashboardCreationId": "FiM4pP5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1643377512916
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1643377512916
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
