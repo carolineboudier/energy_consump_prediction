@@ -31,7 +31,25 @@
     {
       "id": "ZAonEFb",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 10,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {},
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "5MWVG7G",
+            "insightType": "eda",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -41,11 +59,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643376878907
+    "lastModifiedOn": 1643377486699
   },
   "creationTag": {
     "versionNumber": 0,
