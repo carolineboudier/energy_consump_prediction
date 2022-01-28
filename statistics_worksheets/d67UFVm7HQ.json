@@ -220,11 +220,11 @@
             "type": "CONTINUOUS"
           },
           {
-            "name": "cooling_degree_days",
+            "name": "heating_degree_days",
             "type": "CONTINUOUS"
           },
           {
-            "name": "heating_degree_days",
+            "name": "cooling_degree_days",
             "type": "CONTINUOUS"
           },
           {
@@ -5711,130 +5711,6 @@
           {
             "type": "column_card",
             "column": {
-              "name": "cooling_degree_days",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "scatter_plot",
-                "symbolSize": 4,
-                "maxNumberOfPoints": 100000,
-                "showTrend": false,
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "deqXC9q"
-              },
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "binningMode": "AUTO",
-                "customBinningBoundaries": [],
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "DF9HaJ1"
-              },
-              {
-                "type": "bivariate_histogram",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 10,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "WBZRbrz"
-              },
-              {
-                "type": "mosaic_plot",
-                "xBinningMode": "FIXED_NB",
-                "yBinningMode": "FIXED_NB",
-                "maxValuesX": 10,
-                "maxValuesY": 19,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "R8jx3F3"
-              },
-              {
-                "type": "bivariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "spearman": true,
-                  "pearson": true,
-                  "totalCount": true,
-                  "covariance": true,
-                  "kendallTau": true,
-                  "mutualInformation": true,
-                  "completeCount": true
-                },
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "4oGG2zE"
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "cooling_degree_days",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "b9UDb2z"
-              }
-            ],
-            "id": "kOTxlKS"
-          },
-          {
-            "type": "column_card",
-            "column": {
               "name": "heating_degree_days",
               "type": "CONTINUOUS"
             },
@@ -5955,6 +5831,130 @@
               }
             ],
             "id": "vKGljAM"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "cooling_degree_days",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "deqXC9q"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "DF9HaJ1"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 10,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WBZRbrz"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "FIXED_NB",
+                "yBinningMode": "FIXED_NB",
+                "maxValuesX": 10,
+                "maxValuesY": 19,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "R8jx3F3"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4oGG2zE"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "cooling_degree_days",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "b9UDb2z"
+              }
+            ],
+            "id": "kOTxlKS"
           },
           {
             "type": "column_card",
@@ -8072,11 +8072,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643383547542
+    "lastModifiedOn": 1643383813647
   },
   "creationTag": {
     "versionNumber": 0,
