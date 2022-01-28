@@ -532,7 +532,14 @@
         "behavior": "ENABLED_MANUAL"
       },
       "manual_interactions": {
-        "interactions": []
+        "interactions": [
+          {
+            "column_1": "snowdepth_inches",
+            "column_2": "building_age",
+            "max_features": 100,
+            "rescale": true
+          }
+        ]
       },
       "numericals_clustering": {
         "k": 0,
