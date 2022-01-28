@@ -1,6 +1,7 @@
 {
   "type": "PostgreSQL",
   "managed": true,
+  "shortDesc": "- baseline model built on this one",
   "checklists": {
     "checklists": []
   },
@@ -28,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643384579642
+    "lastModifiedOn": 1643384993651
   },
   "creationTag": {
     "versionNumber": 0,
