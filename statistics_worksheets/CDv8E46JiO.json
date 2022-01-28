@@ -68,11 +68,11 @@
             "type": "CONTINUOUS"
           },
           {
-            "name": "energy_star_rating",
+            "name": "ELEVATION",
             "type": "CONTINUOUS"
           },
           {
-            "name": "ELEVATION",
+            "name": "energy_star_rating",
             "type": "CONTINUOUS"
           },
           {
@@ -984,130 +984,6 @@
           {
             "type": "column_card",
             "column": {
-              "name": "energy_star_rating",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "scatter_plot",
-                "symbolSize": 4,
-                "maxNumberOfPoints": 100000,
-                "showTrend": false,
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "0dcqak0"
-              },
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "binningMode": "AUTO",
-                "customBinningBoundaries": [],
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "5zV8Uus"
-              },
-              {
-                "type": "bivariate_histogram",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "gfYGwEj"
-              },
-              {
-                "type": "mosaic_plot",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "NBOIcGo"
-              },
-              {
-                "type": "bivariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "spearman": true,
-                  "pearson": true,
-                  "totalCount": true,
-                  "covariance": true,
-                  "kendallTau": true,
-                  "mutualInformation": true,
-                  "completeCount": true
-                },
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "30kekUg"
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "xBinningMode": "AUTO",
-                "yBinningMode": "AUTO",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthersX": true,
-                "groupWithOthersY": true,
-                "xCustomBinningBoundaries": [],
-                "yCustomBinningBoundaries": [],
-                "xColumn": {
-                  "name": "energy_star_rating",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "kJLyMjz"
-              }
-            ],
-            "id": "Kze5XKi"
-          },
-          {
-            "type": "column_card",
-            "column": {
               "name": "ELEVATION",
               "type": "CONTINUOUS"
             },
@@ -1228,6 +1104,130 @@
               }
             ],
             "id": "uPMWSVo"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "energy_star_rating",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": true,
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "0dcqak0"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "5zV8Uus"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "gfYGwEj"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "NBOIcGo"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "30kekUg"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "energy_star_rating",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "site_eui",
+                  "type": "CONTINUOUS"
+                },
+                "id": "kJLyMjz"
+              }
+            ],
+            "id": "Kze5XKi"
           },
           {
             "type": "column_card",
@@ -8057,11 +8057,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377965365
+    "lastModifiedOn": 1643378104917
   },
   "creationTag": {
     "versionNumber": 0,
