@@ -26,10 +26,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 1,
-              "left": 3,
-              "width": 2,
-              "height": 2
+              "top": 4,
+              "left": 0,
+              "width": 8,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -99,11 +99,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643387050897
+    "lastModifiedOn": 1643387063741
   },
   "creationTag": {
     "versionNumber": 0,
