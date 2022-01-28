@@ -27,6 +27,13 @@
       },
       "title": "Metrics",
       "showTitle": false
+    },
+    {
+      "id": "ZAonEFb",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -34,11 +41,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643376873986
+    "lastModifiedOn": 1643376878907
   },
   "creationTag": {
     "versionNumber": 0,
