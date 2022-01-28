@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "training_data",
+          "ref": "full_data",
           "deps": []
         }
       ]
@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377156413
+    "lastModifiedOn": 1643378306093
   },
   "creationTag": {
     "versionNumber": 0,
