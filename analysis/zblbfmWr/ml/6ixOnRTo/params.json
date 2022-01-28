@@ -634,7 +634,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -1033,7 +1033,7 @@
           }
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "decision_tree_classification": {
       "max_depth": {
@@ -1399,7 +1399,7 @@
       "nesterovs_momentum": true,
       "shuffle": true,
       "learning_rate_init": 0.001,
-      "enabled": false
+      "enabled": true
     },
     "svc_classifier": {
       "C": {
@@ -2092,7 +2092,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,
