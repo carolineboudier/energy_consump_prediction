@@ -868,7 +868,7 @@
                 "type": "scatter_plot",
                 "symbolSize": 4,
                 "maxNumberOfPoints": 100000,
-                "showTrend": false,
+                "showTrend": true,
                 "xColumn": {
                   "name": "year_built",
                   "type": "CONTINUOUS"
@@ -8057,11 +8057,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377423831
+    "lastModifiedOn": 1643377965365
   },
   "creationTag": {
     "versionNumber": 0,
