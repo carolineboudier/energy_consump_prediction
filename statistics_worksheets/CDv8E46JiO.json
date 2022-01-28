@@ -45,7 +45,7 @@
         "xColumns": [
           {
             "name": "Year_Factor",
-            "type": "CONTINUOUS"
+            "type": "CATEGORICAL"
           },
           {
             "name": "State_Factor",
@@ -301,24 +301,9 @@
             "type": "column_card",
             "column": {
               "name": "Year_Factor",
-              "type": "CONTINUOUS"
+              "type": "CATEGORICAL"
             },
             "cards": [
-              {
-                "type": "scatter_plot",
-                "symbolSize": 4,
-                "maxNumberOfPoints": 100000,
-                "showTrend": false,
-                "xColumn": {
-                  "name": "Year_Factor",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "site_eui",
-                  "type": "CONTINUOUS"
-                },
-                "id": "qWjmxjE"
-              },
               {
                 "type": "bivariate_box_plot",
                 "maxValues": 5,
@@ -327,7 +312,7 @@
                 "customBinningBoundaries": [],
                 "xColumn": {
                   "name": "Year_Factor",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "site_eui",
@@ -347,7 +332,7 @@
                 "yCustomBinningBoundaries": [],
                 "xColumn": {
                   "name": "Year_Factor",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "site_eui",
@@ -367,7 +352,7 @@
                 "yCustomBinningBoundaries": [],
                 "xColumn": {
                   "name": "Year_Factor",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "site_eui",
@@ -390,7 +375,7 @@
                 },
                 "xColumn": {
                   "name": "Year_Factor",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "site_eui",
@@ -410,7 +395,7 @@
                 "yCustomBinningBoundaries": [],
                 "xColumn": {
                   "name": "Year_Factor",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "site_eui",
@@ -8072,11 +8057,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377207073
+    "lastModifiedOn": 1643377423831
   },
   "creationTag": {
     "versionNumber": 0,
