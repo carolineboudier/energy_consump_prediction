@@ -992,7 +992,7 @@
                 "type": "scatter_plot",
                 "symbolSize": 4,
                 "maxNumberOfPoints": 100000,
-                "showTrend": false,
+                "showTrend": true,
                 "xColumn": {
                   "name": "ELEVATION",
                   "type": "CONTINUOUS"
@@ -8057,11 +8057,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643378104917
+    "lastModifiedOn": 1643378204129
   },
   "creationTag": {
     "versionNumber": 0,
