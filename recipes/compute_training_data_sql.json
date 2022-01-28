@@ -67,7 +67,7 @@
     "main": {
       "items": [
         {
-          "ref": "training_data_sql",
+          "ref": "full_data_sql",
           "appendMode": false
         }
       ]
@@ -75,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643378313394
+    "lastModifiedOn": 1643378366290
   },
   "creationTag": {
     "versionNumber": 0,

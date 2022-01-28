@@ -1,6 +1,6 @@
 {
   "dataSpec": {
-    "inputDatasetSmartName": "training_data_sql",
+    "inputDatasetSmartName": "full_data_sql",
     "datasetSelection": {
       "useMemTable": false,
       "filter": {
@@ -8057,11 +8057,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643378204129
+    "lastModifiedOn": 1643378366317
   },
   "creationTag": {
     "versionNumber": 0,
