@@ -8072,7 +8072,7 @@
         "heatmapParams": {
           "showValues": false,
           "showColors": true,
-          "showAbsValues": false,
+          "showAbsValues": true,
           "threshold": 0.0,
           "filterVariablesWithoutValues": false
         },
@@ -8330,11 +8330,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643383986003
+    "lastModifiedOn": 1643384089345
   },
   "creationTag": {
     "versionNumber": 0,
