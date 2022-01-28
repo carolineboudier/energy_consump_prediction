@@ -7,29 +7,25 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 1,
               "left": 0,
-              "width": 6,
+              "width": 3,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
-              "showName": true,
-              "showDescription": true,
-              "showCustomFields": true,
-              "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
+              "displayMode": "LAST_VALUE"
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "Bn4DiRX",
-            "insightType": "dataset_table",
+            "insightId": "hgQmkgs",
+            "insightType": "metrics",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
+      "title": "Metrics",
       "showTitle": false
     }
   ],
@@ -38,11 +34,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643376828771
+    "lastModifiedOn": 1643376873986
   },
   "creationTag": {
     "versionNumber": 0,
