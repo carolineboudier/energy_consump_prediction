@@ -35,24 +35,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 0,
-              "width": 10,
-              "height": 5
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {},
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "5MWVG7G",
-            "insightType": "eda",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 5,
+              "top": 4,
               "left": 0,
               "width": 10,
               "height": 5
@@ -76,11 +59,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377513591
+    "lastModifiedOn": 1643377524467
   },
   "creationTag": {
     "versionNumber": 0,
