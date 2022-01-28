@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643377133456
+    "lastModifiedOn": 1643378310805
   },
   "creationTag": {
     "versionNumber": 0,
@@ -308,12 +308,12 @@
         "type": "double"
       },
       {
-        "name": "site_eui",
-        "type": "double"
-      },
-      {
         "name": "id",
         "type": "bigint"
+      },
+      {
+        "name": "site_eui",
+        "type": "double"
       }
     ],
     "userModified": true
