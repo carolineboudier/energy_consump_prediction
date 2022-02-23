@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645637289047
+    "lastModifiedOn": 1645637347490
   },
   "creationTag": {
     "versionNumber": 0,
@@ -370,14 +370,23 @@
       },
       {
         "type": "col_stats",
-        "enabled": false,
+        "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
           "name": "Columns statistics",
           "level": 2
         },
         "configuration": {
-          "aggregates": []
+          "aggregates": [
+            {
+              "column": "building_class",
+              "aggregated": "COUNT_DISTINCT"
+            },
+            {
+              "column": "max_wind_speed",
+              "aggregated": "COUNT_NULL"
+            }
+          ]
         }
       },
       {
