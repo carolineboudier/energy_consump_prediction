@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645637347490
+    "lastModifiedOn": 1645637358265
   },
   "creationTag": {
     "versionNumber": 0,
@@ -475,7 +475,9 @@
         "basic:COUNT_FILES",
         "basic:SIZE",
         "records:COUNT_RECORDS",
-        "reporting:METRICS_COMPUTATION_DURATION"
+        "reporting:METRICS_COMPUTATION_DURATION",
+        "col_stats:COUNT_DISTINCT:building_class",
+        "col_stats:COUNT_NULL:max_wind_speed"
       ]
     }
   },
