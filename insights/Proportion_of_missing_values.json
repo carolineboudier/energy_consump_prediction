@@ -1,0 +1,29 @@
+{
+  "type": "static_file",
+  "params": {
+    "contentType": "image/png",
+    "filetype": "image"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Proportion_of_missing_values",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646040907866
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646040907866
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
