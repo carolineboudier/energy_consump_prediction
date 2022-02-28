@@ -9,6 +9,14 @@
     {
       "objectId": "compute_full_data",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_full_data_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
