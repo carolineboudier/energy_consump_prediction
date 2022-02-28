@@ -5,7 +5,18 @@
       "useMemTable": false,
       "filter": {
         "distinct": false,
-        "enabled": false
+        "enabled": true,
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "site_eui",
+              "operator": "not empty string",
+              "col": "State_Factor",
+              "num": 0.0
+            }
+          ]
+        }
       },
       "partitionSelectionMethod": "ALL",
       "latestPartitionsN": 1,
@@ -20,7 +31,7 @@
       "maxReadUncompressedBytes": -1
     },
     "autoRefreshSample": true,
-    "refreshTrigger": 1,
+    "refreshTrigger": 2,
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -8323,6 +8334,17 @@
             "id": "ucCICpi"
           }
         ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "site_eui",
+            "type": "CONTINUOUS"
+          },
+          "binningMode": "FIXED_NB",
+          "maxValues": 2,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
         "id": "3xv0eJ2"
       }
     ],
@@ -8330,11 +8352,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646039332182
+    "lastModifiedOn": 1646039506750
   },
   "creationTag": {
     "versionNumber": 0,
