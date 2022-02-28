@@ -21,6 +21,10 @@
     {
       "objectId": "5YbetAty",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_5YbetAty",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
