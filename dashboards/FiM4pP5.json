@@ -66,7 +66,7 @@
               "top": 18,
               "left": 0,
               "width": 5,
-              "height": 2
+              "height": 3
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {},
@@ -200,16 +200,16 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 20,
+              "top": 21,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 12,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -324,11 +324,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646042688579
+    "lastModifiedOn": 1646042716026
   },
   "creationTag": {
     "versionNumber": 0,
