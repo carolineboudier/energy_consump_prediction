@@ -1,7 +1,20 @@
 {
   "name": "Input_data",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "nJCGSMIj",
+      "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "data_to_predict",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "training_data",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
