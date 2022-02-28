@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643378291601
+    "lastModifiedOn": 1646037091125
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,6 +48,7 @@
     },
     "lastModifiedOn": 1643378286849
   },
+  "shortDesc": "- stack train and test set",
   "tags": [],
   "customFields": {},
   "checklists": {
