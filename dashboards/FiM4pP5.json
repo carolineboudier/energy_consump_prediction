@@ -1,6 +1,13 @@
 {
   "pages": [
     {
+      "id": "aPrBB68",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    },
+    {
       "id": "9IBHRhV",
       "grid": {
         "tiles": [
@@ -43,23 +50,6 @@
             "showTitle": "YES",
             "insightId": "vi4NBxX",
             "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 9,
-              "left": 0,
-              "width": 10,
-              "height": 5
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {},
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "73kaIlq",
-            "insightType": "eda",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -105,9 +95,27 @@
             "insightType": "eda",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 14,
+              "left": 0,
+              "width": 10,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {},
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "73kaIlq",
+            "insightType": "eda",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
+      "title": "Data exploration",
       "showTitle": false
     }
   ],
@@ -116,11 +124,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646039132491
+    "lastModifiedOn": 1646039161638
   },
   "creationTag": {
     "versionNumber": 0,
