@@ -1,0 +1,314 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "full_data_prepared",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": false,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0,
+          "filterVariablesWithoutValues": false
+        },
+        "metric": "SPEARMAN",
+        "columns": [
+          {
+            "name": "Year_Factor",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "floor_area",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "year_built",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "energy_star_rating",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ELEVATION",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "january_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "january_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "january_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "february_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "february_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "february_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "march_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "march_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "march_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "april_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "april_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "april_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "may_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "may_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "may_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "june_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "june_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "june_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "july_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "july_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "july_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "august_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "august_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "august_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "september_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "september_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "september_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "october_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "october_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "october_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "november_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "november_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "november_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "december_min_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "december_avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "december_max_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "cooling_degree_days",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "heating_degree_days",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "precipitation_inches",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "snowfall_inches",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "snowdepth_inches",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "avg_temp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_below_30F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_below_20F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_below_10F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_below_0F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_above_80F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_above_90F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_above_100F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_above_110F",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "direction_max_wind_speed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "direction_peak_wind_speed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "max_wind_speed",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "days_with_fog",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "id",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "site_eui",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "lc8LC8c"
+      }
+    ],
+    "id": "9itBeSM"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646038208409
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646038191454
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
