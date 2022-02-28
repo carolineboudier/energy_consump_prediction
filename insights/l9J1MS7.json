@@ -1,0 +1,80 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "scatter_plot",
+      "symbolSize": 4,
+      "maxNumberOfPoints": 100000,
+      "showTrend": false,
+      "xColumn": {
+        "name": "floor_area",
+        "type": "CONTINUOUS"
+      },
+      "yColumn": {
+        "name": "site_eui",
+        "type": "CONTINUOUS"
+      },
+      "id": "XC0RA5r"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "full_data_prepared",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": true,
+          "uiData": {
+            "mode": "\u0026\u0026",
+            "conditions": [
+              {
+                "input": "site_eui",
+                "operator": "not empty string",
+                "col": "State_Factor",
+                "num": 0.0
+              }
+            ]
+          }
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 2,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Scatter plot on floor_area \u0026 site_eui ",
+  "dashboardCreationId": "FiM4pP5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646041691447
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646041691447
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
