@@ -17,6 +17,10 @@
     {
       "objectId": "compute_full_data_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "5YbetAty",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
