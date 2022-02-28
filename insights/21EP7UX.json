@@ -47,41 +47,35 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:47230"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of site_eui, descending",
-              "$$hashKey": "object:47229"
+              "label": "Average of site_eui, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Average of site_eui, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:47231"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Count of records, descending",
-              "$$hashKey": "object:47232"
+              "label": "Count of records, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
               "label": "Count of records, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:47233"
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "AGGREGATION",
             "measureIdx": 0,
-            "label": "Average of site_eui, descending",
-            "$$hashKey": "object:47229"
+            "label": "Average of site_eui, descending"
           }
         }
       ],
@@ -185,7 +179,8 @@
         "paletteMiddleValue": 0.0,
         "customColors": {
           "m_null_COUNT_1": "#ff7f0e",
-          "m_site_eui_AVG_1": "#1f77b4"
+          "m_site_eui_AVG_1": "#1f77b4",
+          "m_undefined_COUNT_1": "#ff7f0e"
         },
         "heatDensityMapIntensity": 0.5,
         "heatDensityMapRadius": 0.5
@@ -194,6 +189,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -211,7 +207,6 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,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\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
       "legendPlacement": "OUTER_RIGHT"
@@ -223,11 +218,11 @@
   "name": "Avg. of site_eui by facility_type on full_data_prepared",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646042687368
+    "lastModifiedOn": 1646042722776
   },
   "creationTag": {
     "versionNumber": 0,
