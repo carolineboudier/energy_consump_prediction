@@ -626,9 +626,9 @@
               },
               {
                 "type": "mosaic_plot",
-                "xBinningMode": "AUTO",
+                "xBinningMode": "FIXED_NB",
                 "yBinningMode": "AUTO",
-                "maxValuesX": 5,
+                "maxValuesX": 10,
                 "maxValuesY": 5,
                 "groupWithOthersX": true,
                 "groupWithOthersY": true,
@@ -8341,11 +8341,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646039585896
+    "lastModifiedOn": 1646041620165
   },
   "creationTag": {
     "versionNumber": 0,
