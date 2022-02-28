@@ -8334,17 +8334,6 @@
             "id": "ucCICpi"
           }
         ],
-        "splitBy": {
-          "groupingColumn": {
-            "name": "site_eui",
-            "type": "CONTINUOUS"
-          },
-          "binningMode": "FIXED_NB",
-          "maxValues": 2,
-          "groupWithOthers": true,
-          "customBinningBoundaries": [],
-          "groupWithAll": true
-        },
         "id": "3xv0eJ2"
       }
     ],
@@ -8352,11 +8341,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646039506750
+    "lastModifiedOn": 1646039585896
   },
   "creationTag": {
     "versionNumber": 0,
