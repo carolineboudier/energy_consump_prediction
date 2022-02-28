@@ -5,7 +5,6 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 import matplotlib.pyplot as plt
 import io
-%pylab inline
 
 # Read recipe inputs
 full_data_prepared = dataiku.Dataset("full_data_prepared")
