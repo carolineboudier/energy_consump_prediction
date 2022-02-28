@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 5,
               "left": 0,
               "width": 12,
               "height": 12
@@ -24,9 +24,9 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 1,
+              "top": 4,
               "left": 0,
-              "width": 4,
+              "width": 6,
               "height": 1
             },
             "clickAction": "DO_NOTHING",
@@ -63,7 +63,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 15,
+              "top": 18,
               "left": 0,
               "width": 5,
               "height": 2
@@ -80,7 +80,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 14,
+              "top": 17,
               "left": 0,
               "width": 5,
               "height": 1
@@ -99,7 +99,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 15,
+              "top": 18,
               "left": 5,
               "width": 7,
               "height": 3
@@ -116,7 +116,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 14,
+              "top": 17,
               "left": 5,
               "width": 7,
               "height": 1
@@ -135,16 +135,16 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 17,
+              "top": 1,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 6,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -152,6 +152,25 @@
             "showTitle": "YES",
             "insightId": "TQ2TYaj",
             "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 1,
+              "left": 6,
+              "width": 6,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## Distribution of the target variable \u0026 representation of states",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -259,11 +278,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646042393126
+    "lastModifiedOn": 1646042465699
   },
   "creationTag": {
     "versionNumber": 0,
