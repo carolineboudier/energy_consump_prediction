@@ -1,7 +1,16 @@
 {
   "name": "Data_exploration",
   "color": "#4cede2",
-  "items": [],
+  "items": [
+    {
+      "objectId": "full_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_full_data",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
