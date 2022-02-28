@@ -13,14 +13,14 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
     "autoRefreshSample": true,
-    "refreshTrigger": 0,
+    "refreshTrigger": 1,
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -293,11 +293,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646038208409
+    "lastModifiedOn": 1646038374967
   },
   "creationTag": {
     "versionNumber": 0,
