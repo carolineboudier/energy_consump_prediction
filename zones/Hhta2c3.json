@@ -29,6 +29,10 @@
     {
       "objectId": "to_predict",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "to_train",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
