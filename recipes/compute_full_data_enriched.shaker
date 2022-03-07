@@ -259,6 +259,25 @@
         "width": 1.0
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "BinnerProcessor",
+      "params": {
+        "output": "age_bin",
+        "mode": "WIDTH",
+        "input": "building_age",
+        "useMin": true,
+        "bins": [],
+        "min": 25.0,
+        "useDecimalSeparatorFromLocale": false,
+        "max": 90.0,
+        "useMax": true,
+        "width": 5.0
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -370,6 +389,7 @@
     "january_avg_temp": 162,
     "june_min_temp": 113,
     "heating_degree_days": 158,
+    "age_bin": 100,
     "november_min_temp": 143,
     "december_avg_temp": 169
   },
