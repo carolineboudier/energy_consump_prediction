@@ -37,14 +37,6 @@
     {
       "objectId": "evaluate_on_validation_set",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "to_predict_scored",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "score_to_predict",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
