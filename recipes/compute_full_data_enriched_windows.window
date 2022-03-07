@@ -319,9 +319,10 @@
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -2149,6 +2150,10 @@
             "type": "double"
           },
           {
+            "name": "energy_star_rating_avg",
+            "type": "double"
+          },
+          {
             "name": "site_eui_min",
             "type": "double"
           },
@@ -2209,6 +2214,7 @@
   "outputColumnNameOverrides": {
     "site_eui_max": "group_site_eui_max",
     "site_eui_avg": "group_site_eui_avg",
-    "site_eui_min": "group_site_eui_min"
+    "site_eui_min": "group_site_eui_min",
+    "energy_star_rating_avg": "group_energy_star_rating_avg"
   }
 }
