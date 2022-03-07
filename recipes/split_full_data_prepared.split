@@ -120,12 +120,36 @@
                 "type": "string"
               },
               {
+                "name": "public_found",
+                "type": "string"
+              },
+              {
+                "name": "warehouse_found",
+                "type": "string"
+              },
+              {
+                "name": "office_found",
+                "type": "string"
+              },
+              {
                 "name": "floor_area",
                 "type": "double"
               },
               {
+                "name": "floor_area_bins",
+                "type": "string"
+              },
+              {
                 "name": "year_built",
                 "type": "double"
+              },
+              {
+                "name": "building_age",
+                "type": "double"
+              },
+              {
+                "name": "age_bin",
+                "type": "string"
               },
               {
                 "name": "energy_star_rating",
@@ -272,11 +296,23 @@
                 "type": "bigint"
               },
               {
+                "name": "min_temp",
+                "type": "bigint"
+              },
+              {
                 "name": "december_avg_temp",
                 "type": "double"
               },
               {
                 "name": "december_max_temp",
+                "type": "bigint"
+              },
+              {
+                "name": "max_temp",
+                "type": "bigint"
+              },
+              {
+                "name": "temp_range",
                 "type": "bigint"
               },
               {
