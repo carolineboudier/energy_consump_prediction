@@ -53,6 +53,10 @@
     {
       "objectId": "validation_set",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_to_train",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
