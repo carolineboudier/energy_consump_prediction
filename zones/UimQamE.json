@@ -9,6 +9,18 @@
     {
       "objectId": "full_data_enriched",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_full_data_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "to_train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "to_predict",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],

@@ -3,14 +3,6 @@
   "color": "#8C2DA7",
   "items": [
     {
-      "objectId": "split_full_data_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "to_train",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "split_to_train",
       "objectType": "RECIPE"
     },
@@ -20,10 +12,6 @@
     },
     {
       "objectId": "validation_set",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "to_predict",
       "objectType": "DATASET"
     },
     {
