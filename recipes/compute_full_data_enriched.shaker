@@ -35,21 +35,6 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "ComputeNTile",
-      "params": {
-        "outCol": "floor_area_quantile",
-        "columns": [
-          "floor_area"
-        ],
-        "appliesTo": "SINGLE_COLUMN",
-        "n": 50
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "datePart(now(),\u0027year\u0027)-year_built",
@@ -177,13 +162,24 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "min(january_min_temp,february_min_temp,march_min_temp,april_min_temp,may_min_temp,june_min_temp,july_min_temp,august_min_temp,september_min_temp,october_min_temp,november_min_temp,december_min_temp)",
         "column": "min_temp"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "floor_area_copy",
+        "inputColumn": "floor_area"
       },
       "alwaysShowComment": false
     }
@@ -226,6 +222,7 @@
     "office_1": 100,
     "april_max_temp": 120,
     "september_min_temp": 150,
+    "floor_area_copy": 128,
     "october_min_temp": 135,
     "july_min_temp": 113,
     "direction_peak_wind_speed": 203,
