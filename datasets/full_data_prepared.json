@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646668244486
+    "lastModifiedOn": 1646673050655
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,10 @@
       },
       {
         "name": "year_built",
+        "type": "double"
+      },
+      {
+        "name": "building_age",
         "type": "double"
       },
       {
