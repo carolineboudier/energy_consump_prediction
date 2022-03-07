@@ -112,12 +112,36 @@
                 "type": "string"
               },
               {
+                "name": "public_found",
+                "type": "boolean"
+              },
+              {
+                "name": "warehouse_found",
+                "type": "boolean"
+              },
+              {
+                "name": "office_found",
+                "type": "boolean"
+              },
+              {
                 "name": "floor_area",
                 "type": "double"
               },
               {
+                "name": "floor_area_bins",
+                "type": "string"
+              },
+              {
                 "name": "year_built",
                 "type": "double"
+              },
+              {
+                "name": "building_age",
+                "type": "double"
+              },
+              {
+                "name": "age_bin",
+                "type": "string"
               },
               {
                 "name": "energy_star_rating",
@@ -264,11 +288,23 @@
                 "type": "bigint"
               },
               {
+                "name": "min_temp",
+                "type": "bigint"
+              },
+              {
                 "name": "december_avg_temp",
                 "type": "double"
               },
               {
                 "name": "december_max_temp",
+                "type": "bigint"
+              },
+              {
+                "name": "max_temp",
+                "type": "bigint"
+              },
+              {
+                "name": "temp_range",
                 "type": "bigint"
               },
               {
@@ -349,6 +385,26 @@
               },
               {
                 "name": "site_eui",
+                "type": "double"
+              },
+              {
+                "name": "group_energy_star_rating_avg",
+                "type": "double"
+              },
+              {
+                "name": "new_energy_star_rating",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_min",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_max",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_avg",
                 "type": "double"
               }
             ]
