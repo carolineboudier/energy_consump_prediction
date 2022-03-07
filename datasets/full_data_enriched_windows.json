@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646676243152
+    "lastModifiedOn": 1646676357848
   },
   "creationTag": {
     "versionNumber": 0,
@@ -349,6 +349,10 @@
       },
       {
         "name": "site_eui",
+        "type": "double"
+      },
+      {
+        "name": "group_energy_star_rating_avg",
         "type": "double"
       },
       {
