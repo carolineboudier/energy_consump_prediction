@@ -35,67 +35,14 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
-      "type": "BinnerProcessor",
+      "type": "ComputeNTile",
       "params": {
-        "output": "floor_area_category",
-        "mode": "CUSTOM",
-        "input": "floor_area",
-        "useMin": false,
-        "bins": [
-          {
-            "name": "1st",
-            "sup": 943.0
-          },
-          {
-            "inf": 943.0,
-            "name": "2nd",
-            "sup": 403000.0
-          },
-          {
-            "inf": 40300.0,
-            "name": "3rd",
-            "sup": 57000.0
-          },
-          {
-            "inf": 57000.0,
-            "name": "4th",
-            "sup": 65600.0
-          },
-          {
-            "inf": 65600.0,
-            "name": "5th",
-            "sup": 75800.0
-          },
-          {
-            "inf": 75800.0,
-            "name": "6th",
-            "sup": 90400.0
-          },
-          {
-            "inf": 90400.0,
-            "name": "7th",
-            "sup": 111300.0
-          },
-          {
-            "inf": 111300.0,
-            "name": "8th",
-            "sup": 143500.0
-          },
-          {
-            "inf": 143500.0,
-            "name": "9th",
-            "sup": 342400.0
-          },
-          {
-            "inf": 342400.0,
-            "name": "10th"
-          }
+        "outCol": "floor_area_quantile",
+        "columns": [
+          "floor_area"
         ],
-        "min": 0.0,
-        "useDecimalSeparatorFromLocale": false,
-        "max": 0.0,
-        "useMax": false,
-        "width": 1.0
+        "appliesTo": "SINGLE_COLUMN",
+        "n": 50
       },
       "alwaysShowComment": false
     },
@@ -217,6 +164,28 @@
         }
       ],
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "max(january_max_temp,february_max_temp,march_max_temp,april_max_temp,may_max_temp,june_max_temp,july_max_temp,august_max_temp,september_max_temp,october_max_temp,november_max_temp,december_max_temp)",
+        "column": "max_temp"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "min(january_min_temp,february_min_temp,march_min_temp,april_min_temp,may_min_temp,june_min_temp,july_min_temp,august_min_temp,september_min_temp,october_min_temp,november_min_temp,december_min_temp)",
+        "column": "min_temp"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -246,12 +215,13 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "snowdepth_inches": 135,
-    "site_eui": 100,
+    "site_eui": 60,
     "building_age": 105,
     "avg_temp": 106,
     "officefound": 100,
     "february_min_temp": 143,
     "Year_Factor": 100,
+    "floor_area_quantile": 158,
     "days_above_80F": 120,
     "office_1": 100,
     "april_max_temp": 120,
@@ -263,7 +233,9 @@
     "days_below_10F": 120,
     "days_below_30F": 120,
     "id": 100,
+    "min_list": 60,
     "march_avg_temp": 120,
+    "max_temp": 100,
     "december_max_temp": 143,
     "april_min_temp": 120,
     "public_found": 105,
@@ -275,14 +247,14 @@
     "facility_type_extracted_1": 203,
     "State_Factor": 105,
     "snowfall_inches": 128,
-    "direction_max_wind_speed": 195,
+    "direction_max_wind_speed": 90,
     "may_avg_temp": 134,
     "january_min_temp": 135,
     "february_max_temp": 143,
     "year_built": 100,
     "warehouse_1": 100,
     "september_avg_temp": 150,
-    "september_max_temp": 150,
+    "september_max_temp": 284,
     "days_with_fog": 113,
     "public_1": 100,
     "october_avg_temp": 162,
@@ -298,6 +270,8 @@
     "days_above_90F": 120,
     "may_max_temp": 105,
     "energy_star_rating": 150,
+    "min_temp": 100,
+    "max_list": 118,
     "precipitation_inches": 165,
     "february_avg_temp": 143,
     "facility_type": 300,
@@ -309,6 +283,7 @@
     "march_max_temp": 120,
     "ELEVATION": 100,
     "floor_area": 120,
+    "\u003dmax(2,3)": 100,
     "days_below_0F": 113,
     "office_found": 105,
     "november_max_temp": 143,
