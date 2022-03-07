@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646675356872
+    "lastModifiedOn": 1646675592171
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,8 +92,8 @@
         "type": "double"
       },
       {
-        "name": "floor_area_quantile",
-        "type": "bigint"
+        "name": "floor_area_copy",
+        "type": "double"
       },
       {
         "name": "year_built",
