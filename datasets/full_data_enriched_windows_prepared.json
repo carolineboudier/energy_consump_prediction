@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646676510791
+    "lastModifiedOn": 1646676674420
   },
   "creationTag": {
     "versionNumber": 0,
@@ -353,6 +353,10 @@
       },
       {
         "name": "group_energy_star_rating_avg",
+        "type": "double"
+      },
+      {
+        "name": "new_energy_star_rating",
         "type": "double"
       },
       {
