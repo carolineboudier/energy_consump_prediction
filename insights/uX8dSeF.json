@@ -25,14 +25,14 @@
           "enabled": false,
           "rules": []
         },
-        "samplingMethod": "HEAD_SEQUENTIAL",
+        "samplingMethod": "FULL",
         "maxRecords": 100000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": true,
-      "refreshTrigger": 0,
+      "refreshTrigger": 1,
       "containerSelection": {
         "containerMode": "INHERIT"
       }
@@ -43,11 +43,11 @@
   "name": "Quantile table on floor_area ",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646667726694
+    "lastModifiedOn": 1646667827087
   },
   "creationTag": {
     "versionNumber": 0,
