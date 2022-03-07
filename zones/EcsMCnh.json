@@ -45,6 +45,10 @@
     {
       "objectId": "validation_set_scored",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_validation_set",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
