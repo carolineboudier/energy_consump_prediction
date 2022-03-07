@@ -100,7 +100,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
@@ -108,6 +108,114 @@
         "expression": "datePart(now(),\u0027year\u0027)-year_built",
         "column": "building_age"
       },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "name": "text",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "TextSimplifierProcessor",
+          "params": {
+            "inCol": "facility_type",
+            "sortAlphabetically": false,
+            "normalize": true,
+            "language": "english",
+            "clearStopWords": true,
+            "stem": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
+          "params": {
+            "found_col": true,
+            "extractAllOccurrences": true,
+            "prefix": "office_",
+            "column": "facility_type",
+            "pattern": "(office)"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "office_1"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
+          "params": {
+            "found_col": true,
+            "extractAllOccurrences": true,
+            "prefix": "warehouse_",
+            "column": "facility_type",
+            "pattern": "(warehouse)"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "warehouse_1"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RegexpExtractor",
+          "params": {
+            "found_col": true,
+            "extractAllOccurrences": true,
+            "prefix": "public_",
+            "column": "facility_type",
+            "pattern": "(public)"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "public_1"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     }
   ],
@@ -141,9 +249,11 @@
     "site_eui": 100,
     "building_age": 105,
     "avg_temp": 106,
+    "officefound": 100,
     "february_min_temp": 143,
     "Year_Factor": 100,
     "days_above_80F": 120,
+    "office_1": 100,
     "april_max_temp": 120,
     "september_min_temp": 150,
     "october_min_temp": 135,
@@ -156,11 +266,13 @@
     "march_avg_temp": 120,
     "december_max_temp": 143,
     "april_min_temp": 120,
+    "public_found": 105,
     "building_class": 148,
     "november_avg_temp": 143,
     "august_avg_temp": 155,
     "december_min_temp": 143,
     "august_max_temp": 128,
+    "facility_type_extracted_1": 203,
     "State_Factor": 105,
     "snowfall_inches": 128,
     "direction_max_wind_speed": 195,
@@ -168,12 +280,15 @@
     "january_min_temp": 135,
     "february_max_temp": 143,
     "year_built": 100,
+    "warehouse_1": 100,
     "september_avg_temp": 150,
     "september_max_temp": 150,
     "days_with_fog": 113,
+    "public_1": 100,
     "october_avg_temp": 162,
     "june_avg_temp": 141,
     "july_avg_temp": 141,
+    "office1": 100,
     "max_wind_speed": 120,
     "january_max_temp": 135,
     "june_max_temp": 113,
@@ -190,11 +305,14 @@
     "october_max_temp": 135,
     "cooling_degree_days": 158,
     "may_min_temp": 105,
+    "facility_type_extracted_found": 233,
     "march_max_temp": 120,
     "ELEVATION": 100,
     "floor_area": 120,
     "days_below_0F": 113,
+    "office_found": 105,
     "november_max_temp": 143,
+    "warehouse_found": 128,
     "april_avg_temp": 148,
     "floor_area_category": 158,
     "days_above_100F": 128,
