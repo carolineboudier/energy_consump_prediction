@@ -5,7 +5,72 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "Year_Factor": 100,
+      "State_Factor": 105,
+      "building_class": 148,
+      "facility_type": 300,
+      "floor_area": 120,
+      "year_built": 100,
+      "energy_star_rating": 150,
+      "ELEVATION": 100,
+      "january_min_temp": 135,
+      "january_avg_temp": 162,
+      "january_max_temp": 135,
+      "february_min_temp": 143,
+      "february_avg_temp": 143,
+      "february_max_temp": 143,
+      "march_min_temp": 120,
+      "march_avg_temp": 120,
+      "march_max_temp": 120,
+      "april_min_temp": 120,
+      "april_avg_temp": 148,
+      "april_max_temp": 120,
+      "may_min_temp": 105,
+      "may_avg_temp": 134,
+      "may_max_temp": 105,
+      "june_min_temp": 113,
+      "june_avg_temp": 141,
+      "june_max_temp": 113,
+      "july_min_temp": 113,
+      "july_avg_temp": 141,
+      "july_max_temp": 113,
+      "august_min_temp": 128,
+      "august_avg_temp": 155,
+      "august_max_temp": 128,
+      "september_min_temp": 150,
+      "september_avg_temp": 150,
+      "september_max_temp": 150,
+      "october_min_temp": 135,
+      "october_avg_temp": 162,
+      "october_max_temp": 135,
+      "november_min_temp": 143,
+      "november_avg_temp": 143,
+      "november_max_temp": 143,
+      "december_min_temp": 143,
+      "december_avg_temp": 169,
+      "december_max_temp": 143,
+      "cooling_degree_days": 158,
+      "heating_degree_days": 158,
+      "precipitation_inches": 165,
+      "snowfall_inches": 128,
+      "snowdepth_inches": 135,
+      "avg_temp": 106,
+      "days_below_30F": 120,
+      "days_below_20F": 120,
+      "days_below_10F": 120,
+      "days_below_0F": 113,
+      "days_above_80F": 120,
+      "days_above_90F": 120,
+      "days_above_100F": 128,
+      "days_above_110F": 128,
+      "direction_max_wind_speed": 195,
+      "direction_peak_wind_speed": 203,
+      "max_wind_speed": 120,
+      "days_with_fog": 113,
+      "id": 100,
+      "site_eui": 100
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -28,13 +93,13 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 1000000,
         "targetRatio": 0.02,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1
     },
     "vizSampling": {
       "selection": {
@@ -58,9 +123,45 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "floor_area",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "floor_area",
+          "columnType": "NUMERICAL",
+          "currentMode": "NUMERICAL",
+          "sort": "count",
+          "selectedValues": {}
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "floor_area",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "floor_area",
+          "params": {
+            "type": "DoubleMeaning",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
@@ -662,6 +763,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
