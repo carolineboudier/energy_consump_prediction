@@ -15,6 +15,7 @@
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "site_eui",
   "randomSplits": [
     {
       "outputIndex": 1,
@@ -29,7 +30,7 @@
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
-  "mode": "RANDOM",
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
@@ -90,7 +91,14 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "conditions": [
+            {
+              "input": "site_eui",
+              "col": "State_Factor",
+              "num": 0,
+              "operator": "not empty string"
+            }
+          ]
         },
         "$status": {
           "schema": {
@@ -357,7 +365,7 @@
         "distinct": false,
         "enabled": true
       },
-      "outputIndex": 0
+      "outputIndex": 1
     }
   ]
 }
