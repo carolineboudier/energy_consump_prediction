@@ -70,19 +70,37 @@
     "dimensions": []
   },
   "displayParams": {
+    "displayedMetrics": [
+      "EVS",
+      "MAPE",
+      "MAE",
+      "MSE",
+      "RMSE",
+      "RMSLE",
+      "R2",
+      "PEARSON",
+      "CUSTOM",
+      "DATA_DRIFT"
+    ],
+    "predictionType": "REGRESSION",
     "pinnedMetrics": [],
-    "yLabels": [],
+    "xLabel": "evaluation:date",
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "sortColumn": "refStr",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646666964300
+    "lastModifiedOn": 1646667051106
   },
   "creationTag": {
     "versionNumber": 0,
