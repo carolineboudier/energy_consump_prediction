@@ -30,7 +30,26 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "BinnerProcessor",
+      "params": {
+        "mode": "WIDTH",
+        "input": "floor_area",
+        "useMin": false,
+        "bins": [],
+        "min": 0.0,
+        "useDecimalSeparatorFromLocale": false,
+        "max": 0.0,
+        "useMax": false,
+        "width": 1.0
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
