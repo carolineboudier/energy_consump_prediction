@@ -25,30 +25,6 @@
     {
       "objectId": "compute_5YbetAty",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "to_predict",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "to_train",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "split_full_data_prepared",
-      "objectType": "RECIPE"
-    },
-    {
-      "objectId": "train_set",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "validation_set",
-      "objectType": "DATASET"
-    },
-    {
-      "objectId": "split_to_train",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
