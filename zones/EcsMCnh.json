@@ -41,6 +41,10 @@
     {
       "objectId": "metrics",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "validation_set_scored",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
