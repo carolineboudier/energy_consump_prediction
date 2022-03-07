@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "BinnerProcessor",
@@ -98,6 +98,17 @@
         "width": 1.0
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "datePart(now(),\u0027year\u0027)-year_built",
+        "column": "building_age"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -128,6 +139,7 @@
   "columnWidthsByName": {
     "snowdepth_inches": 135,
     "site_eui": 141,
+    "building_age": 105,
     "avg_temp": 141,
     "february_min_temp": 143,
     "Year_Factor": 100,
