@@ -29,6 +29,14 @@
     {
       "objectId": "full_data_enriched_windows",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "full_data_enriched_windows_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_full_data_enriched_windows_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
