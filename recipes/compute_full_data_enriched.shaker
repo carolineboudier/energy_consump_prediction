@@ -173,7 +173,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "BinnerProcessor",
@@ -236,6 +236,16 @@
         "max": 0.0,
         "useMax": false,
         "width": 1.0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "column": "temp_range"
       },
       "alwaysShowComment": false
     }
