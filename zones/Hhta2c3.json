@@ -49,6 +49,10 @@
     {
       "objectId": "train_set",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "validation_set",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
