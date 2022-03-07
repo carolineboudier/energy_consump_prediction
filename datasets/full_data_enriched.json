@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646673418112
+    "lastModifiedOn": 1646673939476
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,6 +73,18 @@
       },
       {
         "name": "facility_type",
+        "type": "string"
+      },
+      {
+        "name": "public_found",
+        "type": "string"
+      },
+      {
+        "name": "warehouse_found",
+        "type": "string"
+      },
+      {
+        "name": "office_found",
         "type": "string"
       },
       {
