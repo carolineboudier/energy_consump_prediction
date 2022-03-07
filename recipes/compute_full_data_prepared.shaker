@@ -37,10 +37,50 @@
       "disabled": false,
       "type": "BinnerProcessor",
       "params": {
-        "mode": "WIDTH",
+        "output": "",
+        "mode": "CUSTOM",
         "input": "floor_area",
         "useMin": false,
-        "bins": [],
+        "bins": [
+          {
+            "sup": 943.0
+          },
+          {
+            "inf": 943.0,
+            "sup": 403000.0
+          },
+          {
+            "inf": 40300.0,
+            "sup": 57000.0
+          },
+          {
+            "inf": 57000.0,
+            "sup": 65600.0
+          },
+          {
+            "inf": 65600.0,
+            "sup": 75800.0
+          },
+          {
+            "inf": 75800.0,
+            "sup": 90400.0
+          },
+          {
+            "inf": 90400.0,
+            "sup": 111300.0
+          },
+          {
+            "inf": 111300.0,
+            "sup": 143500.0
+          },
+          {
+            "inf": 143500.0,
+            "sup": 342400.0
+          },
+          {
+            "inf": 342400.0
+          }
+        ],
         "min": 0.0,
         "useDecimalSeparatorFromLocale": false,
         "max": 0.0,
