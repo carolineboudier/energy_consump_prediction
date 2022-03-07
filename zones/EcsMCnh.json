@@ -37,6 +37,10 @@
     {
       "objectId": "dvKk48kU",
       "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
+      "objectId": "metrics",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
