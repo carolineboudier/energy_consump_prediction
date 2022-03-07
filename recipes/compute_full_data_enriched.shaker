@@ -152,24 +152,44 @@
     },
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "Temperature",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "max(january_max_temp,february_max_temp,march_max_temp,april_max_temp,may_max_temp,june_max_temp,july_max_temp,august_max_temp,september_max_temp,october_max_temp,november_max_temp,december_max_temp)",
-        "column": "max_temp"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "min(january_min_temp,february_min_temp,march_min_temp,april_min_temp,may_min_temp,june_min_temp,july_min_temp,august_min_temp,september_min_temp,october_min_temp,november_min_temp,december_min_temp)",
-        "column": "min_temp"
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "max(january_max_temp,february_max_temp,march_max_temp,april_max_temp,may_max_temp,june_max_temp,july_max_temp,august_max_temp,september_max_temp,october_max_temp,november_max_temp,december_max_temp)",
+            "column": "max_temp"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "min(january_min_temp,february_min_temp,march_min_temp,april_min_temp,may_min_temp,june_min_temp,july_min_temp,august_min_temp,september_min_temp,october_min_temp,november_min_temp,december_min_temp)",
+            "column": "min_temp"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "max_temp-min_temp",
+            "column": "temp_range"
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {
@@ -178,6 +198,7 @@
       "disabled": false,
       "type": "BinnerProcessor",
       "params": {
+        "output": "floor_area_bins",
         "mode": "CUSTOM",
         "input": "floor_area",
         "useMin": false,
@@ -236,16 +257,6 @@
         "max": 0.0,
         "useMax": false,
         "width": 1.0
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "column": "temp_range"
       },
       "alwaysShowComment": false
     }
@@ -307,6 +318,7 @@
     "august_avg_temp": 155,
     "december_min_temp": 143,
     "august_max_temp": 128,
+    "floor_area_bins": 128,
     "facility_type_extracted_1": 203,
     "State_Factor": 105,
     "snowfall_inches": 128,
@@ -343,6 +355,7 @@
     "cooling_degree_days": 158,
     "may_min_temp": 105,
     "facility_type_extracted_found": 233,
+    "temp_range": 100,
     "march_max_temp": 120,
     "ELEVATION": 100,
     "floor_area": 120,
