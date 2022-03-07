@@ -1,7 +1,16 @@
 {
   "name": "Data_preparation",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_full_data_enriched",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_enriched",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
