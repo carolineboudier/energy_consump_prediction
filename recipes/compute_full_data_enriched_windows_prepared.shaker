@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 0,
+    "_refreshTrigger": 1,
     "selection": {
       "filter": {
         "distinct": false,
@@ -20,7 +20,7 @@
       "maxStoredBytes": 104857600,
       "targetRatio": 0.02,
       "maxReadUncompressedBytes": -1,
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_NB_EXACT",
       "timeout": -1
     },
     "autoRefreshSample": false
@@ -37,7 +37,8 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "column": "energy_star_rating"
+        "expression": "if (isNull(energy_star_rating),group_energy_star_rating_avg,energy_star_rating)",
+        "column": "new_energy_star_rating"
       },
       "alwaysShowComment": false
     }
@@ -81,6 +82,7 @@
     "october_min_temp": 135,
     "july_min_temp": 113,
     "direction_peak_wind_speed": 203,
+    "new_energy_star_rating": 180,
     "august_min_temp": 128,
     "days_below_10F": 120,
     "days_below_30F": 120,
