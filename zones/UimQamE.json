@@ -21,6 +21,14 @@
     {
       "objectId": "to_predict",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_full_data_enriched_windows",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_enriched_windows",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
