@@ -1,13 +1,13 @@
 {
-  "name": "Data Exploration",
+  "name": "Process",
   "layout": "WIKI_ARTICLE",
   "attachments": [],
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646390992598
+    "lastModifiedOn": 1646664039011
   },
   "creationTag": {
     "versionNumber": 0,
