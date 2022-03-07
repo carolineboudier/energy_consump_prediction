@@ -30,7 +30,87 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "BinnerProcessor",
+      "params": {
+        "output": "floor_area_category",
+        "mode": "CUSTOM",
+        "input": "floor_area",
+        "useMin": false,
+        "bins": [
+          {
+            "name": "1st",
+            "sup": 943.0
+          },
+          {
+            "inf": 943.0,
+            "name": "2nd",
+            "sup": 403000.0
+          },
+          {
+            "inf": 40300.0,
+            "name": "3rd",
+            "sup": 57000.0
+          },
+          {
+            "inf": 57000.0,
+            "name": "4th",
+            "sup": 65600.0
+          },
+          {
+            "inf": 65600.0,
+            "name": "5th",
+            "sup": 75800.0
+          },
+          {
+            "inf": 75800.0,
+            "name": "6th",
+            "sup": 90400.0
+          },
+          {
+            "inf": 90400.0,
+            "name": "7th",
+            "sup": 111300.0
+          },
+          {
+            "inf": 111300.0,
+            "name": "8th",
+            "sup": 143500.0
+          },
+          {
+            "inf": 143500.0,
+            "name": "9th",
+            "sup": 342400.0
+          },
+          {
+            "inf": 342400.0,
+            "name": "10th"
+          }
+        ],
+        "min": 0.0,
+        "useDecimalSeparatorFromLocale": false,
+        "max": 0.0,
+        "useMax": false,
+        "width": 1.0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "datePart(now(),\u0027year\u0027)-year_built",
+        "column": "building_age"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -59,6 +139,7 @@
   "columnWidthsByName": {
     "snowdepth_inches": 135,
     "site_eui": 100,
+    "building_age": 105,
     "avg_temp": 106,
     "february_min_temp": 143,
     "Year_Factor": 100,
@@ -115,6 +196,7 @@
     "days_below_0F": 113,
     "november_max_temp": 143,
     "april_avg_temp": 148,
+    "floor_area_category": 158,
     "days_above_100F": 128,
     "january_avg_temp": 162,
     "june_min_temp": 113,
