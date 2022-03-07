@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646675944011
+    "lastModifiedOn": 1646676243152
   },
   "creationTag": {
     "versionNumber": 0,
@@ -102,6 +102,10 @@
       {
         "name": "building_age",
         "type": "double"
+      },
+      {
+        "name": "age_bin",
+        "type": "string"
       },
       {
         "name": "energy_star_rating",
@@ -345,6 +349,18 @@
       },
       {
         "name": "site_eui",
+        "type": "double"
+      },
+      {
+        "name": "group_site_eui_min",
+        "type": "double"
+      },
+      {
+        "name": "group_site_eui_max",
+        "type": "double"
+      },
+      {
+        "name": "group_site_eui_avg",
         "type": "double"
       }
     ],
