@@ -1,0 +1,32 @@
+{
+  "displayName": "Compare best models of each session",
+  "predictionType": "REGRESSION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646761346649
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646761346649
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
