@@ -33,7 +33,7 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "displayMode": "HEATMAP",
+              "displayMode": "CONTRIBUTION_CHARTS",
               "summaryChart": "writeHours",
               "timeSpan": "year",
               "contributorsChart": "commits"
@@ -55,11 +55,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731276117
+    "lastModifiedOn": 1646731311194
   },
   "creationTag": {
     "versionNumber": 0,
