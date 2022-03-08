@@ -13,11 +13,11 @@
     "main": {
       "items": [
         {
-          "ref": "data_to_predict",
+          "ref": "labelled_data",
           "deps": []
         },
         {
-          "ref": "training_data",
+          "ref": "unlabelled_data",
           "deps": []
         }
       ]
@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646038122713
+    "lastModifiedOn": 1646758246489
   },
   "creationTag": {
     "versionNumber": 0,

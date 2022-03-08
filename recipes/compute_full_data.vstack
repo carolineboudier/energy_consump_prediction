@@ -64,8 +64,8 @@
     "direction_peak_wind_speed",
     "max_wind_speed",
     "days_with_fog",
-    "id",
-    "site_eui"
+    "site_eui",
+    "id"
   ],
   "engineParams": {
     "hive": {
@@ -103,22 +103,17 @@
   },
   "virtualInputs": [
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "data_to_predict",
+      "preFilter": {},
+      "originLabel": "labelled_data",
       "index": 0
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "training_data",
+      "preFilter": {},
+      "originLabel": "unlabelled_data",
       "index": 1
     }
   ],
+  "copySchemaFromDatasetWithName": "labelled_data",
   "postFilter": {
     "$status": {
       "schema": {
@@ -372,11 +367,11 @@
             "type": "string"
           },
           {
-            "name": "id",
+            "name": "site_eui",
             "type": "string"
           },
           {
-            "name": "site_eui",
+            "name": "id",
             "type": "string"
           }
         ],
