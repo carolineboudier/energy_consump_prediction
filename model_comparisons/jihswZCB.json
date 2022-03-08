@@ -1,21 +1,59 @@
 {
   "displayName": "Model comparison",
   "predictionType": "REGRESSION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s1-pp2-m1",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s2-pp3-m1",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
-    "yLabels": [],
+    "displayedMetrics": [
+      "EVS",
+      "MAPE",
+      "MAE",
+      "MSE",
+      "RMSE",
+      "RMSLE",
+      "R2",
+      "PEARSON"
+    ],
+    "predictionType": "REGRESSION",
+    "pinnedMetrics": [
+      "RMSE"
+    ],
+    "xLabel": "model:date",
+    "yLabels": [
+      "model:algorithm",
+      "evaluation:date",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646728466915
+    "lastModifiedOn": 1646728468359
   },
   "creationTag": {
     "versionNumber": 0,
