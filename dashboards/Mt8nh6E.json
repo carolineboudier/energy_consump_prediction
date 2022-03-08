@@ -91,12 +91,12 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "url": "https://www.kaggle.com/c/widsdatathon2022/overview",
+              "url": "https://www.widsconference.org/datathon.html",
               "loadTimeoutInSeconds": 1
             },
             "autoLoad": true,
             "showTitle": "NO",
-            "title": "Link on Kaggle",
+            "title": "Link of the conference",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -110,11 +110,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731676784
+    "lastModifiedOn": 1646731841952
   },
   "creationTag": {
     "versionNumber": 0,
