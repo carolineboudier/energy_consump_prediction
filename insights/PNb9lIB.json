@@ -1,0 +1,29 @@
+{
+  "type": "article",
+  "params": {
+    "articleId": "1"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "article Project description",
+  "dashboardCreationId": "Mt8nh6E",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646731325614
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646731325614
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
