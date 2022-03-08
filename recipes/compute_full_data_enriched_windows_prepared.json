@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646756297609
+    "lastModifiedOn": 1646756356100
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,6 +86,7 @@
     },
     "lastModifiedOn": 1646676510797
   },
+  "shortDesc": "- purposefully divided this recipe in two to show the power of pipelines",
   "tags": [],
   "customFields": {},
   "checklists": {
