@@ -320,7 +320,7 @@
       "min": false,
       "countDistinct": false,
       "avg": true,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
@@ -1745,9 +1745,10 @@
       "dateDiffUnit": "DAY",
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -1821,7 +1822,7 @@
       "min": true,
       "countDistinct": false,
       "avg": true,
-      "lag": false,
+      "lag": true,
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
@@ -1835,10 +1836,15 @@
     {
       "windowUpperBound": 0,
       "enablePartitioning": true,
-      "enableOrdering": false,
+      "enableOrdering": true,
       "precedingRows": 0,
       "limitFollowing": false,
-      "orders": [],
+      "orders": [
+        {
+          "column": "Year_Factor",
+          "desc": false
+        }
+      ],
       "limitPreceding": false,
       "followingRows": 0,
       "windowLowerBound": 0,
@@ -2154,6 +2160,14 @@
             "type": "double"
           },
           {
+            "name": "energy_star_rating_lag",
+            "type": "double"
+          },
+          {
+            "name": "max_wind_speed_avg",
+            "type": "double"
+          },
+          {
             "name": "site_eui_min",
             "type": "double"
           },
@@ -2163,6 +2177,10 @@
           },
           {
             "name": "site_eui_avg",
+            "type": "double"
+          },
+          {
+            "name": "site_eui_lag",
             "type": "double"
           }
         ],
@@ -2215,6 +2233,7 @@
     "site_eui_max": "group_site_eui_max",
     "site_eui_avg": "group_site_eui_avg",
     "site_eui_min": "group_site_eui_min",
+    "max_wind_speed_avg": "group_max_wind_speed_avg",
     "energy_star_rating_avg": "group_energy_star_rating_avg"
   }
 }
