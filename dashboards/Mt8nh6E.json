@@ -3,7 +3,49 @@
     {
       "id": "VrbWB9T",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "# Project management dashboard",
+              "textAlign": "CENTER",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 0,
+              "width": 4,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "displayMode": "HEATMAP",
+              "summaryChart": "writeHours",
+              "timeSpan": "year",
+              "contributorsChart": "commits"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "p0o5XSq",
+            "insightType": "project_activity",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +55,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731218215
+    "lastModifiedOn": 1646731276117
   },
   "creationTag": {
     "versionNumber": 0,
