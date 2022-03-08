@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": "VrbWB9T",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "admin",
+  "listed": false,
+  "name": "Project management dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646731218215
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646731218215
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
