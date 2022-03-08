@@ -5,18 +5,18 @@
   "name": "Kill_notebooks",
   "active": true,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646730792392
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646730799968
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646731179950
   },
   "checklists": {
     "checklists": []
@@ -36,13 +36,13 @@
       "active": true,
       "params": {
         "repeatFrequency": 1,
-        "frequency": "Minutely",
+        "frequency": "Weekly",
         "startingFrom": "2022-03-08T08:59:00.000Z",
         "daysOfWeek": [
-          "Tuesday"
+          "Monday"
         ],
-        "minute": 12,
-        "hour": 10,
+        "minute": 0,
+        "hour": 9,
         "timezone": "SERVER"
       }
     }
@@ -61,12 +61,12 @@
           "messageSource": "INLINE",
           "templateFormat": "FORMULA",
           "templateName": "default.ftl",
-          "message": "Dear Caroline, \n\nThe following scenario : ${scenarioName} has run with the outcome : \n${outcome}.\n\nHave a great day, \n\nCaroline"
+          "message": "Dear Caroline, \n\nThe following scenario : ${scenarioName} has run with the outcome : ${outcome}.\n\nHave a great day, \n\nCaroline"
         }
       },
       "id": "jAOrRuAd",
-      "name": "Reporter",
-      "runConditionEnabled": false,
+      "name": "Reporter email",
+      "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"
     }
