@@ -41,17 +41,6 @@
         "column": "energy_star_rating"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CreateColumnWithGREL",
-      "params": {
-        "expression": "if (isNull(max_wind_speed),group_max_wind_speed_avg,max_wind_speed)",
-        "column": "max_wind_speed"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
