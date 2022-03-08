@@ -392,7 +392,11 @@
                 "type": "double"
               },
               {
-                "name": "new_energy_star_rating",
+                "name": "energy_star_rating_lag",
+                "type": "double"
+              },
+              {
+                "name": "group_max_wind_speed_avg",
                 "type": "double"
               },
               {
@@ -405,6 +409,10 @@
               },
               {
                 "name": "group_site_eui_avg",
+                "type": "double"
+              },
+              {
+                "name": "site_eui_lag",
                 "type": "double"
               }
             ]
