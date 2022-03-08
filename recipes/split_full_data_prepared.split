@@ -121,15 +121,15 @@
               },
               {
                 "name": "public_found",
-                "type": "string"
+                "type": "boolean"
               },
               {
                 "name": "warehouse_found",
-                "type": "string"
+                "type": "boolean"
               },
               {
                 "name": "office_found",
-                "type": "string"
+                "type": "boolean"
               },
               {
                 "name": "floor_area",
@@ -393,6 +393,34 @@
               },
               {
                 "name": "site_eui",
+                "type": "double"
+              },
+              {
+                "name": "group_energy_star_rating_avg",
+                "type": "double"
+              },
+              {
+                "name": "energy_star_rating_lag",
+                "type": "double"
+              },
+              {
+                "name": "group_max_wind_speed_avg",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_min",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_max",
+                "type": "double"
+              },
+              {
+                "name": "group_site_eui_avg",
+                "type": "double"
+              },
+              {
+                "name": "site_eui_lag",
                 "type": "double"
               }
             ]
