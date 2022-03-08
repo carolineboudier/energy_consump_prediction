@@ -9,9 +9,21 @@
       "isChampion": false
     },
     {
-      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s2-pp3-m1",
+      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s2-pp1-m1",
       "isSelected": true,
-      "color": "#ff7f0e",
+      "color": "#2ca02c",
+      "isChampion": true
+    },
+    {
+      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s2-pp2-m1",
+      "isSelected": true,
+      "color": "#d62728",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-Dur0J5KG-XSGdDIDV-s1-pp4-m1",
+      "isSelected": true,
+      "color": "#9467bd",
       "isChampion": false
     }
   ],
@@ -49,11 +61,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646728468359
+    "lastModifiedOn": 1646728607479
   },
   "creationTag": {
     "versionNumber": 0,
