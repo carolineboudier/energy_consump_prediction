@@ -56,7 +56,24 @@
   "projectAppType": "REGULAR",
   "owner": "admin",
   "permissionsVersion": "V2",
-  "permissions": [],
+  "permissions": [
+    {
+      "user": "user_test",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": true,
+      "exportDatasetsData": true,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "shareToWorkspaces": true,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -228,11 +245,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646667726625
+    "lastModifiedOn": 1646729574836
   },
   "creationTag": {
     "versionNumber": 0,
