@@ -92,7 +92,7 @@
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "url": "https://www.widsconference.org/datathon.html",
-              "loadTimeoutInSeconds": 1
+              "loadTimeoutInSeconds": 0
             },
             "autoLoad": true,
             "showTitle": "NO",
@@ -110,11 +110,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731870011
+    "lastModifiedOn": 1646731892914
   },
   "creationTag": {
     "versionNumber": 0,
