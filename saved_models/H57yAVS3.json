@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Predict site_eui (regression)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1646761395844",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -16,7 +16,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-ENERGYCONSUMPTIONPREDICTION-Dur0J5KG-XSGdDIDV-s1-pp1-m1",
+  "lastExportedFrom": "A-ENERGYCONSUMPTIONPREDICTION-Dur0J5KG-XSGdDIDV-s3-pp2-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -2152,11 +2152,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646666943269
+    "lastModifiedOn": 1646761396292
   },
   "creationTag": {
     "versionNumber": 0,
