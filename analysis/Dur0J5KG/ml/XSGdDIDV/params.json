@@ -4306,7 +4306,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "random_forest_classification": {
       "n_estimators": {
@@ -4600,7 +4600,8 @@
           "min": 1
         },
         "values": [
-          100
+          100,
+          1000
         ],
         "range": {
           "min": 80,
@@ -4616,7 +4617,9 @@
           "min": 1
         },
         "values": [
-          3
+          3,
+          6,
+          12
         ],
         "range": {
           "min": 3,
@@ -5764,7 +5767,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": true
+      "enabled": false
     },
     "deep_learning_sparkling": {
       "enabled": false,
