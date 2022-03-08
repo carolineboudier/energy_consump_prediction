@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "nJCGSMIj",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
       "objectId": "data_to_predict",
       "objectType": "DATASET"
     },
