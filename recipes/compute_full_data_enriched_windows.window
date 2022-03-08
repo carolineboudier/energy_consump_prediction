@@ -4,7 +4,6 @@
     "enabled": false
   },
   "ntileValues": "10",
-  "keys": [],
   "values": [
     {
       "last": false,
@@ -13,11 +12,9 @@
       "firstLastNotNull": false,
       "column": "Year_Factor",
       "count": false,
-      "$idx": 0,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -38,11 +35,9 @@
       "firstLastNotNull": false,
       "column": "State_Factor",
       "count": false,
-      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -63,11 +58,9 @@
       "firstLastNotNull": false,
       "column": "building_class",
       "count": false,
-      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -88,11 +81,9 @@
       "firstLastNotNull": false,
       "column": "facility_type",
       "count": false,
-      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -113,11 +104,9 @@
       "firstLastNotNull": false,
       "column": "public_found",
       "count": false,
-      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -138,11 +127,9 @@
       "firstLastNotNull": false,
       "column": "warehouse_found",
       "count": false,
-      "$idx": 5,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -163,11 +150,9 @@
       "firstLastNotNull": false,
       "column": "office_found",
       "count": false,
-      "$idx": 6,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -188,11 +173,9 @@
       "firstLastNotNull": false,
       "column": "floor_area",
       "count": false,
-      "$idx": 7,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -213,11 +196,9 @@
       "firstLastNotNull": false,
       "column": "floor_area_bins",
       "count": false,
-      "$idx": 8,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -238,11 +219,9 @@
       "firstLastNotNull": false,
       "column": "year_built",
       "count": false,
-      "$idx": 9,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -263,11 +242,9 @@
       "firstLastNotNull": false,
       "column": "building_age",
       "count": false,
-      "$idx": 10,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -288,15 +265,17 @@
       "firstLastNotNull": false,
       "column": "age_bin",
       "count": false,
-      "$idx": 11,
+      "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "string",
       "lead": false,
+      "concatDistinct": false,
+      "dateDiffUnit": "DAY",
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "lag": false,
-      "$selected": false,
+      "leadValues": "1",
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -309,11 +288,9 @@
       "firstLastNotNull": false,
       "column": "energy_star_rating",
       "count": false,
-      "$idx": 12,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -322,7 +299,6 @@
       "avg": true,
       "lag": true,
       "leadValues": "1",
-      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -335,11 +311,9 @@
       "firstLastNotNull": false,
       "column": "ELEVATION",
       "count": false,
-      "$idx": 13,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -360,11 +334,9 @@
       "firstLastNotNull": false,
       "column": "january_min_temp",
       "count": false,
-      "$idx": 14,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -385,11 +357,9 @@
       "firstLastNotNull": false,
       "column": "january_avg_temp",
       "count": false,
-      "$idx": 15,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -410,11 +380,9 @@
       "firstLastNotNull": false,
       "column": "january_max_temp",
       "count": false,
-      "$idx": 16,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -435,11 +403,9 @@
       "firstLastNotNull": false,
       "column": "february_min_temp",
       "count": false,
-      "$idx": 17,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -460,11 +426,9 @@
       "firstLastNotNull": false,
       "column": "february_avg_temp",
       "count": false,
-      "$idx": 18,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -485,11 +449,9 @@
       "firstLastNotNull": false,
       "column": "february_max_temp",
       "count": false,
-      "$idx": 19,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -510,11 +472,9 @@
       "firstLastNotNull": false,
       "column": "march_min_temp",
       "count": false,
-      "$idx": 20,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -535,11 +495,9 @@
       "firstLastNotNull": false,
       "column": "march_avg_temp",
       "count": false,
-      "$idx": 21,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -560,11 +518,9 @@
       "firstLastNotNull": false,
       "column": "march_max_temp",
       "count": false,
-      "$idx": 22,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -585,11 +541,9 @@
       "firstLastNotNull": false,
       "column": "april_min_temp",
       "count": false,
-      "$idx": 23,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -610,11 +564,9 @@
       "firstLastNotNull": false,
       "column": "april_avg_temp",
       "count": false,
-      "$idx": 24,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -635,11 +587,9 @@
       "firstLastNotNull": false,
       "column": "april_max_temp",
       "count": false,
-      "$idx": 25,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -660,11 +610,9 @@
       "firstLastNotNull": false,
       "column": "may_min_temp",
       "count": false,
-      "$idx": 26,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -685,11 +633,9 @@
       "firstLastNotNull": false,
       "column": "may_avg_temp",
       "count": false,
-      "$idx": 27,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -710,11 +656,9 @@
       "firstLastNotNull": false,
       "column": "may_max_temp",
       "count": false,
-      "$idx": 28,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -735,11 +679,9 @@
       "firstLastNotNull": false,
       "column": "june_min_temp",
       "count": false,
-      "$idx": 29,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -760,11 +702,9 @@
       "firstLastNotNull": false,
       "column": "june_avg_temp",
       "count": false,
-      "$idx": 30,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -785,11 +725,9 @@
       "firstLastNotNull": false,
       "column": "june_max_temp",
       "count": false,
-      "$idx": 31,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -810,11 +748,9 @@
       "firstLastNotNull": false,
       "column": "july_min_temp",
       "count": false,
-      "$idx": 32,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -835,11 +771,9 @@
       "firstLastNotNull": false,
       "column": "july_avg_temp",
       "count": false,
-      "$idx": 33,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -860,11 +794,9 @@
       "firstLastNotNull": false,
       "column": "july_max_temp",
       "count": false,
-      "$idx": 34,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -885,11 +817,9 @@
       "firstLastNotNull": false,
       "column": "august_min_temp",
       "count": false,
-      "$idx": 35,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -910,11 +840,9 @@
       "firstLastNotNull": false,
       "column": "august_avg_temp",
       "count": false,
-      "$idx": 36,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -935,11 +863,9 @@
       "firstLastNotNull": false,
       "column": "august_max_temp",
       "count": false,
-      "$idx": 37,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -960,11 +886,9 @@
       "firstLastNotNull": false,
       "column": "september_min_temp",
       "count": false,
-      "$idx": 38,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -985,11 +909,9 @@
       "firstLastNotNull": false,
       "column": "september_avg_temp",
       "count": false,
-      "$idx": 39,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1010,11 +932,9 @@
       "firstLastNotNull": false,
       "column": "september_max_temp",
       "count": false,
-      "$idx": 40,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1035,11 +955,9 @@
       "firstLastNotNull": false,
       "column": "october_min_temp",
       "count": false,
-      "$idx": 41,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1060,11 +978,9 @@
       "firstLastNotNull": false,
       "column": "october_avg_temp",
       "count": false,
-      "$idx": 42,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1085,11 +1001,9 @@
       "firstLastNotNull": false,
       "column": "october_max_temp",
       "count": false,
-      "$idx": 43,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1110,11 +1024,9 @@
       "firstLastNotNull": false,
       "column": "november_min_temp",
       "count": false,
-      "$idx": 44,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1135,11 +1047,9 @@
       "firstLastNotNull": false,
       "column": "november_avg_temp",
       "count": false,
-      "$idx": 45,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1160,11 +1070,9 @@
       "firstLastNotNull": false,
       "column": "november_max_temp",
       "count": false,
-      "$idx": 46,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1185,11 +1093,9 @@
       "firstLastNotNull": false,
       "column": "december_min_temp",
       "count": false,
-      "$idx": 47,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1210,11 +1116,9 @@
       "firstLastNotNull": false,
       "column": "min_temp",
       "count": false,
-      "$idx": 48,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1235,11 +1139,9 @@
       "firstLastNotNull": false,
       "column": "december_avg_temp",
       "count": false,
-      "$idx": 49,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1260,11 +1162,9 @@
       "firstLastNotNull": false,
       "column": "december_max_temp",
       "count": false,
-      "$idx": 50,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1285,11 +1185,9 @@
       "firstLastNotNull": false,
       "column": "max_temp",
       "count": false,
-      "$idx": 51,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1310,11 +1208,9 @@
       "firstLastNotNull": false,
       "column": "temp_range",
       "count": false,
-      "$idx": 52,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1335,11 +1231,9 @@
       "firstLastNotNull": false,
       "column": "cooling_degree_days",
       "count": false,
-      "$idx": 53,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1360,11 +1254,9 @@
       "firstLastNotNull": false,
       "column": "heating_degree_days",
       "count": false,
-      "$idx": 54,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1385,11 +1277,9 @@
       "firstLastNotNull": false,
       "column": "precipitation_inches",
       "count": false,
-      "$idx": 55,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1410,11 +1300,9 @@
       "firstLastNotNull": false,
       "column": "snowfall_inches",
       "count": false,
-      "$idx": 56,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1435,11 +1323,9 @@
       "firstLastNotNull": false,
       "column": "snowdepth_inches",
       "count": false,
-      "$idx": 57,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1460,11 +1346,9 @@
       "firstLastNotNull": false,
       "column": "avg_temp",
       "count": false,
-      "$idx": 58,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1485,11 +1369,9 @@
       "firstLastNotNull": false,
       "column": "days_below_30F",
       "count": false,
-      "$idx": 59,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1510,11 +1392,9 @@
       "firstLastNotNull": false,
       "column": "days_below_20F",
       "count": false,
-      "$idx": 60,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1535,11 +1415,9 @@
       "firstLastNotNull": false,
       "column": "days_below_10F",
       "count": false,
-      "$idx": 61,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1560,11 +1438,9 @@
       "firstLastNotNull": false,
       "column": "days_below_0F",
       "count": false,
-      "$idx": 62,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1585,11 +1461,9 @@
       "firstLastNotNull": false,
       "column": "days_above_80F",
       "count": false,
-      "$idx": 63,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1610,11 +1484,9 @@
       "firstLastNotNull": false,
       "column": "days_above_90F",
       "count": false,
-      "$idx": 64,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1635,11 +1507,9 @@
       "firstLastNotNull": false,
       "column": "days_above_100F",
       "count": false,
-      "$idx": 65,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1660,11 +1530,9 @@
       "firstLastNotNull": false,
       "column": "days_above_110F",
       "count": false,
-      "$idx": 66,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1685,11 +1553,9 @@
       "firstLastNotNull": false,
       "column": "direction_max_wind_speed",
       "count": false,
-      "$idx": 67,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1710,11 +1576,9 @@
       "firstLastNotNull": false,
       "column": "direction_peak_wind_speed",
       "count": false,
-      "$idx": 68,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1735,11 +1599,9 @@
       "firstLastNotNull": false,
       "column": "max_wind_speed",
       "count": false,
-      "$idx": 69,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1748,7 +1610,6 @@
       "avg": true,
       "lag": false,
       "leadValues": "1",
-      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -1761,11 +1622,9 @@
       "firstLastNotNull": false,
       "column": "days_with_fog",
       "count": false,
-      "$idx": 70,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1786,11 +1645,9 @@
       "firstLastNotNull": false,
       "column": "id",
       "count": false,
-      "$idx": 71,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1811,11 +1668,9 @@
       "firstLastNotNull": false,
       "column": "site_eui",
       "count": false,
-      "$idx": 72,
       "lagValues": "1",
       "sum": false,
       "concat": false,
-      "type": "double",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -1824,7 +1679,6 @@
       "avg": true,
       "lag": true,
       "leadValues": "1",
-      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -1834,7 +1688,7 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0,
+      "windowUpperBound": 0.0,
       "enablePartitioning": true,
       "enableOrdering": true,
       "precedingRows": 0,
@@ -1847,7 +1701,7 @@
       ],
       "limitPreceding": false,
       "followingRows": 0,
-      "windowLowerBound": 0,
+      "windowLowerBound": 0.0,
       "enableLimits": false,
       "partitioningColumns": [
         "State_Factor",
@@ -1860,333 +1714,6 @@
   ],
   "computedColumns": [],
   "postFilter": {
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "Year_Factor",
-            "type": "bigint"
-          },
-          {
-            "name": "State_Factor",
-            "type": "string"
-          },
-          {
-            "name": "building_class",
-            "type": "string"
-          },
-          {
-            "name": "facility_type",
-            "type": "string"
-          },
-          {
-            "name": "public_found",
-            "type": "string"
-          },
-          {
-            "name": "warehouse_found",
-            "type": "string"
-          },
-          {
-            "name": "office_found",
-            "type": "string"
-          },
-          {
-            "name": "floor_area",
-            "type": "double"
-          },
-          {
-            "name": "floor_area_bins",
-            "type": "string"
-          },
-          {
-            "name": "year_built",
-            "type": "double"
-          },
-          {
-            "name": "building_age",
-            "type": "double"
-          },
-          {
-            "name": "age_bin",
-            "type": "string"
-          },
-          {
-            "name": "energy_star_rating",
-            "type": "double"
-          },
-          {
-            "name": "ELEVATION",
-            "type": "double"
-          },
-          {
-            "name": "january_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "january_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "january_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "february_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "february_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "february_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "march_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "march_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "march_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "april_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "april_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "april_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "may_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "may_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "may_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "june_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "june_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "june_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "july_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "july_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "july_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "august_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "august_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "august_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "september_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "september_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "september_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "october_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "october_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "october_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "november_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "november_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "november_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "december_min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "min_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "december_avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "december_max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "max_temp",
-            "type": "bigint"
-          },
-          {
-            "name": "temp_range",
-            "type": "bigint"
-          },
-          {
-            "name": "cooling_degree_days",
-            "type": "bigint"
-          },
-          {
-            "name": "heating_degree_days",
-            "type": "bigint"
-          },
-          {
-            "name": "precipitation_inches",
-            "type": "double"
-          },
-          {
-            "name": "snowfall_inches",
-            "type": "double"
-          },
-          {
-            "name": "snowdepth_inches",
-            "type": "bigint"
-          },
-          {
-            "name": "avg_temp",
-            "type": "double"
-          },
-          {
-            "name": "days_below_30F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_below_20F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_below_10F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_below_0F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_above_80F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_above_90F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_above_100F",
-            "type": "bigint"
-          },
-          {
-            "name": "days_above_110F",
-            "type": "bigint"
-          },
-          {
-            "name": "direction_max_wind_speed",
-            "type": "double"
-          },
-          {
-            "name": "direction_peak_wind_speed",
-            "type": "double"
-          },
-          {
-            "name": "max_wind_speed",
-            "type": "double"
-          },
-          {
-            "name": "days_with_fog",
-            "type": "double"
-          },
-          {
-            "name": "id",
-            "type": "bigint"
-          },
-          {
-            "name": "site_eui",
-            "type": "double"
-          },
-          {
-            "name": "energy_star_rating_avg",
-            "type": "double"
-          },
-          {
-            "name": "energy_star_rating_lag",
-            "type": "double"
-          },
-          {
-            "name": "max_wind_speed_avg",
-            "type": "double"
-          },
-          {
-            "name": "site_eui_min",
-            "type": "double"
-          },
-          {
-            "name": "site_eui_max",
-            "type": "double"
-          },
-          {
-            "name": "site_eui_avg",
-            "type": "double"
-          },
-          {
-            "name": "site_eui_lag",
-            "type": "double"
-          }
-        ],
-        "userModified": false
-      }
-    },
     "distinct": false,
     "enabled": false
   },
@@ -2228,12 +1755,12 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false,
   "outputColumnNameOverrides": {
     "site_eui_max": "group_site_eui_max",
     "site_eui_avg": "group_site_eui_avg",
     "site_eui_min": "group_site_eui_min",
     "max_wind_speed_avg": "group_max_wind_speed_avg",
     "energy_star_rating_avg": "group_energy_star_rating_avg"
-  }
+  },
+  "rowNumber": false
 }
