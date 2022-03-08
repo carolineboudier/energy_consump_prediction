@@ -610,7 +610,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1380,7 +1380,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1596,7 +1596,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -1758,7 +1758,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -2409,26 +2409,8 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": true,
+          "userModified": false,
           "autoModifiedByDSS": false,
-          "dssWantsToSet": {
-            "generate_derivative": false,
-            "numerical_handling": "REGULAR",
-            "missing_handling": "IMPUTE",
-            "missing_impute_with": "MEAN",
-            "impute_constant_value": 0.0,
-            "keep_regular": false,
-            "rescaling": "AVGSTD",
-            "quantile_bin_nb_bins": 4,
-            "binarize_threshold_mode": "MEDIAN",
-            "binarize_constant_threshold": 0.0,
-            "datetime_cyclical_periods": [],
-            "role": "INPUT",
-            "type": "NUMERIC",
-            "customHandlingCode": "",
-            "customProcessorWantsMatrix": false,
-            "sendToInput": "main"
-          },
           "recordedMeaning": "DoubleMeaning"
         },
         "customHandlingCode": "",
@@ -2863,7 +2845,7 @@
         "role": "INPUT",
         "type": "NUMERIC",
         "state": {
-          "userModified": false,
+          "userModified": true,
           "autoModifiedByDSS": true,
           "previousSettings": {
             "category_handling": "DUMMIFY",
@@ -4179,7 +4161,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
