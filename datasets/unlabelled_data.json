@@ -1,0 +1,425 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 63,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646758172591
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646758172591
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "baa8058ff3c7ccf8d2e8b904e83851274f4cdfbdbff23dc496dfd139b673fc3b",
+    "uploadConnection": "Default (in DSS data dir.)",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "Year_Factor",
+        "type": "string"
+      },
+      {
+        "name": "State_Factor",
+        "type": "string"
+      },
+      {
+        "name": "building_class",
+        "type": "string"
+      },
+      {
+        "name": "facility_type",
+        "type": "string"
+      },
+      {
+        "name": "floor_area",
+        "type": "string"
+      },
+      {
+        "name": "year_built",
+        "type": "string"
+      },
+      {
+        "name": "energy_star_rating",
+        "type": "string"
+      },
+      {
+        "name": "ELEVATION",
+        "type": "string"
+      },
+      {
+        "name": "january_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "january_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "january_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "february_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "february_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "february_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "march_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "march_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "march_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "april_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "april_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "april_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "may_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "may_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "may_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "june_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "june_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "june_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "july_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "july_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "july_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "august_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "august_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "august_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "september_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "september_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "september_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "october_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "october_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "october_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "november_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "november_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "november_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "december_min_temp",
+        "type": "string"
+      },
+      {
+        "name": "december_avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "december_max_temp",
+        "type": "string"
+      },
+      {
+        "name": "cooling_degree_days",
+        "type": "string"
+      },
+      {
+        "name": "heating_degree_days",
+        "type": "string"
+      },
+      {
+        "name": "precipitation_inches",
+        "type": "string"
+      },
+      {
+        "name": "snowfall_inches",
+        "type": "string"
+      },
+      {
+        "name": "snowdepth_inches",
+        "type": "string"
+      },
+      {
+        "name": "avg_temp",
+        "type": "string"
+      },
+      {
+        "name": "days_below_30F",
+        "type": "string"
+      },
+      {
+        "name": "days_below_20F",
+        "type": "string"
+      },
+      {
+        "name": "days_below_10F",
+        "type": "string"
+      },
+      {
+        "name": "days_below_0F",
+        "type": "string"
+      },
+      {
+        "name": "days_above_80F",
+        "type": "string"
+      },
+      {
+        "name": "days_above_90F",
+        "type": "string"
+      },
+      {
+        "name": "days_above_100F",
+        "type": "string"
+      },
+      {
+        "name": "days_above_110F",
+        "type": "string"
+      },
+      {
+        "name": "direction_max_wind_speed",
+        "type": "string"
+      },
+      {
+        "name": "direction_peak_wind_speed",
+        "type": "string"
+      },
+      {
+        "name": "max_wind_speed",
+        "type": "string"
+      },
+      {
+        "name": "days_with_fog",
+        "type": "string"
+      },
+      {
+        "name": "id",
+        "type": "string"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
