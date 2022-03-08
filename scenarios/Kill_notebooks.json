@@ -12,11 +12,11 @@
     "lastModifiedOn": 1646729685365
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646729685365
+    "lastModifiedOn": 1646729928573
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,34 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_kill-jupyter-sessions",
+        "type": "runnable",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_kill-jupyter-sessions",
+          "config": {
+            "maxIdleTimeHours": 24,
+            "maxSessionAgeHours": 0,
+            "dontKillBusyKernels": true,
+            "dontKillConnectedKernels": true,
+            "simulate": false
+          },
+          "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
