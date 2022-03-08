@@ -48,7 +48,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 1,
+              "top": 4,
               "left": 0,
               "width": 6,
               "height": 5
@@ -84,10 +84,10 @@
           {
             "tileType": "IFRAME",
             "box": {
-              "top": 4,
-              "left": 6,
+              "top": 1,
+              "left": 0,
               "width": 6,
-              "height": 4
+              "height": 3
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -110,11 +110,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731841952
+    "lastModifiedOn": 1646731870011
   },
   "creationTag": {
     "versionNumber": 0,
