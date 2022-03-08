@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646038101935
+    "lastModifiedOn": 1646758246127
   },
   "creationTag": {
     "versionNumber": 0,
@@ -77,7 +77,7 @@
       },
       {
         "name": "floor_area",
-        "type": "float"
+        "type": "string"
       },
       {
         "name": "year_built",
@@ -308,11 +308,11 @@
         "type": "string"
       },
       {
-        "name": "id",
+        "name": "site_eui",
         "type": "string"
       },
       {
-        "name": "site_eui",
+        "name": "id",
         "type": "string"
       }
     ],
