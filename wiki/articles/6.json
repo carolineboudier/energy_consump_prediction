@@ -1,0 +1,24 @@
+{
+  "name": "Model",
+  "layout": "WIKI_ARTICLE",
+  "attachments": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646727262526
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646727262526
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
