@@ -46,6 +46,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "1",
+          "objectType": "ARTICLE"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -245,11 +254,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646729574836
+    "lastModifiedOn": 1646731325483
   },
   "creationTag": {
     "versionNumber": 0,
