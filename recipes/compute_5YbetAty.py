@@ -5,21 +5,24 @@ import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 import matplotlib.pyplot as plt
 import io
+%pylab inline
 
 # Read recipe inputs
 full_data_prepared = dataiku.Dataset("full_data_prepared")
 full_data_prepared_df = full_data_prepared.get_dataframe()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
+# It is possible to import **custom code** (edited in the Library editor)
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+from my_package import calc_missing_vals
+
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # extract train set
 train_df=full_data_prepared_df.dropna(subset=['site_eui'])
-N=len(train_df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# calculate missing values
-missing_df=train_df.isnull().sum()/N*100
-missing_df=missing_df[missing_df!=0]
-missing_df
+missing_df=calc_missing_vals(train_df)
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 from dataiku import insights
