@@ -13,6 +13,14 @@
     {
       "objectId": "training_data",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "labelled_data",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "unlabelled_data",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
