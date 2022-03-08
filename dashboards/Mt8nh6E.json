@@ -27,7 +27,7 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 1,
-              "left": 0,
+              "left": 6,
               "width": 4,
               "height": 3
             },
@@ -44,6 +44,61 @@
             "insightType": "project_activity",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 0,
+              "width": 6,
+              "height": 5
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {},
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "diJ35yB",
+            "insightType": "article",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 10,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showLastRun": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "p7O6n7f",
+            "insightType": "scenario_run_button",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "IFRAME",
+            "box": {
+              "top": 4,
+              "left": 6,
+              "width": 6,
+              "height": 4
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "url": "https://www.kaggle.com/c/widsdatathon2022/data",
+              "loadTimeoutInSeconds": 0
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "title": "Link on Kaggle",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -55,11 +110,11 @@
   "name": "Project management dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646731311194
+    "lastModifiedOn": 1646731641276
   },
   "creationTag": {
     "versionNumber": 0,
