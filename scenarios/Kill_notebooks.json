@@ -3,20 +3,20 @@
   "id": "Kill_notebooks",
   "type": "step_based",
   "name": "Kill_notebooks",
-  "active": false,
+  "active": true,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646729685365
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646729928573
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646730312043
   },
   "checklists": {
     "checklists": []
@@ -27,8 +27,49 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
-  "reporters": [],
+  "triggers": [
+    {
+      "id": "Gf5SenVE",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Weekly",
+        "startingFrom": "2022-03-08T08:59:00.000Z",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "minute": 30,
+        "hour": 10,
+        "timezone": "SERVER"
+      }
+    }
+  ],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "mail_local_instance",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "recipient": "caroline.boudier@dataiku.com",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "INLINE",
+          "templateFormat": "FORMULA",
+          "templateName": "default.ftl",
+          "message": "Dear Caroline, \n\nThe following scenario : ${scenarioName} has run with the outcome : \n${outcome}.\n\nHave a great day, \n\nCaroline"
+        }
+      },
+      "id": "jAOrRuAd",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
