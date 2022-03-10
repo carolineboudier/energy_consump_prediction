@@ -20,6 +20,7 @@ fig = px.histogram(df, x="State_Factor", y="site_eui", color="building_class",hi
 app.layout = html.Div(children=[
     html.H1(children='A simple Dash application'),
 
+
     dcc.Graph(
         id='example-graph',
         figure=fig
