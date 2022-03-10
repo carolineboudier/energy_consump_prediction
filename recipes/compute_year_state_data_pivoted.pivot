@@ -41,20 +41,40 @@
       }
     }
   },
-  "explicitIdentifiers": [],
+  "explicitIdentifiers": [
+    "State_Factor"
+  ],
   "otherColumns": [],
   "pivots": [
     {
+      "valueLimit": "TOP_N",
       "minOccLimit": 0,
-      "topnLimit": 0,
+      "topnLimit": 20,
       "globalCount": true,
       "explicitValues": [],
       "keyColumns": [
-        "Year_Factor"
+        "building_class"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "january_avg_temp",
+          "count": false,
+          "sum": false,
+          "concat": false,
+          "type": "double",
+          "$agg": "avg",
+          "countDistinct": false,
+          "min": false,
+          "avg": true,
+          "stddev": false,
+          "first": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
-  "customAggregates": []
+  "customAggregates": [],
+  "enginesPreferences": {}
 }
