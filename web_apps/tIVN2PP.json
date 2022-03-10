@@ -35,11 +35,11 @@
   "config": {},
   "name": "simple_histogram",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646915689632
+    "lastModifiedOn": 1646915785376
   },
   "creationTag": {
     "versionNumber": 0,
