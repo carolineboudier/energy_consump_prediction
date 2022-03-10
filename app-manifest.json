@@ -33,7 +33,7 @@
           "params": [
             {
               "name": "selected_year",
-              "type": "SELECT",
+              "type": "INT",
               "label": "Select the year",
               "description": "Select the year on which to run the analysis",
               "mandatory": false,
