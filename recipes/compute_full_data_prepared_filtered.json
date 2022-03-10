@@ -79,7 +79,7 @@
     "main": {
       "items": [
         {
-          "ref": "new_data_filtered",
+          "ref": "full_data_prepared_filtered",
           "appendMode": false
         }
       ]
@@ -87,11 +87,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646935359760
+    "lastModifiedOn": 1646935767428
   },
   "creationTag": {
     "versionNumber": 0,

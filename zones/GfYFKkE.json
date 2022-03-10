@@ -27,7 +27,7 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "new_data_filtered",
+      "objectId": "full_data_prepared_filtered",
       "objectType": "DATASET"
     }
   ],
