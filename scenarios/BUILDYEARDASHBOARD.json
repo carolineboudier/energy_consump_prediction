@@ -5,18 +5,18 @@
   "name": "Build year dashboard",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646930552765
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646930719898
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646930959294
   },
   "checklists": {
     "checklists": []
@@ -52,9 +52,9 @@
         }
       },
       {
-        "id": "build_0_true_1",
+        "id": "build_0_true_d_data_by_state_filtered_ordered",
         "type": "build_flowitem",
-        "name": "full_data_prepared_filtered",
+        "name": "year_by_state_ordered",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -65,7 +65,13 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [],
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "data_by_state_filtered_ordered",
+              "partitionsSpec": ""
+            }
+          ],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
