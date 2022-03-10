@@ -1,9 +1,9 @@
 {
   "projectExportManifest": {
     "exportUploads": true,
-    "exportAllInputDatasets": false,
+    "exportAllInputDatasets": true,
     "exportAllDatasets": false,
-    "exportManagedFS": false,
+    "exportManagedFS": true,
     "exportAnalysisModels": false,
     "exportSavedModels": false,
     "exportModelEvaluationStores": false,
@@ -36,6 +36,7 @@
               "type": "INT",
               "label": "Select the year",
               "description": "Select the year on which to run the analysis",
+              "defaultValue": 6.0,
               "mandatory": false,
               "canSelectForeign": false,
               "markCreatedAsBuilt": false,
