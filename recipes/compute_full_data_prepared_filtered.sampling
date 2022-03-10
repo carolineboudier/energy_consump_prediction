@@ -1,17 +1,30 @@
 {
   "uiData": {
-    "mode": "\u0026\u0026",
+    "mode": "CUSTOM",
     "conditions": [
       {
-        "input": "State_Factor",
-        "col": "State_Factor",
+        "input": "Year_Factor",
+        "col": "Year_Factor",
         "string": "State_1",
+        "num": 1,
+        "operator": "\u003d\u003d [number]"
+      },
+      {
+        "input": "Year_Factor",
+        "col": "State_Factor",
         "num": 0,
-        "operator": "\u003d\u003d [string]"
+        "operator": "\u003d\u003d [number]"
       }
     ]
   },
-  "$status": {},
+  "expression": "( val(\u0027Year_Factor\u0027) \u003d\u003d ${selected_year} ) \u0026\u0026 ( arrayContains(${selected_state_list},State_Factor) )",
+  "$status": {
+    "validated": true,
+    "fullyTranslated": false,
+    "ok": false,
+    "message": "Unknown DSS variable: selected_year",
+    "sql": "(\"Year_Factor\" \u003d 1) AND (\"Year_Factor\" \u003d 0)"
+  },
   "distinct": false,
   "enabled": true
 }
