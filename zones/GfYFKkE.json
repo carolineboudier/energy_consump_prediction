@@ -25,6 +25,10 @@
     {
       "objectId": "data_by_state_filtered",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "data_by_state_filtered_ordered",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
