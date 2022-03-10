@@ -1,0 +1,67 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "numerical_histogram",
+      "showBoxPlot": true,
+      "showHistogram": true,
+      "binningMode": "AUTO",
+      "nbBins": 25,
+      "customBinningBoundaries": [],
+      "column": {
+        "name": "energy_star_rating",
+        "type": "CONTINUOUS"
+      },
+      "id": "t4iyMMa"
+    },
+    "dataSpec": {
+      "inputDatasetSmartName": "full_data_energy_star_rating",
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true,
+      "refreshTrigger": 1,
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      }
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Histogram on energy_star_rating ",
+  "dashboardCreationId": "FiM4pP5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646916531980
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646916531980
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
