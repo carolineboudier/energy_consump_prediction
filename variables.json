@@ -1,6 +1,6 @@
 {
   "threshold_classif": 80,
-  "flat_state_list": [
+  "selected_state_list": [
     "State_1",
     "State_2"
   ],
