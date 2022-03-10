@@ -108,11 +108,89 @@
     },
     {
       "sectionTitle": "Run the scenario",
-      "tiles": []
+      "sectionText": "The flow will be updated according to the chosen parameters.",
+      "tiles": [
+        {
+          "scenarioId": "BUILDYEARDASHBOARD",
+          "buttonText": "Update",
+          "type": "SCENARIO_RUN",
+          "prompt": "Update the flow"
+        }
+      ]
     },
     {
       "sectionTitle": "Obtain your results",
-      "tiles": []
+      "tiles": [
+        {
+          "dashboardId": "Lf3yqtX",
+          "type": "DASHBOARD_LINK",
+          "prompt": "Updated Dashboard"
+        },
+        {
+          "datasetName": "data_by_state_filtered_ordered",
+          "exportParams": {
+            "destinationType": "DOWNLOAD",
+            "temporaryFileBehavior": "AUTO",
+            "originatingOptionId": "tsv-excel-header",
+            "format": {
+              "type": "csv",
+              "params": {
+                "style": "excel",
+                "charset": "utf8",
+                "separator": ",",
+                "quoteChar": "\"",
+                "escapeChar": "\\",
+                "dateSerializationFormat": "ISO",
+                "arrayMapFormat": "json",
+                "hiveSeparators": [
+                  "\u0002",
+                  "\u0003",
+                  "\u0004",
+                  "\u0005",
+                  "\u0006",
+                  "\u0007",
+                  "\b"
+                ],
+                "skipRowsBeforeHeader": 0,
+                "parseHeaderRow": true,
+                "skipRowsAfterHeader": 0,
+                "probableNumberOfRecords": 0,
+                "normalizeBooleans": false,
+                "normalizeDoubles": true,
+                "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+                "readMissingColumnsBehavior": "DISCARD_SILENT",
+                "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+                "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+                "fileReadFailureBehavior": "FAIL",
+                "compress": ""
+              }
+            },
+            "destinationDatasetProjectKey": "ENERGYCONSUMPTIONPREDICTION",
+            "overwriteDestinationDataset": false,
+            "selection": {
+              "useMemTable": false,
+              "filter": {
+                "distinct": false,
+                "enabled": false
+              },
+              "partitionSelectionMethod": "ALL",
+              "selectedPartitions": [],
+              "latestPartitionsN": 1,
+              "ordering": {
+                "enabled": false,
+                "rules": []
+              },
+              "samplingMethod": "FULL",
+              "maxRecords": 100000,
+              "targetRatio": 0.02,
+              "withinFirstN": -1,
+              "maxReadUncompressedBytes": -1
+            }
+          },
+          "type": "DOWNLOAD_DATASET",
+          "prompt": "Download construction date date"
+        }
+      ]
     }
   ],
   "label": "Energy consumption prediction",
