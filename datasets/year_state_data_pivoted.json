@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646924002942
+    "lastModifiedOn": 1646924106474
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,8 +58,93 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {
+        "name": "State_Factor",
+        "type": "string"
+      },
+      {
+        "name": "Commercial_january_avg_temp_avg",
+        "type": "double"
+      },
+      {
+        "name": "Commercial_count",
+        "type": "bigint"
+      },
+      {
+        "name": "Residential_january_avg_temp_avg",
+        "type": "double"
+      },
+      {
+        "name": "Residential_count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "SQL",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "building_class"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": [
+              {
+                "column": "january_avg_temp",
+                "type": "double",
+                "min": false,
+                "max": false,
+                "count": false,
+                "countDistinct": false,
+                "sum": false,
+                "concat": false,
+                "stddev": false,
+                "avg": true,
+                "sum2": false,
+                "first": false,
+                "last": false,
+                "concatDistinct": false,
+                "firstLastNotNull": false
+              }
+            ]
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "Commercial"
+              ],
+              "name": "Commercial",
+              "valueColumns": [
+                {
+                  "source": "january_avg_temp",
+                  "pivoted": "Commercial_january_avg_temp"
+                }
+              ],
+              "globalCountColumn": "Commercial_count"
+            },
+            {
+              "keyValues": [
+                "Residential"
+              ],
+              "name": "Residential",
+              "valueColumns": [
+                {
+                  "source": "january_avg_temp",
+                  "pivoted": "Residential_january_avg_temp"
+                }
+              ],
+              "globalCountColumn": "Residential_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
