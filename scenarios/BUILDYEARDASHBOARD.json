@@ -6,18 +6,18 @@
   "active": false,
   "runAsUser": "admin",
   "creationTag": {
-    "versionNumber": 27,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646937778445
-  },
-  "versionTag": {
     "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646937786077
+  },
+  "versionTag": {
+    "versionNumber": 29,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646938177513
   },
   "checklists": {
     "checklists": []
@@ -94,7 +94,7 @@
           "builds": [
             {
               "type": "DATASET",
-              "itemId": "full_data_prepared_filtered",
+              "itemId": "data_by_state_filtered_ordered",
               "partitionsSpec": ""
             }
           ],
