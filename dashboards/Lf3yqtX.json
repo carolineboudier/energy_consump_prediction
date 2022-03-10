@@ -76,10 +76,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 10,
-              "left": 4,
-              "width": 4,
-              "height": 4
+              "top": 16,
+              "left": 0,
+              "width": 7,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -99,10 +99,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 10,
-              "left": 8,
-              "width": 4,
-              "height": 4
+              "top": 16,
+              "left": 7,
+              "width": 5,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -122,10 +122,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 14,
-              "left": 0,
-              "width": 12,
-              "height": 5
+              "top": 10,
+              "left": 4,
+              "width": 8,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -202,9 +202,9 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 8,
-              "left": 4,
-              "width": 4,
+              "top": 14,
+              "left": 0,
+              "width": 7,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
@@ -221,14 +221,52 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 19,
+              "top": 14,
+              "left": 7,
+              "width": 5,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## Energy Star Rating // Site EUI",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 2,
+              "left": 4,
+              "width": 8,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "# Temperature in that states",
+              "textAlign": "RIGHT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 21,
               "left": 0,
               "width": 4,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "text": "## Energy Star Rating // Site EUI",
+              "text": "## Old or new buildings?",
               "textAlign": "LEFT",
               "isTransparent": false
             },
@@ -247,11 +285,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646930228498
+    "lastModifiedOn": 1646930400225
   },
   "creationTag": {
     "versionNumber": 0,
