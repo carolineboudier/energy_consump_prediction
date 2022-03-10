@@ -87,11 +87,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646923944545
+    "lastModifiedOn": 1646924633808
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,6 +100,7 @@
     },
     "lastModifiedOn": 1646923575963
   },
+  "shortDesc": "- select a specific year and some states",
   "tags": [],
   "customFields": {},
   "checklists": {
