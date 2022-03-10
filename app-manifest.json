@@ -29,7 +29,7 @@
       "sectionTitle": "Choose the parameters",
       "tiles": [
         {
-          "behavior": "INLINE_EXPLICIT_SAVE",
+          "behavior": "INLINE_AUTO_SAVE",
           "params": [
             {
               "name": "selected_year",
