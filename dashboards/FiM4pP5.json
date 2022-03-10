@@ -1,14 +1,6 @@
 {
   "pages": [
     {
-      "id": "9IBHRhV",
-      "grid": {
-        "tiles": []
-      },
-      "title": "Project monitoring",
-      "showTitle": false
-    },
-    {
       "id": "aPrBB68",
       "grid": {
         "tiles": [
@@ -299,11 +291,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 40,
+    "versionNumber": 41,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646916666109
+    "lastModifiedOn": 1646931783472
   },
   "creationTag": {
     "versionNumber": 0,
