@@ -39,7 +39,7 @@
               "mandatory": false,
               "canSelectForeign": false,
               "markCreatedAsBuilt": false,
-              "minI": 0,
+              "minI": 1,
               "maxI": 7,
               "allowDuplicates": true,
               "getChoicesFromPython": false,
