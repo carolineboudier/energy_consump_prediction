@@ -12,10 +12,10 @@ df = pd.DataFrame({
 }) \
  \
 # Uncomment the following to read your own dataset
-#dataset = dataiku.Dataset("YOUR_DATASET_NAME_HERE")
-#df = dataset.get_dataframe()
+dataset = dataiku.Dataset("full_data_enriched")
+df = dataset.get_dataframe()
 
-fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
+fig = px.bar(df, x="State_Factor", y="site_eui", color="building_class", barmode="group")
 
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
