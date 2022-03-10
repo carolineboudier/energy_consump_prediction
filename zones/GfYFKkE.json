@@ -17,6 +17,14 @@
     {
       "objectId": "full_data_prepared_filtered_by_State_Factor",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_data_by_state_filtered",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "data_by_state_filtered",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
