@@ -4,7 +4,7 @@
     "conditions": [
       {
         "input": "Year_Factor",
-        "col": "Year_Factor",
+        "col": "State_Factor",
         "string": "State_1",
         "num": 1,
         "operator": "\u003d\u003d [number]"
@@ -23,7 +23,7 @@
     "fullyTranslated": false,
     "ok": true,
     "message": "Unknown DSS variable: selected_year",
-    "sql": "(\"Year_Factor\" \u003d 1)"
+    "sql": "(\"Year_Factor\" \u003d 2)"
   },
   "distinct": false,
   "enabled": true
