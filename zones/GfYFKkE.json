@@ -7,10 +7,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "full_data_prepared_filtered",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_full_data_prepared_filtered_by_State_Factor",
       "objectType": "RECIPE"
     },
@@ -28,6 +24,10 @@
     },
     {
       "objectId": "full_data_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "new_data_filtered",
       "objectType": "DATASET"
     }
   ],
