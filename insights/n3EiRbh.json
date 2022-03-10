@@ -1,0 +1,210 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "full_data_prepared_filtered",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "pie",
+      "variant": "normal",
+      "name": "Number of buildings per state",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "State_Factor",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "AGGREGATION",
+            "measureIdx": 0,
+            "label": "Count of records, descending"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,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\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Number of buildings per state on full_data_prepared_filtered",
+  "dashboardCreationId": "Lf3yqtX",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867476
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867476
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "full_data_prepared_filtered",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 2
+    },
+    "def": {
+      "type": "scatter",
+      "variant": "normal",
+      "name": "energy_star_rating vs site_eui",
+      "userEditedName": false,
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [
+        {
+          "column": "energy_star_rating",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaYDimension": [
+        {
+          "column": "site_eui",
+          "type": "NUMERICAL",
+          "treatAsAlphanum": false,
+          "sortBy": "NATURAL",
+          "sortAscending": false,
+          "isA": "ua"
+        }
+      ],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [
+        {
+          "column": "State_Factor",
+          "type": "ALPHANUM",
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0
+        }
+      ],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#FF7703",
+        "transparency": 0.75,
+        "colorPalette": "Set2",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "EMPTY_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,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\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "energy_star_rating vs site_eui on full_data_prepared_filtered",
+  "dashboardCreationId": "Lf3yqtX",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867479
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867479
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

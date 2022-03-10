@@ -1,0 +1,479 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "full_data_prepared_filtered",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Average temperature by month",
+      "userEditedName": true,
+      "genericDimension0": [
+        {
+          "column": "State_Factor",
+          "type": "ALPHANUM",
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 20,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of january_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of january_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of february_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of february_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of march_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 2,
+              "label": "Average of march_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of april_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 3,
+              "label": "Average of april_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of april_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 4,
+              "label": "Average of april_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of may_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 5,
+              "label": "Average of may_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of june_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 6,
+              "label": "Average of june_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of july_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 7,
+              "label": "Average of july_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 8,
+              "label": "Average of august_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 8,
+              "label": "Average of august_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 9,
+              "label": "Average of september_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 9,
+              "label": "Average of september_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 10,
+              "label": "Average of october_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 10,
+              "label": "Average of october_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 11,
+              "label": "Average of november_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 11,
+              "label": "Average of november_avg_temp, ascending",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 12,
+              "label": "Average of december_avg_temp, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 12,
+              "label": "Average of december_avg_temp, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "january_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "february_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "march_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "april_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "april_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "may_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "june_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "july_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "august_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "september_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "multiplier": "Auto"
+        },
+        {
+          "column": "october_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "november_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "december_avg_temp",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": true,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "computeMode": "NORMAL",
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.6,
+        "gridLatDeg": 0.6
+      },
+      "thumbnailData": "data:image/png;base64,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",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "SIDEBAR"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Average temperature by month on full_data_prepared_filtered",
+  "dashboardCreationId": "Lf3yqtX",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867475
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646929867475
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
