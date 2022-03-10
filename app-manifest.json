@@ -63,12 +63,6 @@
                   "selected": true
                 },
                 {
-                  "value": "State_1",
-                  "label": "State_1",
-                  "showInColumnPreview": false,
-                  "selected": true
-                },
-                {
                   "value": "State_2",
                   "label": "State_2",
                   "showInColumnPreview": false,
