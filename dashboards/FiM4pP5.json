@@ -331,7 +331,7 @@
       "grid": {
         "tiles": []
       },
-      "title": "Data exploration",
+      "title": "Data exploration (classif)",
       "showTitle": false
     }
   ],
@@ -340,11 +340,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 37,
+    "versionNumber": 38,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646916533345
+    "lastModifiedOn": 1646916555280
   },
   "creationTag": {
     "versionNumber": 0,
