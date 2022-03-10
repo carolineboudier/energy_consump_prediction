@@ -2,12 +2,14 @@
   "type": "DASH",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "python_37_developer_academy"
     },
     "nbProcesses": 1,
     "serveLocally": true,
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -33,11 +35,11 @@
   "config": {},
   "name": "simple_histogram",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646915344692
+    "lastModifiedOn": 1646915366745
   },
   "creationTag": {
     "versionNumber": 0,
