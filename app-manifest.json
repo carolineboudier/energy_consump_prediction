@@ -24,7 +24,96 @@
     "showVersionControlFeatures": false
   },
   "useAppHomepage": true,
-  "homepageSections": [],
+  "homepageSections": [
+    {
+      "sectionTitle": "Chose the parameters",
+      "tiles": [
+        {
+          "behavior": "MODAL",
+          "params": [
+            {
+              "name": "selected_year",
+              "type": "SELECT",
+              "label": "year",
+              "description": "Select the year on which to run the analysis",
+              "mandatory": false,
+              "canSelectForeign": false,
+              "markCreatedAsBuilt": false,
+              "allowDuplicates": true,
+              "getChoicesFromPython": false,
+              "disableAutoReload": false,
+              "canCreateDataset": false
+            },
+            {
+              "name": "selected_state_list",
+              "type": "MULTISELECT",
+              "label": "states",
+              "mandatory": false,
+              "canSelectForeign": false,
+              "markCreatedAsBuilt": false,
+              "allowDuplicates": true,
+              "selectChoices": [
+                {
+                  "value": "State_1",
+                  "label": "State_1",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_1",
+                  "label": "State_1",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_2",
+                  "label": "State_2",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_4",
+                  "label": "State_4",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_6",
+                  "label": "State_6",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_8",
+                  "label": "State_8",
+                  "showInColumnPreview": false,
+                  "selected": true
+                },
+                {
+                  "value": "State_11",
+                  "label": "State_11",
+                  "showInColumnPreview": false,
+                  "selected": true
+                }
+              ],
+              "getChoicesFromPython": false,
+              "disableAutoReload": false,
+              "canCreateDataset": false
+            }
+          ],
+          "type": "PROJECT_VARIABLES_EDIT"
+        }
+      ]
+    },
+    {
+      "sectionTitle": "Run the scenario",
+      "tiles": []
+    },
+    {
+      "sectionTitle": "Obtain your results",
+      "tiles": []
+    }
+  ],
   "label": "Energy consumption prediction",
   "shortDesc": "The template *Energy consumption prediction* was created by Caroline Boudier on Mar 08th 2022",
   "tags": [],
