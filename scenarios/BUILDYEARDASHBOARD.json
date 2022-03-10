@@ -4,19 +4,20 @@
   "type": "step_based",
   "name": "Build year dashboard",
   "active": false,
+  "runAsUser": "admin",
   "creationTag": {
-    "versionNumber": 13,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646933956883
-  },
-  "versionTag": {
     "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646934400159
+  },
+  "versionTag": {
+    "versionNumber": 15,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646934801415
   },
   "checklists": {
     "checklists": []
@@ -31,6 +32,25 @@
   "reporters": [],
   "params": {
     "steps": [
+      {
+        "id": "refresh_chart_cache_1",
+        "type": "refresh_chart_cache",
+        "name": "Step #4",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": false,
+          "dashboards": [],
+          "proceedOnFailure": false
+        }
+      },
       {
         "id": "build_1_true_d_full_data_prepared_filtered",
         "type": "build_flowitem",
@@ -53,7 +73,7 @@
             }
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
+          "refreshHiveMetastore": false,
           "proceedOnFailure": false
         }
       },
