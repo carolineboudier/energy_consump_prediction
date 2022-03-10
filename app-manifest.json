@@ -2,7 +2,7 @@
   "projectExportManifest": {
     "exportUploads": true,
     "exportAllInputDatasets": true,
-    "exportAllDatasets": false,
+    "exportAllDatasets": true,
     "exportManagedFS": false,
     "exportAnalysisModels": false,
     "exportSavedModels": false,
@@ -34,7 +34,7 @@
             {
               "name": "selected_year",
               "type": "SELECT",
-              "label": "year",
+              "label": "Select the year",
               "description": "Select the year on which to run the analysis",
               "mandatory": false,
               "canSelectForeign": false,
@@ -91,7 +91,7 @@
             {
               "name": "selected_state_list",
               "type": "MULTISELECT",
-              "label": "states",
+              "label": "Select the states",
               "mandatory": false,
               "canSelectForeign": false,
               "markCreatedAsBuilt": false,
