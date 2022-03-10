@@ -1,9 +1,9 @@
 {
   "projectExportManifest": {
     "exportUploads": true,
-    "exportAllInputDatasets": true,
+    "exportAllInputDatasets": false,
     "exportAllDatasets": false,
-    "exportManagedFS": true,
+    "exportManagedFS": false,
     "exportAnalysisModels": false,
     "exportSavedModels": false,
     "exportModelEvaluationStores": false,
