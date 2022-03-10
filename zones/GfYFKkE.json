@@ -9,10 +9,6 @@
     {
       "objectId": "full_data_prepared_filtered",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "year_state_data_pivoted",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
