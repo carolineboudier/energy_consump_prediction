@@ -259,15 +259,15 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 21,
-              "left": 0,
-              "width": 4,
+              "top": 8,
+              "left": 4,
+              "width": 8,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "text": "## Old or new buildings?",
-              "textAlign": "LEFT",
+              "textAlign": "RIGHT",
               "isTransparent": false
             },
             "autoLoad": true,
@@ -285,11 +285,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646930400225
+    "lastModifiedOn": 1646930411238
   },
   "creationTag": {
     "versionNumber": 0,
