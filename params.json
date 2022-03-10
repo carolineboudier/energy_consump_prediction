@@ -64,6 +64,15 @@
         "modes": [
           "RUN"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "full_data_energy_star_rating",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -263,11 +272,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646756177414
+    "lastModifiedOn": 1646916531903
   },
   "creationTag": {
     "versionNumber": 0,
