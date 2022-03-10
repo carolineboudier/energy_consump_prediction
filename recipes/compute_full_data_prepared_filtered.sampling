@@ -23,7 +23,7 @@
     "fullyTranslated": false,
     "ok": true,
     "message": "Unknown DSS variable: selected_year",
-    "sql": "(\"Year_Factor\" \u003d 2)"
+    "sql": "(\"Year_Factor\" \u003d 1)"
   },
   "distinct": false,
   "enabled": true
