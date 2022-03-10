@@ -17,6 +17,10 @@
     {
       "objectId": "compute_full_data_energy_star_rating_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "amtFRPuE",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
