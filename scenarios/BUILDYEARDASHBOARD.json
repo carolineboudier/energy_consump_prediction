@@ -5,18 +5,18 @@
   "name": "Build year dashboard",
   "active": false,
   "creationTag": {
-    "versionNumber": 11,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646931458232
-  },
-  "versionTag": {
     "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646931459571
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1646933956883
   },
   "checklists": {
     "checklists": []
@@ -31,32 +31,6 @@
   "reporters": [],
   "params": {
     "steps": [
-      {
-        "id": "build_0_true",
-        "type": "build_flowitem",
-        "name": "full_data_prepared_filtered",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "full_data_prepared",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
       {
         "id": "build_1_true_d_full_data_prepared_filtered",
         "type": "build_flowitem",
@@ -78,7 +52,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
