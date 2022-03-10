@@ -15,7 +15,7 @@ df = pd.DataFrame({
 dataset = dataiku.Dataset("full_data_enriched")
 df = dataset.get_dataframe()
 
-fig = px.histogram(df, x="State_Factor", y="site_eui", color="building_class",histfunc="avg",barmode="group")
+fig = px.histogram(df, x="State_Factor", y="site_eui", color="building_class",histfunc="avg",barmode="group",title="Average Site EUI")
 
 app.layout = html.Div(children=[
     html.H1(children='Hello Dash'),
