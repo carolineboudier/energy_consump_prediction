@@ -147,6 +147,12 @@
           ],
           "type": "PROJECT_VARIABLES_EDIT",
           "prompt": "Chose the parameters of your analysis"
+        },
+        {
+          "datasetName": "unlabelled_data",
+          "behavior": "INLINE_UPLOAD_ONLY",
+          "type": "UPLOAD_DATASET_SET_FILE",
+          "prompt": "(Optional) Upload new data"
         }
       ]
     },
