@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": false,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": true,
     "envSelection": {
       "envMode": "INHERIT"
@@ -16,6 +16,7 @@
       "d3",
       "font_awesome"
     ],
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -38,15 +39,17 @@
     },
     "forceAuthentication": false
   },
-  "config": {},
+  "config": {
+    "input_folder": "amtFRPuE"
+  },
   "name": "Decision_tree_builder",
   "apiKey": "090crKY9FxiulUiDOMAVWeoao1yDI7Zs",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646916856188
+    "lastModifiedOn": 1646916908356
   },
   "creationTag": {
     "versionNumber": 0,
