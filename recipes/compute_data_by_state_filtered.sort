@@ -46,6 +46,9 @@
     }
   ],
   "rowNumber": false,
-  "outputColumnNameOverrides": {},
+  "outputColumnNameOverrides": {
+    "State_2_count": "State_2",
+    "State_1_count": "State_1"
+  },
   "computedColumns": []
 }
