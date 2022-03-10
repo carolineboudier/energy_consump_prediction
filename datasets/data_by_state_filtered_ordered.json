@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646930830992
+    "lastModifiedOn": 1646930834411
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,20 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "year_built",
+        "type": "double"
+      },
+      {
+        "name": "State_1_count",
+        "type": "bigint"
+      },
+      {
+        "name": "State_2_count",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
