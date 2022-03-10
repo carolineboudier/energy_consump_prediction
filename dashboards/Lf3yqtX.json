@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
-              "left": 5,
-              "width": 2,
-              "height": 2
+              "top": 10,
+              "left": 0,
+              "width": 4,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -30,10 +30,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 8,
-              "left": 0,
-              "width": 2,
-              "height": 2
+              "top": 4,
+              "left": 4,
+              "width": 8,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -76,10 +76,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
-              "left": 7,
-              "width": 2,
-              "height": 2
+              "top": 10,
+              "left": 4,
+              "width": 4,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -99,10 +99,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 10,
               "left": 8,
-              "width": 2,
-              "height": 2
+              "width": 4,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -122,10 +122,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
-              "left": 10,
-              "width": 2,
-              "height": 2
+              "top": 14,
+              "left": 0,
+              "width": 12,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -166,12 +166,69 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 7,
+              "width": 12,
               "height": 2
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "text": "# Dashboard ${selected_year}",
+              "text": "# Dashboard",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 8,
+              "left": 0,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## Residential or Commercial buildings?",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 8,
+              "left": 4,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## Precise type of facilities",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 19,
+              "left": 0,
+              "width": 4,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## Energy Star Rating // Site EUI",
               "textAlign": "LEFT",
               "isTransparent": false
             },
@@ -190,11 +247,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646930068621
+    "lastModifiedOn": 1646930228498
   },
   "creationTag": {
     "versionNumber": 0,
