@@ -1,6 +1,6 @@
 {
   "projectExportManifest": {
-    "exportUploads": false,
+    "exportUploads": true,
     "exportAllInputDatasets": false,
     "exportAllDatasets": false,
     "exportManagedFS": false,
@@ -17,7 +17,7 @@
     "exportGitRepository": false
   },
   "instanceFeatures": {
-    "showFlowNavLink": false,
+    "showFlowNavLink": true,
     "showLabNavLink": false,
     "showCodeNavLink": false,
     "showSwitchToProjectViewButton": true,
@@ -26,10 +26,10 @@
   "useAppHomepage": true,
   "homepageSections": [
     {
-      "sectionTitle": "Chose the parameters",
+      "sectionTitle": "Choose the parameters",
       "tiles": [
         {
-          "behavior": "MODAL",
+          "behavior": "INLINE_AUTO_SAVE",
           "params": [
             {
               "name": "selected_year",
@@ -101,7 +101,8 @@
               "canCreateDataset": false
             }
           ],
-          "type": "PROJECT_VARIABLES_EDIT"
+          "type": "PROJECT_VARIABLES_EDIT",
+          "prompt": "Chose the parameters of your analysis"
         }
       ]
     },
