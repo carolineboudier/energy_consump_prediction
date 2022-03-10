@@ -1,7 +1,24 @@
 {
   "name": "Year_level_analysis",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_full_data_prepared_filtered",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_prepared_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_year_state_data_pivoted",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "year_state_data_pivoted",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
