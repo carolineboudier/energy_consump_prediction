@@ -1,7 +1,16 @@
 {
   "name": "Data_preparation_classification",
   "color": "#c79871",
-  "items": [],
+  "items": [
+    {
+      "objectId": "full_data_energy_star_rating",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_full_data_energy_star_rating",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
