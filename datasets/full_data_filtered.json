@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646934880018
+    "lastModifiedOn": 1646934881459
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,264 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "Year_Factor",
+        "type": "bigint"
+      },
+      {
+        "name": "State_Factor",
+        "type": "string"
+      },
+      {
+        "name": "building_class",
+        "type": "string"
+      },
+      {
+        "name": "facility_type",
+        "type": "string"
+      },
+      {
+        "name": "floor_area",
+        "type": "double"
+      },
+      {
+        "name": "year_built",
+        "type": "double"
+      },
+      {
+        "name": "energy_star_rating",
+        "type": "double"
+      },
+      {
+        "name": "ELEVATION",
+        "type": "double"
+      },
+      {
+        "name": "january_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "january_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "january_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "february_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "february_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "february_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "march_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "march_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "march_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "april_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "april_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "april_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "may_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "may_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "may_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "june_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "june_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "june_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "july_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "july_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "july_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "august_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "august_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "august_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "september_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "september_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "september_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "october_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "october_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "october_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "november_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "november_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "november_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "december_min_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "december_avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "december_max_temp",
+        "type": "bigint"
+      },
+      {
+        "name": "cooling_degree_days",
+        "type": "bigint"
+      },
+      {
+        "name": "heating_degree_days",
+        "type": "bigint"
+      },
+      {
+        "name": "precipitation_inches",
+        "type": "double"
+      },
+      {
+        "name": "snowfall_inches",
+        "type": "double"
+      },
+      {
+        "name": "snowdepth_inches",
+        "type": "bigint"
+      },
+      {
+        "name": "avg_temp",
+        "type": "double"
+      },
+      {
+        "name": "days_below_30F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_below_20F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_below_10F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_below_0F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_above_80F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_above_90F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_above_100F",
+        "type": "bigint"
+      },
+      {
+        "name": "days_above_110F",
+        "type": "bigint"
+      },
+      {
+        "name": "direction_max_wind_speed",
+        "type": "double"
+      },
+      {
+        "name": "direction_peak_wind_speed",
+        "type": "double"
+      },
+      {
+        "name": "max_wind_speed",
+        "type": "double"
+      },
+      {
+        "name": "days_with_fog",
+        "type": "double"
+      },
+      {
+        "name": "site_eui",
+        "type": "double"
+      },
+      {
+        "name": "id",
+        "type": "bigint"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
