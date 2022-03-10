@@ -256,7 +256,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAApVJREFUeF7t1L1qFGEchfEZU2oTRBNCYhAlbCxsXSQgFqIYJSCx8RJsRRRbGzWFV6LgZ6rchKWoKAhBW9ussdAmqGFn3z3vE5Yn9fzPYc5vJ23j30Qv0E702/lyjcAT/iMQWOBuCyzefXW128XfT3/ZuP62NMP73wuM/QtevPfmYdPsrow6cPuzffl5Y/XpqPfe7V1A4An/RQgscLcF/Bfdba/0037B6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0vcDpheF8gWGAdL3A6YXhfIFhgHS9wOmF4XyBYYB0/YEDvtKb/3hp+fhmyYuv9+eeldz/7/bE/dfT7W7zuCR70A6efH209qEko8vtgQS+3Js91eUl9jzbtts3+jO3Rr7f5/AP8POS7DsXl18sTB/+NmrGzmDn+83z81vD3o8d+OSDzbPDlv/ruWtn5pYunJ59X5Kx3p95V3K/3xc8dWhqoSR76eiR9va53qeSjLWVYz+GvR878LDFPldnAYHr7Iy1CIxNX6dY4Do7Yy0CY9PXKRa4zs5Yi8DY9HWKBa6zM9YiMDZ9nWKB6+yMtfwCYXbhYPzRlMYAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAdtJREFUeF7t3btNnGEYROF/My5FuBYCREZADc4sp+T0RENLHUi2nBshnQ1WZ3SId9C88/CJDE5HX9MLnKav67gj4PEfgoADHl9g/LxecMDjC4yf1wsOeHyB8fN6wQGPLzB+3lVe8I/X95c/x/E0vu23533c3v863h4+v/3gBR+4GvBxOn5f0Hsier65fwx4gvL/RwQ8jPvvtIADvniBfgdfPCH/Br1gvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXjJgvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXjJgvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXjJgvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXjJgvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXjJgvp0iGbCCiZcMmG+nSAasYOIlA+bbKZIBK5h4yYD5dopkwAomXnIc+PSTT7ORPN/cPU/+U44NHscVV/mT/o5pNloGvOH45RUBBzy+wPh5veCAxxcYP68XHPD4AuPn9YIDHl9g/LxecMDjC4yf1wseB/4LAUYUYJw2zEkAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -832,6 +832,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -994,6 +995,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -1157,6 +1159,7 @@
           "defaultRadius": 5.0,
           "singleShape": "EMPTY_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -1392,6 +1395,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
