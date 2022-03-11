@@ -25,6 +25,10 @@
     {
       "objectId": "compute_5YbetAty",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "test",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
