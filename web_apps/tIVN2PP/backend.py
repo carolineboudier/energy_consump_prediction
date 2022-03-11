@@ -4,13 +4,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
 
-# This loads dummy data into a dataframe
-df = pd.DataFrame({
-    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
-    "Amount": [4, 1, 2, 2, 4, 5],
-    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
-}) \
- \
 # Uncomment the following to read your own dataset
 dataset = dataiku.Dataset("full_data_enriched")
 df = dataset.get_dataframe()
