@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "full_data_filtered",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "full_data_prepared_filtered",
       "objectType": "DATASET"
     }
