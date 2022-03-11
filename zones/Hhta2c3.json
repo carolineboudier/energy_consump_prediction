@@ -29,6 +29,10 @@
     {
       "objectId": "test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_full_data_prepared_1",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
