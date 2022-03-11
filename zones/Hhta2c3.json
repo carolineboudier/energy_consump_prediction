@@ -25,10 +25,6 @@
     {
       "objectId": "compute_5YbetAty",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "split_full_data_prepared_1",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
