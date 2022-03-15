@@ -264,19 +264,7 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "filters": [
-                {
-                  "filterType": "NUMERICAL_FACET",
-                  "column": "Year_Factor",
-                  "columnType": "NUMERICAL",
-                  "minValue": 1.0,
-                  "maxValue": 7.0,
-                  "isA": "filter",
-                  "excludedValues": {},
-                  "isAGlobalFilter": true,
-                  "explicitExclude": false
-                }
-              ],
+              "filters": [],
               "engineType": "SQL",
               "refreshableSelection": {
                 "selection": {
@@ -346,11 +334,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647359294900
+    "lastModifiedOn": 1647359318807
   },
   "creationTag": {
     "versionNumber": 0,
