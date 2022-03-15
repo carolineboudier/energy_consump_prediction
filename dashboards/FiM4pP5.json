@@ -264,7 +264,26 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "filters": [],
+              "filters": [
+                {
+                  "filterType": "ALPHANUM_FACET",
+                  "column": "State_Factor",
+                  "columnType": "ALPHANUM",
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "State_6": true,
+                    "State_11": true,
+                    "State_4": true,
+                    "State_1": true,
+                    "State_2": true,
+                    "State_8": true,
+                    "State_10": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
               "engineType": "SQL",
               "refreshableSelection": {
                 "selection": {
@@ -334,11 +353,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 43,
+    "versionNumber": 44,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647359318807
+    "lastModifiedOn": 1647359326202
   },
   "creationTag": {
     "versionNumber": 0,
