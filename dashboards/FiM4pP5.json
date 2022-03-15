@@ -282,6 +282,19 @@
                   },
                   "isAGlobalFilter": true,
                   "explicitExclude": false
+                },
+                {
+                  "filterType": "ALPHANUM_FACET",
+                  "column": "building_class",
+                  "columnType": "ALPHANUM",
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "Commercial": true,
+                    "Residential": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
                 }
               ],
               "engineType": "SQL",
@@ -353,11 +366,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 44,
+    "versionNumber": 45,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647359326202
+    "lastModifiedOn": 1647361829141
   },
   "creationTag": {
     "versionNumber": 0,
