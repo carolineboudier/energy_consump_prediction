@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 5,
+              "top": 7,
               "left": 0,
               "width": 12,
               "height": 12
@@ -24,7 +24,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 4,
+              "top": 6,
               "left": 0,
               "width": 6,
               "height": 1
@@ -63,7 +63,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 18,
+              "top": 20,
               "left": 0,
               "width": 5,
               "height": 3
@@ -80,7 +80,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 17,
+              "top": 19,
               "left": 0,
               "width": 5,
               "height": 1
@@ -99,7 +99,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 18,
+              "top": 20,
               "left": 5,
               "width": 7,
               "height": 3
@@ -116,7 +116,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 17,
+              "top": 19,
               "left": 5,
               "width": 7,
               "height": 1
@@ -135,7 +135,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 1,
+              "top": 3,
               "left": 0,
               "width": 6,
               "height": 3
@@ -158,7 +158,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 1,
+              "top": 3,
               "left": 6,
               "width": 6,
               "height": 1
@@ -177,7 +177,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 4,
               "left": 6,
               "width": 6,
               "height": 3
@@ -200,7 +200,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 21,
+              "top": 23,
               "left": 0,
               "width": 12,
               "height": 5
@@ -223,7 +223,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 26,
+              "top": 28,
               "left": 0,
               "width": 4,
               "height": 3
@@ -240,7 +240,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 26,
+              "top": 28,
               "left": 4,
               "width": 4,
               "height": 3
@@ -251,6 +251,61 @@
             "showTitle": "YES",
             "insightId": "uX8dSeF",
             "insightType": "eda",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 1,
+              "left": 0,
+              "width": 12,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "filters": [
+                {
+                  "filterType": "NUMERICAL_FACET",
+                  "column": "Year_Factor",
+                  "columnType": "NUMERICAL",
+                  "minValue": 1.0,
+                  "maxValue": 7.0,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
+              "engineType": "SQL",
+              "refreshableSelection": {
+                "selection": {
+                  "useMemTable": false,
+                  "filter": {
+                    "distinct": false,
+                    "enabled": false
+                  },
+                  "partitionSelectionMethod": "ALL",
+                  "latestPartitionsN": 1,
+                  "ordering": {
+                    "enabled": false,
+                    "rules": []
+                  },
+                  "samplingMethod": "FULL",
+                  "maxRecords": -1,
+                  "targetRatio": 0.02,
+                  "withinFirstN": -1,
+                  "maxReadUncompressedBytes": -1
+                },
+                "autoRefreshSample": false,
+                "_refreshTrigger": 2
+              },
+              "copySelectionFromScript": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "onf27SR",
+            "insightType": "filters",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -291,11 +346,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646931783472
+    "lastModifiedOn": 1647359294900
   },
   "creationTag": {
     "versionNumber": 0,
