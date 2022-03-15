@@ -83,7 +83,6 @@
     ],
     "predictionType": "REGRESSION",
     "pinnedMetrics": [],
-    "xLabel": "evaluation:date",
     "yLabels": [
       "model:name",
       "evaluationDataset:dataset-name"
@@ -101,11 +100,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647355112083
+    "lastModifiedOn": 1647355215303
   },
   "creationTag": {
     "versionNumber": 0,
