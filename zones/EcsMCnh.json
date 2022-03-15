@@ -23,12 +23,20 @@
       "objectType": "SAVED_MODEL"
     },
     {
+      "objectId": "dvKk48kU",
+      "objectType": "MODEL_EVALUATION_STORE"
+    },
+    {
       "objectId": "metrics",
       "objectType": "DATASET"
     },
     {
       "objectId": "validation_set_scored",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "evaluate_on_validation_set",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
