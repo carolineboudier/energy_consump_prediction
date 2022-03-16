@@ -82,6 +82,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "2JY0YEG",
+          "objectType": "WEB_APP"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -274,11 +283,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 39,
+    "versionNumber": 40,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647364268322
+    "lastModifiedOn": 1647454126309
   },
   "creationTag": {
     "versionNumber": 0,
