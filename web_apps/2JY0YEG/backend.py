@@ -39,6 +39,8 @@ def scoring_api_call(params):
 
     prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
     print("prediction sent back to JS",prediction)
+    precise_pred=prediction["result"]["prediction"]
+    print("precise pred sent back to JS",precise_pred)
 
     return json.dumps({"results": prediction})
 
