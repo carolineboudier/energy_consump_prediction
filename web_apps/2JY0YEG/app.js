@@ -191,6 +191,13 @@ function onDocumentReady(val) {
     legend = legend.substring(0, 12) +"";    
     legendGauge.innerHTML = "<i>" + legend + "</i>";    
 
+    powerGauge.render(val*100);
+        
+    let legend = "Score = " + val*100;
+    legend = legend.substring(0, 12) + "%";
+    legend = legend + "<br/>Model = " + model;
+    
+    legendGauge.innerHTML = "<i>" + legend + "</i>";    
     
 }
 
