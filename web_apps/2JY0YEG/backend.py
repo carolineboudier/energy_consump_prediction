@@ -18,19 +18,11 @@ def scoring_api_call(params):
     if params.get('public_found')=="true":
         public_found = "1"
     
-    #if params.get('claimDate') == "":
-    #    claimDate = "2019-09-01T00:00:00.000Z"
-   # else :
-    #    claimDate = params.get('claimDate') + 'T00:00:00.000Z'
-    year_built=1921
-    
-  #  record_to_predict = {
-   #     "id": params.get('id'),
-    #    "floor_area": params.get('floor_area'),
-     #   "year_built": year_built,
-      ## "public_found": public_found,
-        #"State_factor": params.get('State_factor')[:2]
-    #}
+    if params.get('year_built') == "":
+        year_built = "1950"
+    else :
+        year_built=2001
+
     
     record_to_predict = {
         "id": params.get('id'),
@@ -40,18 +32,8 @@ def scoring_api_call(params):
         "warehouse_found": warehouse_found,
         "State_Factor":params.get('State_Factor')
     }
-
-
-   #"features": {
-   #   "public_found": false,
-  #    "warehouse_found": false,
- #     "floor_area": 590869,
- #     "year_built": 2001,
- #     "id": 74002
-#   }
-
-
-
+    
+    print('record_to_predict',record_to_predict)
 
     record_to_predict = {
       "public_found": 0,
