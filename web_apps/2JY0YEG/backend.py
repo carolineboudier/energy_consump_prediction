@@ -34,17 +34,11 @@ def scoring_api_call(params):
     }
     
     print('record_to_predict',record_to_predict)
-
-    record_to_predict = {
-      "public_found": 0,
-      "warehouse_found": 0,
-      "floor_area": 590869,
-      "year_built": 2001,
-      "id": 74002}
     
     client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "vMPmPc6oc5QsYPmNuQ7C8w7edaQu9HKY")
 
     prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
+    print("prediction sent back to JS",prediction)
 
     return json.dumps({"results": prediction})
 
