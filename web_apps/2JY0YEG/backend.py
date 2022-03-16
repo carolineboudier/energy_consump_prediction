@@ -32,7 +32,8 @@ def scoring_api_call(params):
         "litigation_flag": litigation,
         "code_dep": params.get('claimDept')[:2]
     }
-        record_to_predict = {
+    
+    record_to_predict = {
         "id": params.get('id'),
         "floor_area": params.get('floor_area'),
         "claim_date": claimDate,
@@ -41,7 +42,7 @@ def scoring_api_call(params):
         "code_dep": params.get('claimDept')[:2]
     }
 
-    {
+
    #"features": {
    #   "public_found": false,
   #    "warehouse_found": false,
