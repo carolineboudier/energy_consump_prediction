@@ -3,7 +3,7 @@ import pandas as pd
 
 import dataikuapi
 
-@app.route('/scoring_api_call/<path:params>')
+@app.route('/scoring_api_call')
 def scoring_api_call(params):
     
     # get Parameters from the form
