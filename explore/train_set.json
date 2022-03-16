@@ -69,7 +69,23 @@
       "max_wind_speed": 120,
       "days_with_fog": 113,
       "id": 100,
-      "site_eui": 141
+      "site_eui": 141,
+      "public_found": 105,
+      "warehouse_found": 128,
+      "office_found": 105,
+      "floor_area_bins": 128,
+      "building_age": 105,
+      "age_bin": 100,
+      "min_temp": 100,
+      "max_temp": 100,
+      "temp_range": 100,
+      "group_energy_star_rating_avg": 225,
+      "energy_star_rating_lag": 180,
+      "group_max_wind_speed_avg": 195,
+      "group_site_eui_min": 176,
+      "group_site_eui_max": 176,
+      "group_site_eui_avg": 176,
+      "site_eui_lag": 141
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -99,7 +115,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1
+      "_refreshTrigger": 2
     },
     "vizSampling": {
       "selection": {
