@@ -210,7 +210,7 @@ function run_scoring(variables) {
          
                  console.log(R.results.apiContext);
          
-                 Proba_1 = R.results.result.probas[1];
+                 Proba_1 = R.results.result.prediction;
                  Version_Model = R.results.apiContext.endpointId + ' ' + R.results.apiContext.serviceGeneration;
          
                  console.log(Version_Model);

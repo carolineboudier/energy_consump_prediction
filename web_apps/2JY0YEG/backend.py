@@ -54,17 +54,15 @@ def scoring_api_call(params):
 
 
 
-    #record_to_predict = {
-    #    "contract_id": "229959",
-    #    "claim_amount": "240.93",
-    #    "claim_date": "2015-11-27T00:00:00.000Z",
-    #    "expert": "1",
-    #    "litigation_flag": "0",
-    #    "code_dep": 76
-    #}
+    record_to_predict = {
+      "public_found": false,
+      "warehouse_found": false,
+      "floor_area": 590869,
+      "year_built": 2001,
+      "id": 74002
+   }
     
-    
-    client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "vMPmPc6oc5QsYPmNuQ7C8w7edaQu9HKY")
+    client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption")
 
     prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
 
