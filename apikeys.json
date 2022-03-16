@@ -31,5 +31,29 @@
     "key": "090crKY9FxiulUiDOMAVWeoao1yDI7Zs",
     "label": "Key for Web app Decision_tree_builder(wVr90F3)",
     "createdOn": 1646916855837
+  },
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    },
+    "onBehalf": "2JY0YEG",
+    "id": "R749XMeiDErbOUfa",
+    "key": "UF003ATSycLuiiMfsWJkDrSJUuZgMcGn",
+    "label": "Key for Web app Predict building energy use intensity(2JY0YEG)",
+    "createdOn": 1647437667324
   }
 ]
