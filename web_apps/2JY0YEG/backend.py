@@ -7,8 +7,7 @@ import dataikuapi
 def scoring_api_call(params):
     
     # get Parameters from the form
-    print(params)
-    print('hello')
+    print('params sent by JS',params)
     params = json.loads(params)
     
     warehouse_found = "0"
