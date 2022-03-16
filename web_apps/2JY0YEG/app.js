@@ -198,19 +198,11 @@ function onDocumentReady(val) {
 function run_scoring(variables) {
   
        var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){
-       
-   
                  console.log(JSON.stringify(data));
                  R = JSON.parse(JSON.stringify(data));
-         
-                 console.log(R.results.result);
-         
-                 /*Proba_1 = R.results.result.prediction;*/
-                 Proba_1 = R.results.result.probas[1];
-                 Version_Model = R.results.apiContext.endpointId + ' ' + R.results.apiContext.serviceGeneration;
-         
-                 console.log(Version_Model);
-         
+                 val=R.results
+                 console.log(R.results);
+
                  /* Refresh the Gauge */
                  onDocumentReady(value);
     
