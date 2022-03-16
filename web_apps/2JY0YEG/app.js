@@ -1,68 +1,251 @@
-/*
- * For more information, refer to the "Javascript API" documentation:
- * https://doc.dataiku.com/dss/latest/api/js/index.html
- */
+var gauge = function(container, configuration) {
+    var that = {};
+    var config = {
+        size: 200,
+        clipWidth: 200,
+        clipHeight: 110,
+        ringInset: 20,
+        ringWidth: 20,
 
-function displayMessage(messageText, messageClassname) {
-    let messageContainer = document.getElementById('message');
-    messageContainer.innerHTML = messageText;
-    messageContainer.className = '';
-    if (messageClassname && messageClassname.length > 0) {
-        messageContainer.className = messageClassname;
+        pointerWidth: 10,
+        pointerTailLength: 5,
+        pointerHeadLengthPercent: 0.9,
+
+        minValue: 0,
+        maxValue: 100,
+
+        minAngle: -90,
+        maxAngle: 90,
+
+        transitionMs: 750,
+
+        majorTicks: 11,
+        labelFormat: d3.format(',g'),
+        labelInset: 10,
+
+        arcColorFn: [d3.rgb('#66e59d'), d3.rgb('#66e59d'), d3.rgb('#fee08b'), d3.rgb('#fee08b'), d3.rgb('#fee08b'), d3.rgb('#d73027'), d3.rgb('#d73027'), d3.rgb('#d73027'), d3.rgb('#d73027'), d3.rgb('#d73027'), d3.rgb('#d73027')]
+        
+    };
+    var range = undefined;
+    var r = undefined;
+    var pointerHeadLength = undefined;
+    var value = 0;
+
+    var svg = undefined;
+    var arc = undefined;
+    var scale = undefined;
+    var ticks = undefined;
+    var tickData = undefined;
+    var pointer = undefined;
+
+    var donut = d3.layout.pie();
+
+    function deg2rad(deg) {
+        return deg * Math.PI / 180;
     }
-}
 
-let datasetSelector = document.getElementById('datasets-list');
-datasetSelector.onchange = function(event) {
-    let datasetName = event.target.value;
-    let path = '/projects/'+dataiku.defaultProjectKey+'/datasets/'+datasetName+'/schema';
-    dataikuREST(path, function(schema) {
-        console.warn(schema);
-        if (schema.columns.length > 0) {
-            let header = schema.columns.length + " columns: <br /> -- <br />";
-            let columns = schema.columns.map(function(column) {return column.name + ' (' + column.type + ')'}).join('<br />');
-            displayMessage(header + columns);
-        } else {
-            displayMessage("This dataset has no columns")
-        }
-    })
-}
-
-// Most of the Dataiku Rest API is not wrapped in JavaScript
-// Check the documentation: https://doc.dataiku.com/dss/api/7.0/rest (replace 7.0 by the corresponding DSS version)
-function dataikuREST(path, callback) {
-    let url = '/public/api' + path;
-    // We use fetch API (https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch)
-    fetch(url, {
-        headers: {
-            'Authorization': 'Basic ' + btoa(dataiku.defaultAPIKey + ':' + '')
-        }
-    })
-        .then(response => {
-            if (response.ok) {
-                response.json().then(callback);
-            } else {
-                response.json().then(
-                    err => displayMessage(err.message, 'error-message')
-                );
-            }
-        });
-}
-
-dataiku.listDatasets(
-    function(datasets) { // success
-        // iterate through the datasets list to populate the select:
-        let datasetSelector = document.getElementById('datasets-list');
-        datasets.forEach(function(datasetName) {
-            let option = document.createElement('option');
-            option.value = datasetName;
-            option.innerHTML = datasetName;
-            datasetSelector.append(option);
-        });
-        datasetSelector.focus();
-        displayMessage('The datasets have been successfully retrieved. Try to pick one.');
-    },
-    function() { // error
-        displayMessage('The datasets cannot be retrieved. Please check your API Key.', 'error-message');
+    function newAngle(d) {
+        var ratio = scale(d);
+        var newAngle = config.minAngle + (ratio * range);
+        return newAngle;
     }
-);
+
+    function configure(configuration) {
+        var prop = undefined;
+        for ( prop in configuration ) {
+            config[prop] = configuration[prop];
+        }
+
+    range = config.maxAngle - config.minAngle;
+    r = config.size / 2;
+    pointerHeadLength = Math.round(r * config.pointerHeadLengthPercent);
+
+    // a linear scale that maps domain values to a percent from 0..1
+    scale = d3.scale.linear()
+            .range([0,1])
+            .domain([config.minValue, config.maxValue]);
+
+    ticks = scale.ticks(config.majorTicks);
+    tickData = d3.range(config.majorTicks).map(function() {return 1/config.majorTicks;});
+
+    arc = d3.svg.arc()
+          .innerRadius(r - config.ringWidth - config.ringInset)
+          .outerRadius(r - config.ringInset)
+          .startAngle(function(d, i) {
+                var ratio = d * i;
+                return deg2rad(config.minAngle + (ratio * range));
+           })
+           .endAngle(function(d, i) {
+                var ratio = d * (i+1);
+                return deg2rad(config.minAngle + (ratio * range));
+            });
+    }
+    that.configure = configure;
+    
+    function centerTranslation() {
+        return 'translate('+r +','+ r +')';
+    }
+
+    function isRendered() {
+        return (svg !== undefined);
+    }
+    that.isRendered = isRendered;
+    
+    function render(newValue) {
+        
+        svg = d3.select(container)
+            .append('svg:svg')
+            .attr('id', 'gauge-score')
+            .attr('class', 'gauge')
+            .attr('width', config.clipWidth)
+            .attr('height', config.clipHeight);
+        
+        var centerTx = centerTranslation();
+
+        var arcs = svg.append('g')
+                .attr('class', 'arc')
+                .attr('transform', centerTx);
+
+        arcs.selectAll('path')
+            .data(tickData)
+            .enter().append('path')
+            .attr('fill', function(d, i) {return config.arcColorFn[i];})
+            .attr('d', arc);
+
+        var lg = svg.append('g')
+                .attr('class', 'label')
+                .attr('transform', centerTx);
+        
+        lg.selectAll('text')
+            .data(ticks)
+            .enter().append('text')
+            .attr('transform', function(d) {
+                    var ratio = scale(d);
+                    var newAngle = config.minAngle + (ratio * range);
+                    return 'rotate(' +newAngle +') translate(0,' +(config.labelInset - r) +')';
+            })
+            .text(config.labelFormat);
+
+         var lineData = [ [config.pointerWidth / 2, 0], 
+                        [0, -pointerHeadLength],
+                        [-(config.pointerWidth / 2), 0],
+                        [0, config.pointerTailLength],
+                        [config.pointerWidth / 2, 0] ];
+         
+         var pointerLine = d3.svg.line().interpolate('monotone');
+         var pg = svg.append('g').data([lineData])
+                     .attr('class', 'pointer')
+                     .attr('transform', centerTx);
+
+         pointer = pg.append('path')
+                     .attr('id','gauge-pointer')
+                     .attr('d', pointerLine/*function(d) { return pointerLine(d) +'Z';}*/ )
+                     .attr('transform', 'rotate(' +config.minAngle +')');
+
+         update(newValue === undefined ? 0 : newValue);
+    }
+    that.render = render;
+    
+    function update(newValue, newConfiguration) {
+        if ( newConfiguration  !== undefined) {
+            configure(newConfiguration);
+        }
+        var ratio = scale(newValue);
+        var newAngle = config.minAngle + (ratio * range);
+        
+        pointer.transition()
+            .duration(config.transitionMs)
+            .ease('elastic')
+            .attr('transform', 'rotate(' +newAngle +')');
+        
+    }
+    that.update = update;
+
+    configure(configuration);
+
+    return that;
+};
+
+function onDocumentReady(val, model) {
+     
+    var powerGauge = gauge('#power-gauge', {
+        size: 300,
+        clipWidth: 300,
+        clipHeight: 180,
+        ringWidth: 60,
+        maxValue: 100,
+        transitionMs: 4000,
+    });
+ 
+    var legendGauge = document.getElementById('gauge-legend');
+    
+    flagFirst = (legendGauge.innerHTML === '');
+    if (!flagFirst) {
+        var mygauge = document.getElementById('gauge-score');
+        mygauge.remove();  
+    }
+        
+    powerGauge.render(val*100);
+        
+    let legend = "Score = " + val*100;
+    legend = legend.substring(0, 12) + "%";
+    legend = legend + "<br/>Model = " + model;
+    
+    legendGauge.innerHTML = "<i>" + legend + "</i>";    
+
+    
+}
+
+/* Function that launches an API Call to the API Node to get the Fraud Result */
+function run_scoring(variables) {
+    
+     console.log("sending to backend : ", variables);
+    
+     var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){
+                 
+                 /* data =  {"results":{"probaPercentile":15,"ignored":false,"probas":{"0":0.9894460439682007,"1":0.010553939267992973},"prediction":"0"}} */
+                 /*console.log(JSON.stringify(data));*/
+         
+                 R = JSON.parse(JSON.stringify(data));
+         
+                 console.log(R.results.apiContext);
+         
+                 Proba_1 = R.results.result.probas[1];
+                 Version_Model = R.results.apiContext.endpointId + ' ' + R.results.apiContext.serviceGeneration;
+         
+                 console.log(Version_Model);
+         
+                 /* Refresh the Gauge */
+                 onDocumentReady(Proba_1, Version_Model);
+    
+     })
+ }
+
+
+let validationButton = document.getElementById('validation-button');
+
+validationButton.addEventListener('click', function (event) {
+    
+    let contractID = document.getElementById('contract-id').value;
+    let claimAmount = document.getElementById('claim-amount').value;
+    let claimDate = document.getElementById('claim-date').value;
+    let claimExpert = document.getElementById('claim-expert').checked.toString();
+    let litigationFlag = document.getElementById('litigation-flag').checked.toString();
+    let claimDept = document.getElementById('claim-dept').value;
+    
+    /* Create a variable with parameters to push to the backend */
+    variables = {};
+    variables['contractID'] = contractID;
+    variables['claimAmount'] = claimAmount;
+    variables['claimDate'] = claimDate;
+    variables['claimExpert'] = claimExpert;
+    variables['litigationFlag'] = litigationFlag;
+    variables['claimDept'] = claimDept;
+    
+    run_scoring(variables);
+    event.preventDefault();
+});$.getJSON(getWebAppBackendUrl('/first_api_call'), function(data) {
+    console.log('Received data from backend', data)
+    const output = $('<pre />').text('Backend reply: ' + JSON.stringify(data));
+    $('body').append(output)
+});
