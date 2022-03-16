@@ -1,8 +1,9 @@
 import dataiku
 import pandas as pd
-
 import dataikuapi
 
+# gets parameters from JS
+# sends back prediction
 @app.route('/scoring_api_call/<path:params>')
 def scoring_api_call(params):
     
