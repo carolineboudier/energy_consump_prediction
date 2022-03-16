@@ -244,3 +244,4 @@ validationButton.addEventListener('click', function (event) {
     
     run_scoring(variables);
     event.preventDefault();
+    });
