@@ -12,26 +12,26 @@ def scoring_api_call(params):
     params = json.loads(params)
     
     claimExpert = "0"
-    if params.get('claimExpert')=="true":
-        claimExpert = "1"
+    if params.get('warehouse_found')=="true":
+        warehouse_found = "1"
         
-    litigation = "0"
-    if params.get('litigationFlag')=="true":
-        litigation = "1"
+    public_found = "0"
+    if params.get('public_found')=="true":
+        public_found = "1"
     
     #if params.get('claimDate') == "":
     #    claimDate = "2019-09-01T00:00:00.000Z"
    # else :
     #    claimDate = params.get('claimDate') + 'T00:00:00.000Z'
+    year_built=1921
     
-    record_to_predict = {
-        "contract_id": params.get('contractID'),
-        "claim_amount": params.get('claimAmount'),
-        "claim_date": claimDate,
-        "expert": claimExpert,
-        "litigation_flag": litigation,
-        "code_dep": params.get('claimDept')[:2]
-    }
+  #  record_to_predict = {
+   #     "id": params.get('id'),
+    #    "floor_area": params.get('floor_area'),
+     #   "year_built": year_built,
+      ## "public_found": public_found,
+        #"State_factor": params.get('State_factor')[:2]
+    #}
     
     record_to_predict = {
         "id": params.get('id'),
