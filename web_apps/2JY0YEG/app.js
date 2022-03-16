@@ -201,7 +201,7 @@ function run_scoring(variables) {
   
        var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){          
                  data =  {"results":{"probaPercentile":15,"ignored":false,"probas":{"0":0.9894460439682007,"1":0.010553939267992973},"prediction":"0"}}
-                 /*console.log(JSON.stringify(data));*/
+                 console.log(JSON.stringify(data));
          
                  R = JSON.parse(JSON.stringify(data));
          
