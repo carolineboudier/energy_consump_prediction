@@ -17,104 +17,37 @@
                 <input type="date" name="year_built" placeholder="Year Built" id="year_built" />
             </div>
             <div class="field">
-                <label for="floor_area">Claim Amount</label>
+                <label for="floor_area">Floor area</label>
                 <input type="number" name="floor_area" id="floor_area" min="0" step="10" autocomplete="off"/>
             </div>
             <div class="field">
                 <div class="checkbox">
-                    <input type="checkbox" name="claim-expert" id="claim-expert" />
-                    <label for="claim-expert">Expertise</label>
+                    <input type="checkbox" name="warehouse_found" id="warehouse_found" />
+                    <label for="warehouse_found">Warehouse</label>
                 </div>
             </div>
             <div class="field">
                 <div class="checkbox">
-                    <input type="checkbox" name="litigation-flag" id="litigation-flag" />
-                    <label for="litigation-flag">Litigation</label>
+                    <input type="checkbox" name="public_found" id="public_found" />
+                    <label for="public_found">Public building</label>
                 </div> 
             </div>
             <div class="field">
-                <label for="claim-dept">Department</label>
-                <input type="text" name="claim-dept" placeholder="Department where the accident occured" id="claim-dept" list="depts" autocomplete="off"/>
+                <label for="State_factor">State</label>
+                <input type="text" name="State" placeholder="id of the state the building is located in" id="State_factor" list="depts" autocomplete="off"/>
             </div>
 
             <button type="button" class="main-blue-button" id="validation-button">Score</button>
         </form>
         
         <datalist id="depts">
-            <option>01 - AIN</option>
-            <option>02 - AISNE</option>
-            <option>03 - ALLIER</option>
-            <option>06 - ALPES-MARITIMES</option>
-            <option>08 - ARDENNES</option>
-            <option>10 - AUBE</option>
-            <option>11 - AUDE</option>
-            <option>13 - BOUCHES-DU-RHONE</option>
-            <option>14 - CALVADOS</option>
-            <option>16 - CHARENTE</option>
-            <option>18 - CHER</option>
-            <option>19 - CORREZE</option>
-            <option>21 - COTE-D'OR</option>
-            <option>22 - COTES-D'ARMOR</option>
-            <option>25 - DOUBS</option>
-            <option>26 - DROME</option>
-            <option>27 - EURE</option>
-            <option>28 - EURE-ET-LOIR</option>
-            <option>29 - FINISTERE</option>
-            <option>30 - GARD</option>
-            <option>31 - HAUTE-GARONNE</option>
-            <option>33 - GIRONDE</option>
-            <option>34 - HERAULT</option>
-            <option>35 - ILLE-ET-VILAINE</option>
-            <option>36 - INDRE</option>
-            <option>37 - INDRE-ET-LOIRE</option>
-            <option>38 - ISERE</option>
-            <option>41 - LOIR-ET-CHER</option>
-            <option>42 - LOIRE</option>
-            <option>44 - LOIRE-ATLANTIQUE</option>
-            <option>45 - LOIRET</option>
-            <option>47 - LOT-ET-GARONNE</option>
-            <option>49 - MAINE-ET-LOIRE</option>
-            <option>50 - MANCHE</option>
-            <option>51 - MARNE</option>
-            <option>53 - MAYENNE</option>
-            <option>54 - MEURTHE-ET-MOSELLE</option>
-            <option>56 - MORBIHAN</option>
-            <option>57 - MOSELLE</option>
-            <option>58 - NIEVRE</option>
-            <option>59 - NORD</option>
-            <option>60 - OISE</option>
-            <option>62 - PAS-DE-CALAIS</option>
-            <option>63 - PUY-DE-DOME</option>
-            <option>64 - PYRENEES-ATLANTIQUES</option>
-            <option>66 - PYRENEES-ORIENTALES</option>
-            <option>67 - BAS-RHIN</option>
-            <option>68 - HAUT-RHIN</option>
-            <option>69 - RHONE</option>
-            <option>70 - HAUTE-SAONE</option>
-            <option>71 - SAONE-ET-LOIRE</option>
-            <option>72 - SARTHE</option>
-            <option>73 - SAVOIE</option>
-            <option>74 - HAUTE-SAVOIE</option>
-            <option>75 - PARIS</option>
-            <option>76 - SEINE-MARITIME</option>
-            <option>77 - SEINE-ET-MARNE</option>
-            <option>78 - YVELINES</option>
-            <option>79 - DEUX-SEVRES</option>
-            <option>80 - SOMME</option>
-            <option>81 - TARN</option>
-            <option>82 - TARN-ET-GARONNE</option>
-            <option>83 - VAR</option>
-            <option>84 - VAUCLUSE</option>
-            <option>85 - VENDEE</option>
-            <option>86 - VIENNE</option>
-            <option>87 - HAUTE-VIENNE</option>
-            <option>88 - VOSGES</option>
-            <option>90 - TERRITOIRE-DE-BELFORT</option>
-            <option>91 - ESSONNE</option>
-            <option>92 - HAUTS-DE-SEINE</option>
-            <option>93 - SEINE-SAINT-DENIS</option>
-            <option>94 - VAL-DE-MARNE</option>
-            <option>95 - VAL-D'OISE</option>
+            <option>State_1</option>
+            <option>State_2</option>
+            <option>State_4</option>
+            <option>State_6</option>
+            <option>State_8</option>
+            <option>State_10</option>
+            <option>State_11</option>
         </datalist>
         
     </section>
