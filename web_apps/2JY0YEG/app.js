@@ -188,7 +188,7 @@ function onDocumentReady(val) {
     powerGauge.render(val);
         
     let legend = "Expected EUI = " + val;
-    legend = legend.substring(0, 12);    
+    legend = legend.substring(0, 12) +"";    
     legendGauge.innerHTML = "<i>" + legend + "</i>";    
 
     
