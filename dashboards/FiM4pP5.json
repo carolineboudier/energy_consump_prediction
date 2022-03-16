@@ -378,6 +378,14 @@
       },
       "title": "Data exploration (classif)",
       "showTitle": false
+    },
+    {
+      "id": "4TLvh6b",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Prediction",
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -385,11 +393,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 47,
+    "versionNumber": 48,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647454128001
+    "lastModifiedOn": 1647454146707
   },
   "creationTag": {
     "versionNumber": 0,
