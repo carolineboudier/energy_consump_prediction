@@ -200,7 +200,7 @@ function onDocumentReady(val, model) {
 function run_scoring(variables) {
     
      console.log("sending to backend : ", variables);
-    
+     displayMessage('The datasets cannot be retrieved. Please check your API Key.', 'error-message')
      var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){
                  
                  /* data =  {"results":{"probaPercentile":15,"ignored":false,"probas":{"0":0.9894460439682007,"1":0.010553939267992973},"prediction":"0"}} */
