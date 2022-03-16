@@ -63,9 +63,7 @@ def scoring_api_call(params):
     
     client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "vMPmPc6oc5QsYPmNuQ7C8w7edaQu9HKY")
 
-    prediction = client.predict_record("Fraud_Scoring", record_to_predict)
+    prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
 
-    prediction = client.predict_record("Fraud_Scoring", record_to_predict)
-    #return json.dumps({"results": prediction["result"]})
     return json.dumps({"results": prediction})
 
