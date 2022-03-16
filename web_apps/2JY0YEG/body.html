@@ -12,9 +12,9 @@
                 <label for="id">Building id</label>
                 <input type="text" name="contract-id" placeholder="Id of the building" id="id" value="74002" />
             </div>
-            <div class="field">
+             <div class="field">
                 <label for="year_built">Year built</label>
-                <input type="date" name="year_built" placeholder="Year Built" id="year_built"/>
+                <input type="number" name="floor_area" id="year_built" min="1950" step="10" autocomplete="off" value="1950"/>
             </div>
             <div class="field">
                 <label for="floor_area">Floor area</label>
@@ -31,9 +31,15 @@
                     <label for="public_found">Public building</label>
                 </div> 
             </div>
+             <div class="field">
+                <div class="checkbox">
+                    <input type="checkbox" name="warehouse_found" id="warehouse_found"  />
+                    <label for="warehouse_found">Warehouse</label>
+                </div> 
+            </div>
             <div class="field">
                 <label for="State_factor">State</label>
-                    <input type="checkbox" name="warehouse_found" id="warehouse_found"  />
+                    
                 <input type="text" name="State" placeholder="id of the state the building is located in" id="State_factor" list="depts" autocomplete="off" value="State_1"/>
             </div>
 
