@@ -200,7 +200,7 @@ function run_scoring(variables) {
        var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){
                  /*console.log(JSON.stringify(data));*/
                  R = JSON.parse(JSON.stringify(data));
-                 val=R.results
+                 value=R.results
                  /*console.log(R.results);*/
 
                  /* Refresh the Gauge */
