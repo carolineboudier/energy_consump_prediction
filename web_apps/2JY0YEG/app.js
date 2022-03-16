@@ -12,7 +12,7 @@ var gauge = function(container, configuration) {
         pointerHeadLengthPercent: 0.9,
 
         minValue: 0,
-        maxValue: 100,
+        maxValue: 500,
 
         minAngle: -90,
         maxAngle: 90,
@@ -173,7 +173,7 @@ function onDocumentReady(val) {
         clipWidth: 300,
         clipHeight: 180,
         ringWidth: 60,
-        maxValue: 1000,
+        maxValue: 100,
         transitionMs: 4000,
     });
  
