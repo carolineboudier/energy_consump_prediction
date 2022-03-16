@@ -1,20 +1,20 @@
 <link rel="stylesheet" href="/static/public/styles/1.0.0/dku-styles.css" />
 <script type="text/javascript" src="/local/static/javascript/d3.v2.min.js"></script>
 
-<h1>Fraud Estimation</h1>
+<h1>Predict building energy use intensity</h1>
 
 <div class="row">
   <div class="column">
     <section>
-        <i>Please fill the following form to have an estimation of Fraud for the claim</i>
+        <i>Please fill the following form to have an estimation of Energy usage for the builing</i>
         <form id="form-sample" novalidate>
             <div class="field">
-                <label for="contract-id">Contract ID</label>
-                <input type="text" name="contract-id" placeholder="Id of the contract" id="contract-id" />
+                <label for="id">Building id</label>
+                <input type="text" name="contract-id" placeholder="Id of the building" id="id" />
             </div>
             <div class="field">
-                <label for="claim-date">Claim Date</label>
-                <input type="date" name="claim-date" placeholder="Declared claim date" id="claim-date" />
+                <label for="year_built">Claim Date</label>
+                <input type="date" name="claim-date" placeholder="Year Built" id="year_built" />
             </div>
             <div class="field">
                 <label for="claim-amount">Claim Amount</label>

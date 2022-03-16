@@ -32,8 +32,24 @@ def scoring_api_call(params):
         "litigation_flag": litigation,
         "code_dep": params.get('claimDept')[:2]
     }
+        record_to_predict = {
+        "id": params.get('id'),
+        "floor_area": params.get('floor_area'),
+        "claim_date": claimDate,
+        "year_built": year_built,
+        "litigation_flag": litigation,
+        "code_dep": params.get('claimDept')[:2]
+    }
 
-    
+    {
+   #"features": {
+   #   "public_found": false,
+  #    "warehouse_found": false,
+ #     "floor_area": 590869,
+ #     "year_built": 2001,
+ #     "id": 74002
+#   }
+
     #record_to_predict = {
     #    "contract_id": "229959",
     #    "claim_amount": "240.93",
