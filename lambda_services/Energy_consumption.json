@@ -43,9 +43,9 @@
           "columnsMapping": {
             "Year_Factor": "Year_Factor",
             "State_Factor": "State_Factor",
+            "building_class": "building_class",
             "facility_type": "facility_type",
-            "public_found": "public_found",
-            "warehouse_found": "warehouse_found",
+            "office_found": "office_found",
             "floor_area_bins": "floor_area_bins",
             "building_age": "building_age",
             "age_bin": "age_bin",
@@ -131,11 +131,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647437540135
+    "lastModifiedOn": 1647437576244
   },
   "creationTag": {
     "versionNumber": 0,
