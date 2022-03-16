@@ -21,7 +21,7 @@ def scoring_api_call(params):
     if params.get('year_built') == "":
         year_built = "1950"
     else :
-        year_built=2001
+        year_built=params.get('year_built')
 
     
     record_to_predict = {
@@ -40,6 +40,8 @@ def scoring_api_call(params):
     prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
     print("prediction sent back to JS",prediction)
     precise_pred=prediction["result"]["prediction"]
+    if precise_pred>=500:
+        precise_pred=500
     print("precise pred sent back to JS",precise_pred)
 
     return json.dumps({"results": precise_pred})
