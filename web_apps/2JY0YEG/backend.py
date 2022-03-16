@@ -54,9 +54,9 @@ def scoring_api_call(params):
 
 
 
-    record_to_predict = {
-      "public_found": false,
-      "warehouse_found": false,
+record_to_predict = {
+      "public_found": 0,
+      "warehouse_found": 0,
       "floor_area": 590869,
       "year_built": 2001,
       "id": 74002
