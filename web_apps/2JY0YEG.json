@@ -43,11 +43,11 @@
   "name": "Predict building energy use intensity",
   "apiKey": "UF003ATSycLuiiMfsWJkDrSJUuZgMcGn",
   "versionTag": {
-    "versionNumber": 66,
+    "versionNumber": 67,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647453367670
+    "lastModifiedOn": 1647453383558
   },
   "creationTag": {
     "versionNumber": 0,
