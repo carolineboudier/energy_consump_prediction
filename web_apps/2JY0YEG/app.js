@@ -189,11 +189,7 @@ function onDocumentReady(val) {
         
     let legend = "Expected EUI = " + val;
     legend = legend.substring(0, 12) +"";    
-    legendGauge.innerHTML = "<i>" + legend + "</i>";    
-
-    legend = legend.substring(0, 12) + "%";
-    
-    legendGauge.innerHTML = "<i>" + legend + "</i>";    
+    legendGauge.innerHTML = "<i>" + legend + "</i>";     
     
 }
 
