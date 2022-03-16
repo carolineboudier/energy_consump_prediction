@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646756310168
+    "lastModifiedOn": 1647437338032
   },
   "creationTag": {
     "versionNumber": 0,
@@ -41,7 +41,9 @@
     },
     "lastModifiedOn": 1646756310168
   },
-  "tags": [],
+  "tags": [
+    "enrichment_dataset"
+  ],
   "params": {
     "writeWithCopyBadDataBehavior": "NOVERIFY_ERROR",
     "connection": "postgreSQL",
