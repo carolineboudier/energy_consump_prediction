@@ -193,7 +193,7 @@ function onDocumentReady(val) {
     
     powerGauge.render(val*100);
         
-    let legend = "Score = " + val*100;
+    let legend = "Score = " + val;
     legend = legend.substring(0, 12) + "%";
     legendGauge.innerHTML = "<i>" + legend + "</i>";   
     
