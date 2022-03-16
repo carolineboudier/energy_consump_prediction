@@ -226,21 +226,21 @@ let validationButton = document.getElementById('validation-button');
 
 validationButton.addEventListener('click', function (event) {
     
-    let contractID = document.getElementById('contract-id').value;
-    let claimAmount = document.getElementById('claim-amount').value;
-    let claimDate = document.getElementById('claim-date').value;
-    let claimExpert = document.getElementById('claim-expert').checked.toString();
-    let litigationFlag = document.getElementById('litigation-flag').checked.toString();
-    let claimDept = document.getElementById('claim-dept').value;
+    let id = document.getElementById('id').value;
+    let year_built = document.getElementById('year_built').value;
+    let floor_area = document.getElementById('floor_area').value;
+    let warehouse_found = document.getElementById('warehouse_found').checked.toString();
+    let public_found = document.getElementById('public_found').checked.toString();
+    let State_factor = document.getElementById('State_factor').value;
     
     /* Create a variable with parameters to push to the backend */
     variables = {};
-    variables['contractID'] = contractID;
-    variables['claimAmount'] = claimAmount;
-    variables['claimDate'] = claimDate;
-    variables['claimExpert'] = claimExpert;
-    variables['litigationFlag'] = litigationFlag;
-    variables['claimDept'] = claimDept;
+    variables['id'] = id;
+    variables['year_built'] = year_built;
+    variables['floor_area'] = floor_area;
+    variables['warehouse_found'] = warehouse_found;
+    variables['public_found'] = public_found;
+    variables['State_factor'] = State_factor;
     
     run_scoring(variables);
     event.preventDefault();
