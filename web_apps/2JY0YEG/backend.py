@@ -19,10 +19,10 @@ def scoring_api_call(params):
     if params.get('litigationFlag')=="true":
         litigation = "1"
     
-    if params.get('claimDate') == "":
-        claimDate = "2019-09-01T00:00:00.000Z"
-    else :
-        claimDate = params.get('claimDate') + 'T00:00:00.000Z'
+    #if params.get('claimDate') == "":
+    #    claimDate = "2019-09-01T00:00:00.000Z"
+   # else :
+    #    claimDate = params.get('claimDate') + 'T00:00:00.000Z'
     
     record_to_predict = {
         "contract_id": params.get('contractID'),
