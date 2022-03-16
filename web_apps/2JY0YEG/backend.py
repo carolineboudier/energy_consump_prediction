@@ -11,7 +11,7 @@ def scoring_api_call(params):
     # print(params) --> {'claimAmount': '5435','claimDate': '2019-11-27T00:00:00.000Z','claimDept': '77','claimExpert': '1','contractID': '333333','litigationFlag': '1'}
     params = json.loads(params)
     
-    claimExpert = "0"
+    warehouse_found = "0"
     if params.get('warehouse_found')=="true":
         warehouse_found = "1"
         
@@ -36,9 +36,10 @@ def scoring_api_call(params):
     record_to_predict = {
         "id": params.get('id'),
         "floor_area": params.get('floor_area'),
-        "claim_date": claimDate,
         "year_built": year_built,
-        "litigation_flag": litigation,
+        "public_found": public_found,
+        "warehouse_found": warehouse_found,
+        
         "code_dep": params.get('claimDept')[:2]
     }
 
