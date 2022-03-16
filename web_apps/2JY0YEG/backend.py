@@ -1,22 +1,54 @@
 import dataiku
 import pandas as pd
-from flask import request
 
+import dataikuapi
 
-# Example:
-# As the Python webapp backend is a Flask app, refer to the Flask
-# documentation for more information about how to adapt this
-# example to your needs.
-# From JavaScript, you can access the defined endpoints using
-# getWebAppBackendUrl('first_api_call')
+@app.route('/scoring_api_call/<path:params>')
+def scoring_api_call(params):
+    
+    # get Parameters from the form
+    print(params)
+    # print(params) --> {'claimAmount': '5435','claimDate': '2019-11-27T00:00:00.000Z','claimDept': '77','claimExpert': '1','contractID': '333333','litigationFlag': '1'}
+    params = json.loads(params)
+    
+    claimExpert = "0"
+    if params.get('claimExpert')=="true":
+        claimExpert = "1"
+        
+    litigation = "0"
+    if params.get('litigationFlag')=="true":
+        litigation = "1"
+    
+    if params.get('claimDate') == "":
+        claimDate = "2019-09-01T00:00:00.000Z"
+    else :
+        claimDate = params.get('claimDate') + 'T00:00:00.000Z'
+    
+    record_to_predict = {
+        "contract_id": params.get('contractID'),
+        "claim_amount": params.get('claimAmount'),
+        "claim_date": claimDate,
+        "expert": claimExpert,
+        "litigation_flag": litigation,
+        "code_dep": params.get('claimDept')[:2]
+    }
 
-@app.route('/first_api_call')
-def first_call():
-    max_rows = request.args.get('max_rows') if 'max_rows' in request.args else 500
+    
+    #record_to_predict = {
+    #    "contract_id": "229959",
+    #    "claim_amount": "240.93",
+    #    "claim_date": "2015-11-27T00:00:00.000Z",
+    #    "expert": "1",
+    #    "litigation_flag": "0",
+    #    "code_dep": 76
+    #}
+    
+    
+    client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "vMPmPc6oc5QsYPmNuQ7C8w7edaQu9HKY")
 
-    mydataset = dataiku.Dataset("REPLACE_WITH_YOUR_DATASET_NAME")
-    mydataset_df = mydataset.get_dataframe(sampling='head', limit=max_rows)
+    prediction = client.predict_record("Fraud_Scoring", record_to_predict)
 
-    # Pandas dataFrames are not directly JSON serializable, use to_json()
-    data = mydataset_df.to_json()
-    return json.dumps({"status": "ok", "data": data})
+    prediction = client.predict_record("Fraud_Scoring", record_to_predict)
+    #return json.dumps({"results": prediction["result"]})
+    return json.dumps({"results": prediction})
+
