@@ -42,7 +42,6 @@
           "multiMatchBehavior": "KEEP_FIRST",
           "columnsMapping": {
             "Year_Factor": "Year_Factor",
-            "State_Factor": "State_Factor",
             "building_class": "building_class",
             "facility_type": "facility_type",
             "office_found": "office_found",
@@ -131,11 +130,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647437592360
+    "lastModifiedOn": 1647453511637
   },
   "creationTag": {
     "versionNumber": 0,
