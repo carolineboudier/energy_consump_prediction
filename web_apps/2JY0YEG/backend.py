@@ -39,8 +39,7 @@ def scoring_api_call(params):
         "year_built": year_built,
         "public_found": public_found,
         "warehouse_found": warehouse_found,
-        "State_Factor":params.get('State_Factor'),
-        "code_dep": params.get('claimDept')[:2]
+        "State_Factor":params.get('State_Factor')
     }
 
 
