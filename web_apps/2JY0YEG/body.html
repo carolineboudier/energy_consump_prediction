@@ -1,32 +1,127 @@
-<!-- Retrieves dataiku starter stylesheets -->
-
 <link rel="stylesheet" href="/static/public/styles/1.0.0/dku-styles.css" />
+<script type="text/javascript" src="/local/static/javascript/d3.v2.min.js"></script>
 
-<h1>Dataiku REST API advanced usage</h1>
-<h2>First example : change the API Key and list the values of a dataset's column</h2>
-<div class="columns-listing-container">
+<h1>Fraud Estimation</h1>
+
+<div class="row">
+  <div class="column">
     <section>
-        <h3>Set API key permissions</h3>
-        Every webapp is created with its dedicated API key.
-        <br />For security reasons, these API keys have limited permissions that must be activated manually.
-
-        <br /><br />To use the full <a href="https://doc.dataiku.com/dss/latest/publicapi/rest.html">REST API</a>,
-        you must extend the permissions:
-        in the project security settings, update the API key to allow the desired actions
-        (see <a href="https://doc.dataiku.com/dss/latest/publicapi/keys.html" target="blank">the documentation</a> for details)
-
-        <h3>Example: get dataset schema through REST API</h3>
-        <form id="form-datasets" novalidate>
+        <i>Please fill the following form to have an estimation of Fraud for the claim</i>
+        <form id="form-sample" novalidate>
             <div class="field">
-                <label for="dataset-name">Dataset Name</label>
-                <select class="dropdown" id="datasets-list" name="datasets-name">
-                    <option value="" selected hidden>Pick a dataset...</option>
-                </select>
+                <label for="contract-id">Contract ID</label>
+                <input type="text" name="contract-id" placeholder="Id of the contract" id="contract-id" />
             </div>
-        </form>
-    </section>
+            <div class="field">
+                <label for="claim-date">Claim Date</label>
+                <input type="date" name="claim-date" placeholder="Declared claim date" id="claim-date" />
+            </div>
+            <div class="field">
+                <label for="claim-amount">Claim Amount</label>
+                <input type="number" name="claim-amount" id="claim-amount" min="0" step="10" autocomplete="off"/>
+            </div>
+            <div class="field">
+                <div class="checkbox">
+                    <input type="checkbox" name="claim-expert" id="claim-expert" />
+                    <label for="claim-expert">Expertise</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="checkbox">
+                    <input type="checkbox" name="litigation-flag" id="litigation-flag" />
+                    <label for="litigation-flag">Litigation</label>
+                </div> 
+            </div>
+            <div class="field">
+                <label for="claim-dept">Department</label>
+                <input type="text" name="claim-dept" placeholder="Department where the accident occured" id="claim-dept" list="depts" autocomplete="off"/>
+            </div>
 
-    <section class="results">
-        <span id="message">Results will appear here.</span>
+            <button type="button" class="main-blue-button" id="validation-button">Score</button>
+        </form>
+        
+        <datalist id="depts">
+            <option>01 - AIN</option>
+            <option>02 - AISNE</option>
+            <option>03 - ALLIER</option>
+            <option>06 - ALPES-MARITIMES</option>
+            <option>08 - ARDENNES</option>
+            <option>10 - AUBE</option>
+            <option>11 - AUDE</option>
+            <option>13 - BOUCHES-DU-RHONE</option>
+            <option>14 - CALVADOS</option>
+            <option>16 - CHARENTE</option>
+            <option>18 - CHER</option>
+            <option>19 - CORREZE</option>
+            <option>21 - COTE-D'OR</option>
+            <option>22 - COTES-D'ARMOR</option>
+            <option>25 - DOUBS</option>
+            <option>26 - DROME</option>
+            <option>27 - EURE</option>
+            <option>28 - EURE-ET-LOIR</option>
+            <option>29 - FINISTERE</option>
+            <option>30 - GARD</option>
+            <option>31 - HAUTE-GARONNE</option>
+            <option>33 - GIRONDE</option>
+            <option>34 - HERAULT</option>
+            <option>35 - ILLE-ET-VILAINE</option>
+            <option>36 - INDRE</option>
+            <option>37 - INDRE-ET-LOIRE</option>
+            <option>38 - ISERE</option>
+            <option>41 - LOIR-ET-CHER</option>
+            <option>42 - LOIRE</option>
+            <option>44 - LOIRE-ATLANTIQUE</option>
+            <option>45 - LOIRET</option>
+            <option>47 - LOT-ET-GARONNE</option>
+            <option>49 - MAINE-ET-LOIRE</option>
+            <option>50 - MANCHE</option>
+            <option>51 - MARNE</option>
+            <option>53 - MAYENNE</option>
+            <option>54 - MEURTHE-ET-MOSELLE</option>
+            <option>56 - MORBIHAN</option>
+            <option>57 - MOSELLE</option>
+            <option>58 - NIEVRE</option>
+            <option>59 - NORD</option>
+            <option>60 - OISE</option>
+            <option>62 - PAS-DE-CALAIS</option>
+            <option>63 - PUY-DE-DOME</option>
+            <option>64 - PYRENEES-ATLANTIQUES</option>
+            <option>66 - PYRENEES-ORIENTALES</option>
+            <option>67 - BAS-RHIN</option>
+            <option>68 - HAUT-RHIN</option>
+            <option>69 - RHONE</option>
+            <option>70 - HAUTE-SAONE</option>
+            <option>71 - SAONE-ET-LOIRE</option>
+            <option>72 - SARTHE</option>
+            <option>73 - SAVOIE</option>
+            <option>74 - HAUTE-SAVOIE</option>
+            <option>75 - PARIS</option>
+            <option>76 - SEINE-MARITIME</option>
+            <option>77 - SEINE-ET-MARNE</option>
+            <option>78 - YVELINES</option>
+            <option>79 - DEUX-SEVRES</option>
+            <option>80 - SOMME</option>
+            <option>81 - TARN</option>
+            <option>82 - TARN-ET-GARONNE</option>
+            <option>83 - VAR</option>
+            <option>84 - VAUCLUSE</option>
+            <option>85 - VENDEE</option>
+            <option>86 - VIENNE</option>
+            <option>87 - HAUTE-VIENNE</option>
+            <option>88 - VOSGES</option>
+            <option>90 - TERRITOIRE-DE-BELFORT</option>
+            <option>91 - ESSONNE</option>
+            <option>92 - HAUTS-DE-SEINE</option>
+            <option>93 - SEINE-SAINT-DENIS</option>
+            <option>94 - VAL-DE-MARNE</option>
+            <option>95 - VAL-D'OISE</option>
+        </datalist>
+        
     </section>
+  </div>
+  <div class="columnb">
+    <div id="power-gauge"></div>
+    <div id="gauge-legend"></div>
+      
+  </div>
 </div>
