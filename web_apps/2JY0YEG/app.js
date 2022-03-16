@@ -166,7 +166,7 @@ var gauge = function(container, configuration) {
     return that;
 };
 
-function onDocumentReady(val, model) {
+function onDocumentReady(val) {
      
     var powerGauge = gauge('#power-gauge', {
         size: 300,
@@ -185,12 +185,10 @@ function onDocumentReady(val, model) {
         mygauge.remove();  
     }
         
-    powerGauge.render(val*100);
+    powerGauge.render(val);
         
-    let legend = "Score = " + val*100;
-    legend = legend.substring(0, 12) + "%";
-    legend = legend + "<br/>Model = " + model;
-    
+    let legend = "Score = " + val;
+    legend = legend.substring(0, 12) + "%";    
     legendGauge.innerHTML = "<i>" + legend + "</i>";    
 
     
@@ -200,14 +198,12 @@ function onDocumentReady(val, model) {
 function run_scoring(variables) {
   
        var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call')+'/'+JSON.stringify(variables),function(data){
-       /*var flow_run = $.getJSON(getWebAppBackendUrl('/scoring_api_call'),function(data){  */
        
-                 data =  {"results":{"probaPercentile":15,"ignored":false,"probas":{"0":0.9894460439682007,"1":0.010553939267992973},"prediction":"0"}}
+   
                  console.log(JSON.stringify(data));
-         
                  R = JSON.parse(JSON.stringify(data));
          
-                 console.log(R.results.apiContext);
+                 console.log(R.results.result);
          
                  /*Proba_1 = R.results.result.prediction;*/
                  Proba_1 = R.results.result.probas[1];
@@ -216,7 +212,7 @@ function run_scoring(variables) {
                  console.log(Version_Model);
          
                  /* Refresh the Gauge */
-                 onDocumentReady(Proba_1, Version_Model);
+                 onDocumentReady(value);
     
      })
  }

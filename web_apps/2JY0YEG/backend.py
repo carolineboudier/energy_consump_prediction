@@ -42,5 +42,5 @@ def scoring_api_call(params):
     precise_pred=prediction["result"]["prediction"]
     print("precise pred sent back to JS",precise_pred)
 
-    return json.dumps({"results": prediction})
+    return json.dumps({"results": precise_pred})
 
