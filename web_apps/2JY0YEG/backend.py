@@ -8,7 +8,7 @@ def scoring_api_call(params):
     
     # get Parameters from the form
     print(params)
-    # print(params) --> {'claimAmount': '5435','claimDate': '2019-11-27T00:00:00.000Z','claimDept': '77','claimExpert': '1','contractID': '333333','litigationFlag': '1'}
+    print('hello')
     params = json.loads(params)
     
     warehouse_found = "0"
