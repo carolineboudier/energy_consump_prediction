@@ -51,6 +51,9 @@ def scoring_api_call(params):
  #     "id": 74002
 #   }
 
+
+
+
     #record_to_predict = {
     #    "contract_id": "229959",
     #    "claim_amount": "240.93",
