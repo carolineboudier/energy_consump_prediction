@@ -37,17 +37,17 @@
       },
       "deploymentModifier": {}
     },
-    "forceAuthentication": false
+    "forceAuthentication": true
   },
   "config": {},
   "name": "Predict building energy use intensity",
   "apiKey": "UF003ATSycLuiiMfsWJkDrSJUuZgMcGn",
   "versionTag": {
-    "versionNumber": 71,
+    "versionNumber": 72,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647454004885
+    "lastModifiedOn": 1647861246379
   },
   "creationTag": {
     "versionNumber": 0,

@@ -232,3 +232,10 @@ validationButton.addEventListener('click', function (event) {
     run_scoring(variables);
     event.preventDefault();
     });
+
+dataiku.fetch('data_by_state_filtered_ordered', {
+        sampling: "head",
+        limit: 10000
+    }, function(dataFrame) {
+    /* Process the dataframe */
+})
