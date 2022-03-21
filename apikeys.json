@@ -34,7 +34,156 @@
   },
   {
     "execSQLLike": false,
-    "localDatasets": [],
+    "localDatasets": [
+      {
+        "datasets": [
+          "data_by_state_filtered_ordered"
+        ],
+        "privileges": [
+          "READ_DATA",
+          "READ_METADATA",
+          "READ_SCHEMA"
+        ]
+      },
+      {
+        "datasets": [
+          "full_data"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_energy_star_rating"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_energy_star_rating_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_enriched"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_enriched_windows"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_enriched_windows_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_enriched_windows_prepared_bis"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_feature_engineered"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_prepared"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_prepared_filtered"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_prepared_filtered_by_State_Factor"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "full_data_sql"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "labelled_data"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "metrics"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "testing_full_data"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "to_predict"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "to_predict_scored"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "to_train"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "train_set"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "training_full_data"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "unlabelled_data"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "validation_set"
+        ],
+        "privileges": []
+      },
+      {
+        "datasets": [
+          "validation_set_scored"
+        ],
+        "privileges": []
+      }
+    ],
     "projectPrivileges": {
       "admin": false,
       "readProjectContent": false,
