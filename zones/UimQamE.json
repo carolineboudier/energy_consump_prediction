@@ -45,6 +45,10 @@
     {
       "objectId": "compute_full_data_enriched_windows_prepared_bis",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_second_window",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
