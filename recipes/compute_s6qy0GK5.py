@@ -19,7 +19,6 @@ path_output_folder="datasets"
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 final_path=os.path.join(folder_path,path_output_folder,"my_file.csv")
-final_path
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 with folder_handle.get_writer(final_path) as writer:
