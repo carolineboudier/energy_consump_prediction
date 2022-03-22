@@ -65,7 +65,7 @@
     "main": {
       "items": [
         {
-          "ref": "full_data_enriched_windows_prepared_bis",
+          "ref": "full_data_second_window",
           "appendMode": false
         }
       ]
@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646756391181
+    "lastModifiedOn": 1647957856635
   },
   "creationTag": {
     "versionNumber": 0,
