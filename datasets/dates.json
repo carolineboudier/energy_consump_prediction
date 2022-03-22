@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647971092332
+    "lastModifiedOn": 1647971145018
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,12 @@
     "importProjectKey": "ENERGYCONSUMPTIONPREDICTION"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "new_column",
+        "type": "string"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
