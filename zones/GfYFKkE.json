@@ -25,6 +25,10 @@
     {
       "objectId": "full_data_prepared_filtered",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "output_datasets",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
