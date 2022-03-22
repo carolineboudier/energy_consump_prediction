@@ -17,14 +17,11 @@
     ],
     [
       "1999011"
-    ],
-    [
-      null
     ]
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"string"}
+      {"name":"date","type":"string"}
     ],
     "userModified": false
   }
