@@ -5,6 +5,14 @@
     {
       "objectId": "dates",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "dates_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dates_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
