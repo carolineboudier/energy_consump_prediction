@@ -18,16 +18,21 @@
   "inputs": {},
   "outputs": {
     "main": {
-      "items": []
+      "items": [
+        {
+          "ref": "test",
+          "appendMode": false
+        }
+      ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647969280829
+    "lastModifiedOn": 1647969329196
   },
   "creationTag": {
     "versionNumber": 0,
