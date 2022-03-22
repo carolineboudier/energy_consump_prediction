@@ -22,6 +22,28 @@
         },
         "sql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\"",
         "expandedSql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\""
+      },
+      {
+        "mode": "SQL",
+        "id": "90zzRhjhw4Yq",
+        "runOn": 1647957515668,
+        "runIn": 187,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "GmUbTBUi",
+        "hash": "5cdaa637837a3594bb0d0388c9dcfcf6",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\"",
+        "expandedSql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\""
       }
     ]
   }
