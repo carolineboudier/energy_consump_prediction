@@ -29,6 +29,10 @@
     {
       "objectId": "output_datasets",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "s6qy0GK5",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
