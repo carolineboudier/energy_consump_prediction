@@ -27,10 +27,10 @@
         "mode": "SQL",
         "id": "DPyNnsAKQqL8",
         "runOn": 1648722934105,
-        "runIn": 151,
+        "runIn": 69,
         "runBy": "admin",
         "connection": "postgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "C8nx3Zjb",
         "hash": "b50e89058704ac17f638959bcea2884e",
         "querySettings": {
