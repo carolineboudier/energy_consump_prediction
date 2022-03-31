@@ -49,10 +49,10 @@
         "mode": "SQL",
         "id": "kpbAmnTuavRf",
         "runOn": 1648722977098,
-        "runIn": 69,
+        "runIn": 90,
         "runBy": "admin",
         "connection": "postgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "ORkTW61p",
         "hash": "0e9fee97c9dbccd0f8fbb969ce86fe72",
         "querySettings": {
