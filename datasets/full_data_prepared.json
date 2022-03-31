@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646758301146
+    "lastModifiedOn": 1648716587206
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,7 +61,7 @@
     "columns": [
       {
         "name": "Year_Factor",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "State_Factor",
