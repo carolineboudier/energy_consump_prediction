@@ -45,10 +45,6 @@
     {
       "objectId": "full_data_second_window",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "transactions_2017_sql_query",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],

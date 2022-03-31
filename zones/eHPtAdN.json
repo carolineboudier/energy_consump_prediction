@@ -1,7 +1,12 @@
 {
   "name": "SQL_query",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "transactions_2017_sql_query",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
