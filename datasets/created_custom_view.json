@@ -1,6 +1,7 @@
 {
   "type": "PostgreSQL",
   "managed": false,
+  "shortDesc": "- this dataset reads from a view that was created within a SQL notebook of this project",
   "checklists": {
     "checklists": []
   },
@@ -27,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648723375217
+    "lastModifiedOn": 1648723399040
   },
   "creationTag": {
     "versionNumber": 0,
