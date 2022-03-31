@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648716047305
+    "lastModifiedOn": 1648716733882
   },
   "creationTag": {
     "versionNumber": 0,
@@ -61,7 +61,7 @@
     "columns": [
       {
         "name": "Year_Factor",
-        "type": "bigint"
+        "type": "int"
       },
       {
         "name": "State_Factor",
@@ -77,7 +77,7 @@
       },
       {
         "name": "floor_area",
-        "type": "double"
+        "type": "string"
       },
       {
         "name": "year_built",
