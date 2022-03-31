@@ -22,6 +22,28 @@
         },
         "sql": "SELECT * FROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\"",
         "expandedSql": "SELECT * FROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\""
+      },
+      {
+        "mode": "SQL",
+        "id": "DPyNnsAKQqL8",
+        "runOn": 1648722934105,
+        "runIn": 151,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "C8nx3Zjb",
+        "hash": "b50e89058704ac17f638959bcea2884e",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\"",
+        "expandedSql": "SELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\""
       }
     ]
   }
