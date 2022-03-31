@@ -13,6 +13,10 @@
     {
       "objectId": "full_data_infered_pandas",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "created_custom_view",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
