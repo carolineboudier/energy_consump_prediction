@@ -25,6 +25,10 @@
     {
       "objectId": "compute_5YbetAty",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_with_code",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
