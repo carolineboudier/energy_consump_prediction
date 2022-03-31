@@ -34,17 +34,21 @@
         {
           "ref": "full_data_with_code",
           "appendMode": false
+        },
+        {
+          "ref": "full_data_infered_pandas",
+          "appendMode": false
         }
       ]
     }
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648715717660
+    "lastModifiedOn": 1648715783303
   },
   "creationTag": {
     "versionNumber": 0,
