@@ -44,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648716707213
+    "lastModifiedOn": 1648716806361
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,6 +57,7 @@
     },
     "lastModifiedOn": 1648715717660
   },
+  "shortDesc": "- two trials : \n-- first one - no inference is made (the schema from the input dataset is kept)\n-- second one - inference is made (int becomes bigint and string becomes double for floor area and year)",
   "tags": [],
   "customFields": {},
   "checklists": {
