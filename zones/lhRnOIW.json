@@ -1,7 +1,20 @@
 {
   "name": "Coding",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_full_data_with_code",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "full_data_with_code",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "full_data_infered_pandas",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
