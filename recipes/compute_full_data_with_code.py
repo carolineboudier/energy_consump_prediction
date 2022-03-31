@@ -16,7 +16,7 @@ infered_df = full_data_prepared.get_dataframe()
 
 # Write recipe outputs
 full_data_with_code = dataiku.Dataset("full_data_with_code")
-full_data_with_code.write_with_schema(full_data_with_code_df)
+full_data_with_code.write_with_schema(full_data_prepared_df)
 
 # Write recipe outputs
 infered_full_data_with_code = dataiku.Dataset("full_data_infered_pandas")
