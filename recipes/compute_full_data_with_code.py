@@ -3,7 +3,7 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-# Read recipe inputs
+# Read recipe inputs : one with infered datatypes - ones with no infered datatypes
 full_data_prepared = dataiku.Dataset("full_data_prepared")
 full_data_prepared_df = full_data_prepared.get_dataframe(infer_with_pandas=False)
 infered_df = full_data_prepared.get_dataframe()
