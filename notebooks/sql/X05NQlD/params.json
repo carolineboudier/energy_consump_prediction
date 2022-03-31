@@ -1,14 +1,28 @@
 {
   "connection": "postgreSQL",
   "name": "Create a view",
-  "cells": [],
+  "cells": [
+    {
+      "id": "6zcg20ngdac",
+      "type": "QUERY",
+      "querySettings": {
+        "addLimitToStatement": true,
+        "statementsOutOfTransaction": false,
+        "inheritConf": "default",
+        "extraConf": [],
+        "addDkuUdf": false,
+        "statementsParseMode": "SPLIT",
+        "statementsExecutionMode": "PREPARED"
+      }
+    }
+  ],
   "automationLocal": false,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648722856088
+    "lastModifiedOn": 1648722872760
   },
   "creationTag": {
     "versionNumber": 0,
