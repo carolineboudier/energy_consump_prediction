@@ -27,11 +27,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1648715343433
+    "lastModifiedOn": 1648715470420
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,7 +48,7 @@
     "mode": "query",
     "partitioningType": "custom",
     "normalizeDoubles": true,
-    "query": "SELECT *\nFROM transactions_2017",
+    "query": "SELECT *\nFROM transactions_2017\nWHERE authorized_flag LIKE \u00271\u0027",
     "table": "transactions_2017",
     "schema": "public",
     "tableCreationMode": "auto",
