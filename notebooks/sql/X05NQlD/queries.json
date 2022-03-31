@@ -88,6 +88,28 @@
         },
         "sql": "CREATE VIEW created_custom_view AS\nSELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\"",
         "expandedSql": "CREATE VIEW created_custom_view AS\nSELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\""
+      },
+      {
+        "mode": "SQL",
+        "id": "aNkprhmGHZ0c",
+        "runOn": 1648723100844,
+        "runIn": 38,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "o09GJ7eI",
+        "hash": "542e3a93d9288bcd1c1cf52c0a09b870",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "CREATE VIEW \"caroline_boudier\".\"created_custom_view\" AS\nSELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\"",
+        "expandedSql": "CREATE VIEW \"caroline_boudier\".\"created_custom_view\" AS\nSELECT \"Year_Factor\",\"State_Factor\",\"id\"\nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data\""
       }
     ]
   }
