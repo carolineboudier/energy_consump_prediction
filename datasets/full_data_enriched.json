@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649090684202
+    "lastModifiedOn": 1649090687973
   },
   "creationTag": {
     "versionNumber": 0,
@@ -69,8 +69,7 @@
       },
       {
         "name": "building_class",
-        "type": "string",
-        "meaning": "custom_building_class"
+        "type": "string"
       },
       {
         "name": "facility_type",
