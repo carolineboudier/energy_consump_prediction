@@ -1,6 +1,7 @@
 {
   "type": "PostgreSQL",
   "managed": true,
+  "shortDesc": "- here I implemented custom meanings",
   "checklists": {
     "checklists": []
   },
@@ -28,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649091410708
+    "lastModifiedOn": 1649091426127
   },
   "creationTag": {
     "versionNumber": 0,
