@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649090687973
+    "lastModifiedOn": 1649091180409
   },
   "creationTag": {
     "versionNumber": 0,
@@ -89,7 +89,8 @@
       },
       {
         "name": "floor_area",
-        "type": "double"
+        "type": "double",
+        "meaning": "custom_rank"
       },
       {
         "name": "floor_area_bins",
