@@ -5,6 +5,10 @@
     {
       "objectId": "transactions_2017_sql_query",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "created_custom_view",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
