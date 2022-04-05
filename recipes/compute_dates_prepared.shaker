@@ -62,13 +62,27 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "get(date,5,7)",
         "column": "month"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": false,
+        "extractAllOccurrences": false,
+        "prefix": "no_leading_zeros",
+        "column": "column_with_leading_zeros",
+        "pattern": "^0*(.*)"
       },
       "alwaysShowComment": false
     }
@@ -100,9 +114,12 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "date": 100,
+    "column_with_leading_zeros_extracted_1": 293,
     "month": 100,
     "year": 100,
-    "date_parsed": 183
+    "no_leading_zeros1": 165,
+    "date_parsed": 183,
+    "column_with_leading_zeros": 191
   },
   "sorting": [],
   "globalSearchQuery": "",
