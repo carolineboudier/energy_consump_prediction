@@ -1,6 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
+  "shortDesc": "- this dataset has been shared with me",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -59,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646930848820
+    "lastModifiedOn": 1649260010631
   },
   "creationTag": {
     "versionNumber": 0,
