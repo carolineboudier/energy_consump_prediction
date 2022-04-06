@@ -98,6 +98,15 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "mjdhm3GI",
+          "objectType": "MANAGED_FOLDER"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -318,11 +327,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649259962414
+    "lastModifiedOn": 1649264317586
   },
   "creationTag": {
     "versionNumber": 0,
