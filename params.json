@@ -91,11 +91,29 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "data_by_state_filtered_ordered",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "data_by_state_filtered_ordered",
+        "rules": [
+          {
+            "targetProject": "USINGAPASARECIPE",
+            "appearOnFlow": true
+          }
+        ]
+      }
+    ]
   },
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
@@ -300,11 +318,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647593297465
+    "lastModifiedOn": 1649259962414
   },
   "creationTag": {
     "versionNumber": 0,
