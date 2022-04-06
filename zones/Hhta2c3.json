@@ -29,6 +29,10 @@
     {
       "objectId": "mjdhm3GI",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "compute_mjdhm3GI",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
