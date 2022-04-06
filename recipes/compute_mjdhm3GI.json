@@ -15,7 +15,8 @@
         "#FF7F0E",
         "#2CA02C"
       ],
-      "text_column": "facility_type"
+      "text_column": "facility_type",
+      "subchart_column": "building_class"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -50,11 +51,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649263939097
+    "lastModifiedOn": 1649264063758
   },
   "creationTag": {
     "versionNumber": 0,
