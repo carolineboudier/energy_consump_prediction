@@ -1,0 +1,31 @@
+{
+  "type": "managed-folder_content",
+  "params": {
+    "folderSmartId": "mjdhm3GI",
+    "filePath": "/wordcloud_building_class_commercial.png",
+    "isDirectory": false
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Wordcloud on the commercial facility types",
+  "dashboardCreationId": "FiM4pP5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649264317653
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649264317653
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
