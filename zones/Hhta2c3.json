@@ -25,14 +25,6 @@
     {
       "objectId": "compute_5YbetAty",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "mjdhm3GI",
-      "objectType": "MANAGED_FOLDER"
-    },
-    {
-      "objectId": "compute_mjdhm3GI",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],

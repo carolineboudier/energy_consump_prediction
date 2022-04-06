@@ -1,7 +1,16 @@
 {
   "name": "Leverage a DSS plugin",
   "color": "#C82423",
-  "items": [],
+  "items": [
+    {
+      "objectId": "compute_mjdhm3GI",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "mjdhm3GI",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
