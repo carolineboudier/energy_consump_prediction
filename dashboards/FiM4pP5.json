@@ -225,7 +225,7 @@
             "box": {
               "top": 28,
               "left": 0,
-              "width": 4,
+              "width": 3,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -241,8 +241,8 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 28,
-              "left": 4,
-              "width": 4,
+              "left": 3,
+              "width": 3,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -328,6 +328,26 @@
             "insightType": "filters",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 28,
+              "left": 6,
+              "width": 6,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "minimal": false,
+              "showLegend": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "bKLeSH4",
+            "insightType": "managed-folder_content",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -394,11 +414,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647454175129
+    "lastModifiedOn": 1649264357302
   },
   "creationTag": {
     "versionNumber": 0,
