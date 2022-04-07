@@ -1,0 +1,29 @@
+{
+  "type": "project_activity",
+  "params": {
+    "projectKey": "ENERGYCONSUMPTIONPREDICTION"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Activity of Energy consumption prediction (ENERGYCONSUMPTIONPREDICTION)",
+  "dashboardCreationId": "Mt8nh6E",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649327368828
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649327368828
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
