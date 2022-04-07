@@ -39,7 +39,7 @@
       "hadoopConfigKeys": [],
       "sqlPipelineParams": {
         "pipelineAllowStart": true,
-        "pipelineAllowMerge": true
+        "pipelineAllowMerge": false
       },
       "maxThreads": 8
     }
@@ -73,11 +73,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646756397675
+    "lastModifiedOn": 1649339307637
   },
   "creationTag": {
     "versionNumber": 0,
