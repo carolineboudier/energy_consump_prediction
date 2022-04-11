@@ -31,11 +31,11 @@
   "config": {},
   "name": "shiny_webapp",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649666357659
+    "lastModifiedOn": 1649666360815
   },
   "creationTag": {
     "versionNumber": 0,
