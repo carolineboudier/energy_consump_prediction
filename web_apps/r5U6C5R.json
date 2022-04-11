@@ -2,10 +2,11 @@
   "type": "SHINY",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "USE_BUILTIN_MODE"
     },
+    "runAs": "admin",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -31,11 +32,11 @@
   "config": {},
   "name": "shiny_webapp",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649666360815
+    "lastModifiedOn": 1649666371418
   },
   "creationTag": {
     "versionNumber": 0,
