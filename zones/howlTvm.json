@@ -21,6 +21,18 @@
     {
       "objectId": "amtFRPuE",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "classif_train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "classif_eval",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_full_data_second_window",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
