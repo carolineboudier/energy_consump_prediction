@@ -1,0 +1,32 @@
+{
+  "displayName": "Compare 3 models from Predict good_star_rating",
+  "predictionType": "BINARY_CLASSIFICATION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649770595791
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649770595791
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
