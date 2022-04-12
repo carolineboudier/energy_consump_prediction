@@ -33,6 +33,10 @@
     {
       "objectId": "split_full_data_second_window",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "classif_train_prepared",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
