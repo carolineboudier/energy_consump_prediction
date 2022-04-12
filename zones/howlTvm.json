@@ -3,10 +3,6 @@
   "color": "#c79871",
   "items": [
     {
-      "objectId": "full_data_energy_star_rating",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "full_data_energy_star_rating_prepared",
       "objectType": "DATASET"
     },
