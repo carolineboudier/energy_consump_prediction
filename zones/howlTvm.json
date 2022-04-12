@@ -29,6 +29,10 @@
     {
       "objectId": "training",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "validation",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
