@@ -22,7 +22,7 @@
     }
   },
   "weight": {
-    "weightMethod": "CLASS_WEIGHT"
+    "weightMethod": "NO_WEIGHTING"
   },
   "time": {
     "enabled": false,
@@ -4082,7 +4082,7 @@
         "rules": []
       },
       "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
-      "maxRecords": 20000,
+      "maxRecords": 100000,
       "targetRatio": 0.02,
       "column": "good_star_rating",
       "withinFirstN": -1,
@@ -4093,7 +4093,7 @@
     "testOnLargerValues": true,
     "kfold": false,
     "nFolds": 5,
-    "instanceIdRefresher": 1,
+    "instanceIdRefresher": 2,
     "subSamplingSeed": 1337
   },
   "id": "Rg2jzYz2",
