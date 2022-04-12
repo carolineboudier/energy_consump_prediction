@@ -25,6 +25,10 @@
     {
       "objectId": "classif_train_prepared",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "training",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
