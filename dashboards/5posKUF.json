@@ -132,6 +132,30 @@
             "insightType": "filters",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 9,
+              "left": 0,
+              "width": 9,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "J6Ktbj0",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -143,11 +167,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757304496
+    "lastModifiedOn": 1649757518371
   },
   "creationTag": {
     "versionNumber": 0,
