@@ -3989,9 +3989,10 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
       "maxRecords": 100000,
       "targetRatio": 0.02,
+      "column": "good_star_rating",
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
