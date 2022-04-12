@@ -1,0 +1,217 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "classif_train_prepared",
+    "engineType": "SQL",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Count by good_star_rating",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "good_star_rating",
+          "type": "NUMERICAL",
+          "numParams": {
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 10,
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS"
+          },
+          "maxValues": 100,
+          "generateOthersCategory": true,
+          "oneTickPerBin": true,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "$$hashKey": "object:13268"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending",
+              "$$hashKey": "object:13269"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true,
+              "$$hashKey": "object:13270"
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "$$hashKey": "object:13268"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": true,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "displayXAxis": true,
+      "displayYAxis": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAjFJREFUeF7tnTtOAzEYBr0dpwi5AZegpIYrUFCjSDSUNNQcgjYRl+GhcAVEOrIIOpQiLnb4jJnU1j/2zHqlpMlQ/HRtYOj6dB6uGLjzh8DABu7cQOfH8wYbuHMDnR/PG2zg/QZmi9X1/lXsiqGMb+ubk1uW8vemT3KDDy+XD2UoB9HjD2Vp4N0CBo4+lTzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MC84yjBwFH9PNzAvOMowcBR/TzcwLzjKMHAUf083MCVjueL1fl2O84rl2PLXl82V+X+9KMWYOBKU1+Bx3E8q1yOLVs/b44NDOg1cOd/q2NgAwPvjd2RvqIhzd5gbzD0aP0c6w2GNP/rGzxbrO4gr9VjhzI+kv9d+P09uJSj6g1BC1+f3i9+/WsSdBbHTmBgkh86JtiHIyADBobEtjLWwK2UgPZhYEhsK2MN3EoJaB8GhsS2MtbArZSA9mFgSGwrYw3cSgloH5/sX5BgjgOk2QAAAABJRU5ErkJggg\u003d\u003d",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Count by good_star_rating on classif_train_prepared",
+  "dashboardCreationId": "kcRxiJA",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649771055265
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649771055265
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
