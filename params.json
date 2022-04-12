@@ -116,6 +116,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "validation_set",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -336,11 +345,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 45,
+    "versionNumber": 46,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757189545
+    "lastModifiedOn": 1649757203587
   },
   "creationTag": {
     "versionNumber": 0,
