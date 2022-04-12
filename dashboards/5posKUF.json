@@ -3,7 +3,111 @@
     {
       "id": "j8xPkGQ",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 0,
+              "width": 6,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "OFgbJuu",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 2,
+              "left": 6,
+              "width": 6,
+              "height": 5
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "T7lzdcP",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 12,
+              "height": 2
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "filters": [
+                {
+                  "filterType": "NUMERICAL_FACET",
+                  "column": "Year_Factor",
+                  "columnType": "NUMERICAL",
+                  "minValue": 1.0,
+                  "maxValue": 6.0,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
+              "engineType": "SQL",
+              "refreshableSelection": {
+                "selection": {
+                  "useMemTable": false,
+                  "filter": {
+                    "distinct": false,
+                    "enabled": false
+                  },
+                  "partitionSelectionMethod": "ALL",
+                  "latestPartitionsN": 1,
+                  "ordering": {
+                    "enabled": false,
+                    "rules": []
+                  },
+                  "samplingMethod": "RANDOM_FIXED_NB",
+                  "maxRecords": 10000,
+                  "targetRatio": 0.02,
+                  "withinFirstN": -1,
+                  "maxReadUncompressedBytes": -1
+                },
+                "autoRefreshSample": false,
+                "_refreshTrigger": 0
+              },
+              "copySelectionFromScript": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "uYrEPjX",
+            "insightType": "filters",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +117,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757161698
+    "lastModifiedOn": 1649757233996
   },
   "creationTag": {
     "versionNumber": 0,
