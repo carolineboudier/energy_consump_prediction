@@ -43,7 +43,8 @@
     "pinnedMetrics": [
       "ROC_AUC",
       "RECALL",
-      "PRECISION"
+      "PRECISION",
+      "F1"
     ],
     "xLabel": "model:date",
     "yLabels": [
@@ -64,11 +65,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649772173677
+    "lastModifiedOn": 1649772579457
   },
   "creationTag": {
     "versionNumber": 0,
