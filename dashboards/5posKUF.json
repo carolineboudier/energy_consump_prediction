@@ -62,7 +62,21 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "filters": [],
+              "filters": [
+                {
+                  "filterType": "ALPHANUM_FACET",
+                  "column": "building_class",
+                  "columnType": "ALPHANUM",
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "Commercial": true,
+                    "Residential": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
               "engineType": "SQL",
               "refreshableSelection": {
                 "selection": {
@@ -105,11 +119,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757260803
+    "lastModifiedOn": 1649757284536
   },
   "creationTag": {
     "versionNumber": 0,
