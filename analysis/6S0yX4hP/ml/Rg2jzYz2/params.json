@@ -22,7 +22,7 @@
     }
   },
   "weight": {
-    "weightMethod": "SAMPLE_WEIGHT"
+    "weightMethod": "CLASS_WEIGHT"
   },
   "time": {
     "enabled": false,
