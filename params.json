@@ -125,6 +125,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "full_data_second_window",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -345,11 +354,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 46,
+    "versionNumber": 47,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757203587
+    "lastModifiedOn": 1649757507276
   },
   "creationTag": {
     "versionNumber": 0,
