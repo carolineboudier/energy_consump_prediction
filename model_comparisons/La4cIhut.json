@@ -47,16 +47,12 @@
       "F1"
     ],
     "xLabel": "model:date",
-    "yLabels": [
-      "model:algorithm",
-      "evaluation:date",
-      "evaluationDataset:dataset-name"
-    ],
+    "yLabels": [],
     "alsoDisplayedLabels": [],
     "barLabels": [
       "evaluation:date",
-      "model:name",
-      "evaluationDataset:dataset-name"
+      "evaluationDataset:dataset-name",
+      "model:name"
     ],
     "graphStyle": "BAR",
     "sortColumn": "",
@@ -65,11 +61,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649773260988
+    "lastModifiedOn": 1649775817984
   },
   "creationTag": {
     "versionNumber": 0,
