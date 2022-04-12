@@ -1,0 +1,29 @@
+{
+  "type": "filters",
+  "params": {
+    "datasetSmartName": "train_set"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Filters on train_set",
+  "dashboardCreationId": "5posKUF",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649757223035
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1649757223035
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
