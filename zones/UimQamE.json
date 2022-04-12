@@ -49,6 +49,10 @@
     {
       "objectId": "classif_train",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "classif_eval",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
