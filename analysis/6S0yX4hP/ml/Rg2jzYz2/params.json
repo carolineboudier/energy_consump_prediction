@@ -4081,7 +4081,7 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "FULL",
+      "samplingMethod": "CLASS_REBALANCE_TARGET_NB_APPROX",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "column": "good_star_rating",
