@@ -33,6 +33,10 @@
     {
       "objectId": "validation",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_classif_train_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
