@@ -52,13 +52,32 @@
               "top": 0,
               "left": 4,
               "width": 8,
-              "height": 5
+              "height": 4
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
               "text": "# A small test I made on an unbalanced dataset used for classification. \n\n## Set-up : \n- Trying out several combinations of class-weights and class rebalancing. \n- The dataset was originally composed of 75k+ rows including 9k labelled “1”. \n\n## Set-up in the lab : \n- For the train test I used 20k records : \n  - Either random\n   - Either with a class rebalance\n\n- For the test set I used 2k records (always random, no rebalance in order to be able to compare the metrics). \n\n## The intuition here (might be wrong) is that : \n- Class weights allows to predict more “high” probabilities (density shifts to the right)\n- Class balance allows to better distinguish between both classes",
               "textAlign": "LEFT",
               "isTransparent": true
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 4,
+              "left": 0,
+              "width": 12,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "À remplacer en 10.6\n\nhttp://localhost:11000/projects/ENERGYCONSUMPTIONPREDICTION/modelcomparisons/La4cIhut/summary",
+              "textAlign": "LEFT",
+              "isTransparent": false
             },
             "autoLoad": true,
             "showTitle": "NO",
@@ -75,11 +94,11 @@
   "name": "Classification dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649776691210
+    "lastModifiedOn": 1649776835186
   },
   "creationTag": {
     "versionNumber": 0,
