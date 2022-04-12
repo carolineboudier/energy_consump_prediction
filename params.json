@@ -134,6 +134,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "classif_train_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -354,11 +363,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 47,
+    "versionNumber": 48,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757507276
+    "lastModifiedOn": 1649771055205
   },
   "creationTag": {
     "versionNumber": 0,
