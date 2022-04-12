@@ -7,7 +7,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 4,
               "left": 0,
               "width": 6,
               "height": 5
@@ -31,7 +31,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 2,
+              "top": 4,
               "left": 6,
               "width": 6,
               "height": 5
@@ -58,7 +58,7 @@
               "top": 0,
               "left": 0,
               "width": 12,
-              "height": 2
+              "height": 4
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -143,11 +143,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757300126
+    "lastModifiedOn": 1649757304496
   },
   "creationTag": {
     "versionNumber": 0,
