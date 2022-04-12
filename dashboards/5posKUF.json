@@ -62,19 +62,7 @@
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
-              "filters": [
-                {
-                  "filterType": "NUMERICAL_FACET",
-                  "column": "Year_Factor",
-                  "columnType": "NUMERICAL",
-                  "minValue": 1.0,
-                  "maxValue": 6.0,
-                  "isA": "filter",
-                  "excludedValues": {},
-                  "isAGlobalFilter": true,
-                  "explicitExclude": false
-                }
-              ],
+              "filters": [],
               "engineType": "SQL",
               "refreshableSelection": {
                 "selection": {
@@ -117,11 +105,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757233996
+    "lastModifiedOn": 1649757260803
   },
   "creationTag": {
     "versionNumber": 0,
