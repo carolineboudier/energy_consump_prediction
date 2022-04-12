@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646916827023
+    "lastModifiedOn": 1649768159953
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,7 @@
     },
     "lastModifiedOn": 1646916462378
   },
+  "shortDesc": "- energy star rating \u003e threshold",
   "tags": [],
   "customFields": {},
   "checklists": {
