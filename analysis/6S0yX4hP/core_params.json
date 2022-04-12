@@ -223,7 +223,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAq9JREFUeF7tnbFqFFEYRu86m93gYqvlLsQXCHkBxW4D6UyrNgELuxR2Mo2QxsbKxti6guUWNr6FlcisnYWVBHSzmREGFmz2JpDL912Hs+0O/7n/OTP17QV+nTbQ6/R2LBcI3PGXgMAE7riBjq/HF0zgjhvo+Hobv+Dx8/luaJr92P6L7enLUPbqjjv6r9e7JHD9Kh54/wGB9f13jj/eXt0YnMbIRa9++u3k4DuB9X2uTWwDF4P30cChfkTga6v2DCCwx7uMSmCZag+IwB7vMiqBZao9IAJ7vMuoBJap9oAI7PEuoxJYptoDIrDHu4xKYJlqD4jAHu8yKoFlqj0gAnu8y6gElqn2gAjs8S6jElim2gMisMe7jEpgmWoPiMAe7zIqgWWqPSACe7zLqASWqfaACOzxLqMSWKbaAyKwx7uMSmCZag+IwB7vMiqBZao9IAJ7vMuoBJap9oAI7PEuoxJYptoDIrDHu4xKYJlqD4jAHu8yKoFlqj0gAnu8y6gElqn2gAjs8S6jElim2gMisMe7jEpgmWoPiMAe7zIqgWWqPSACe7zLqASWqfaACOzxLqMSWKbaAyKwx7uMSmCZag+IwB7vMiqBZao9IAJ7vMuoBJap9oAI7PEuoxJYptoDIrDHu4xKYJlqDyhd4NDsxVZYDKdv15dT3n02H65+/dh4F2I1nqxCeX/Vzns4Kyajs63Y7Ordk9/r/y+dfTY6Dx8OL9rnZ7NiMt88u3/rTvP19fTPevbk8el29Bz/zL734nO/WlT9Tc/fHI/qL+Xh8sqzx9UylGV7e+ve0Zutn8tBcZXZbeD+8CB27qK5+BS9u9DzbkJNbYAbwFMbzWwegTMLkvo4BE5tNLN5BM4sSOrjEDi10czmETizIKmPQ+DURjObR+DMgqQ+DoFTG81s3l/o2aN+iXgOawAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAs5JREFUeF7t3bFqFFEAheG7O8mafYGAjYLpphNtrO1U7EyrldaChd2ypY0PkDdIFmwEW1/AYOWUQdOksBBshJiZCRsNbDPXHU7uzHH4UwUyOffc8+0GUu0o8DXoBUaDvh2XCwAP/EUAMMADX2Dg1+MdDPDAFxj49RrfwTdff7hdV+Wz2P2Pp49ehvmoGvhG//X1osChrt7Gbvdt6+F9gL39Afb2kdsBLE/oHQCwt4/cDmB5Qu8AgL195HYAyxN6BwDs7SO3A1ie0DsAYG8fuR3A8oTeAQB7+8jtAJYn9A4A2NtHbgewPKF3AMDePnI7gOUJvQMA9vaR2wEsT+gdALC3j9wOYHlC7wCAvX3kdgDLE3oHAOztI7cDWJ7QOwBgbx+5HcDyhN4BAHv7yO0Alif0DgDY20duB7A8oXcAwN4+cjuA5Qm9AwD29pHbASxP6B0AsLeP3A5geULvAIC9feR2AMsTegcA7O0jtwNYntA7AGBvH7kdwPKE3gEAe/vI7QCWJ/QOANjbR24HsDyhdwDA3j5yO4DlCb0DAPb2kdsBLE/oHQCwt4/cDmB5wu4Ddl692z6dTLZjJ2+W1c+jN4+PAe7eRz5xCXyWTfZjQVmongIsT91PAMD97N7ZqQB3NnU/BwHcz+6dnQpwZ1P3cxDA/eze2al9ATf+y7Vy8/rv922eXf5Km+fbPJsye50ey/Nbb3JlwKO6vhF7WX7devD+8sMp7zz/tPnr+lHjpYoilGGxW17kzepxHhYbsexivnt6+fN8djCJPrua/eQgy/OQNT5fhFAsWmSHL2dhPv/zCav/yJ6e3KoP9+7+Xrv3avbs40Yevo+bek9PftSHey8uspfAZXbtXmyTcSg/R/8P7uzvDQclXWDdPyNJSxCebgGA021rkQywBUO6EgCn29YiGWALhnQlAE63rUUywBYM6UoAnG5bi2SALRjSlTgHDOc7b3l+nWYAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -232,11 +232,11 @@
   ],
   "name": "Classification : predict if star rating is good",
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649769990466
+    "lastModifiedOn": 1649770056028
   },
   "creationTag": {
     "versionNumber": 0,
