@@ -11,6 +11,9 @@
           "map": {
             "full_data_energy_star_rating": {
               "repartition": 10
+            },
+            "classif_train": {
+              "repartition": 10
             }
           }
         },
@@ -64,7 +67,7 @@
     "main": {
       "items": [
         {
-          "ref": "full_data_energy_star_rating_prepared",
+          "ref": "classif_train_prepared",
           "appendMode": false
         }
       ]
@@ -72,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649768275123
+    "lastModifiedOn": 1649768310212
   },
   "creationTag": {
     "versionNumber": 0,
