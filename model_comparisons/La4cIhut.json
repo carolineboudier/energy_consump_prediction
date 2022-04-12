@@ -33,11 +33,7 @@
       "PRECISION",
       "RECALL",
       "F1",
-      "COST_MATRIX",
-      "LOG_LOSS",
-      "ROC_AUC",
-      "CALIBRATION_LOSS",
-      "CUMULATIVE_LIFT"
+      "ROC_AUC"
     ],
     "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [
@@ -47,13 +43,12 @@
       "F1"
     ],
     "xLabel": "model:date",
-    "yLabels": [],
-    "alsoDisplayedLabels": [],
-    "barLabels": [
-      "evaluation:date",
-      "evaluationDataset:dataset-name",
-      "model:name"
+    "yLabels": [
+      "model:name",
+      "evaluationDataset:dataset-name"
     ],
+    "alsoDisplayedLabels": [],
+    "barLabels": [],
     "graphStyle": "BAR",
     "sortColumn": "",
     "sortDescending": false,
@@ -61,11 +56,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649775817984
+    "lastModifiedOn": 1649775994020
   },
   "creationTag": {
     "versionNumber": 0,
