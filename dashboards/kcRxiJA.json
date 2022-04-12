@@ -9,7 +9,7 @@
             "box": {
               "top": 1,
               "left": 0,
-              "width": 3,
+              "width": 4,
               "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
@@ -26,6 +26,25 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 4,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "# Distribution between classes",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -37,11 +56,11 @@
   "name": "Classification dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649771062769
+    "lastModifiedOn": 1649771233968
   },
   "creationTag": {
     "versionNumber": 0,
