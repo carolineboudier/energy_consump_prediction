@@ -75,6 +75,30 @@
                   },
                   "isAGlobalFilter": true,
                   "explicitExclude": false
+                },
+                {
+                  "filterType": "ALPHANUM_FACET",
+                  "column": "office_found",
+                  "columnType": "ALPHANUM",
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "false": true,
+                    "true": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                },
+                {
+                  "filterType": "NUMERICAL_FACET",
+                  "column": "floor_area",
+                  "columnType": "NUMERICAL",
+                  "minValue": 943.0,
+                  "maxValue": 6385382.0,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
                 }
               ],
               "engineType": "SQL",
@@ -119,11 +143,11 @@
   "name": "Test dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649757284536
+    "lastModifiedOn": 1649757300126
   },
   "creationTag": {
     "versionNumber": 0,
