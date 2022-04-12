@@ -1,21 +1,72 @@
 {
   "displayName": "Comparison between different classif types",
   "predictionType": "BINARY_CLASSIFICATION",
-  "comparedModels": [],
+  "comparedModels": [
+    {
+      "smartId": "A-*-6S0yX4hP-Rg2jzYz2-s13-pp1-m1",
+      "isSelected": true,
+      "color": "#1f77b4",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-6S0yX4hP-Rg2jzYz2-s14-pp1-m1",
+      "isSelected": true,
+      "color": "#ff7f0e",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-6S0yX4hP-Rg2jzYz2-s15-pp1-m1",
+      "isSelected": true,
+      "color": "#2ca02c",
+      "isChampion": false
+    },
+    {
+      "smartId": "A-*-6S0yX4hP-Rg2jzYz2-s16-pp1-m1",
+      "isSelected": true,
+      "color": "#d62728",
+      "isChampion": false
+    }
+  ],
   "displayParams": {
-    "pinnedMetrics": [],
-    "yLabels": [],
+    "displayedMetrics": [
+      "ACCURACY",
+      "PRECISION",
+      "RECALL",
+      "F1",
+      "COST_MATRIX",
+      "LOG_LOSS",
+      "ROC_AUC",
+      "CALIBRATION_LOSS",
+      "CUMULATIVE_LIFT"
+    ],
+    "predictionType": "BINARY_CLASSIFICATION",
+    "pinnedMetrics": [
+      "ROC_AUC"
+    ],
+    "xLabel": "model:date",
+    "yLabels": [
+      "model:algorithm",
+      "evaluation:date",
+      "evaluationDataset:dataset-name"
+    ],
     "alsoDisplayedLabels": [],
+    "barLabels": [
+      "evaluation:date",
+      "model:name",
+      "evaluationDataset:dataset-name"
+    ],
+    "graphStyle": "BAR",
+    "sortColumn": "",
     "sortDescending": false,
     "showConfidenceIntervals": true,
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649772042417
+    "lastModifiedOn": 1649772043023
   },
   "creationTag": {
     "versionNumber": 0,
