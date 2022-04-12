@@ -35,11 +35,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649768371106
+    "lastModifiedOn": 1649768490741
   },
   "creationTag": {
     "versionNumber": 0,
@@ -48,6 +48,7 @@
     },
     "lastModifiedOn": 1649768363934
   },
+  "shortDesc": "- keep some labelled data out of the training to evaluate the model afterwards",
   "tags": [],
   "customFields": {},
   "checklists": {
