@@ -41,7 +41,9 @@
     ],
     "predictionType": "BINARY_CLASSIFICATION",
     "pinnedMetrics": [
-      "ROC_AUC"
+      "ROC_AUC",
+      "RECALL",
+      "PRECISION"
     ],
     "xLabel": "model:date",
     "yLabels": [
@@ -62,11 +64,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649772043023
+    "lastModifiedOn": 1649772173677
   },
   "creationTag": {
     "versionNumber": 0,
