@@ -7,10 +7,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 0,
+              "top": 1,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 3,
+              "height": 3
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -37,11 +37,11 @@
   "name": "Classification dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649771055763
+    "lastModifiedOn": 1649771062769
   },
   "creationTag": {
     "versionNumber": 0,
