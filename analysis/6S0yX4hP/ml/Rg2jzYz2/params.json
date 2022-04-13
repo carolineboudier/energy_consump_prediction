@@ -67,12 +67,12 @@
     "target_remapping": [
       {
         "sourceValue": "0",
-        "mappedValue": 0,
+        "mappedValue": 1,
         "sampleFreq": 9059
       },
       {
         "sourceValue": "1",
-        "mappedValue": 1,
+        "mappedValue": 0,
         "sampleFreq": 941
       }
     ],
