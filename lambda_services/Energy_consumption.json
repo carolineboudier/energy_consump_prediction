@@ -29,7 +29,7 @@
       ],
       "enrichMapping": [
         {
-          "datasetRef": "full_data_enriched_windows_prepared_bis",
+          "datasetRef": "full_data_enriched_windows_prepared",
           "packagingType": "REFERENCED",
           "on": [
             {
@@ -130,11 +130,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1647537159563
+    "lastModifiedOn": 1649856350292
   },
   "creationTag": {
     "versionNumber": 0,
