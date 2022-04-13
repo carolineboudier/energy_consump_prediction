@@ -172,6 +172,41 @@
       "importTimeMode": "INSTALL_IF_MISS"
     }
   },
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportModelEvaluationStores": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [
+        {
+          "name": "labelled_data",
+          "type": "UploadedFiles"
+        },
+        {
+          "name": "unlabelled_data",
+          "type": "UploadedFiles"
+        }
+      ],
+      "includedSavedModels": [
+        {
+          "id": "H57yAVS3",
+          "name": "Predict site_eui (regression)"
+        }
+      ],
+      "includedModelEvaluationStores": [],
+      "includedManagedFolders": [],
+      "shareAllInputDatasets": false
+    }
+  },
   "owner": "admin",
   "permissionsVersion": "V2",
   "permissions": [
@@ -363,11 +398,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 48,
+    "versionNumber": 49,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649771055205
+    "lastModifiedOn": 1649855190239
   },
   "creationTag": {
     "versionNumber": 0,
