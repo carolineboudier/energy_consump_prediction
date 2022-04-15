@@ -76,13 +76,13 @@
       "MAE",
       "MSE",
       "RMSE",
-      "RMSLE",
       "R2",
       "PEARSON",
       "DATA_DRIFT"
     ],
     "predictionType": "REGRESSION",
     "pinnedMetrics": [],
+    "xLabel": "evaluation:date",
     "yLabels": [
       "model:name",
       "evaluationDataset:dataset-name"
@@ -100,11 +100,11 @@
     "disabledMERunIds": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649752197743
+    "lastModifiedOn": 1650020614639
   },
   "creationTag": {
     "versionNumber": 0,
