@@ -1,0 +1,37 @@
+{
+  "projectKey": "ENERGYCONSUMPTIONPREDICTION",
+  "id": "Refresher",
+  "type": "step_based",
+  "name": "Refresh when input data changes",
+  "active": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin_2"
+    },
+    "lastModifiedOn": 1650375017802
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin_2"
+    },
+    "lastModifiedOn": 1650375017802
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": []
+  },
+  "automationLocal": false,
+  "customFields": {}
+}
