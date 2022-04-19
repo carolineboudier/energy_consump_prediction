@@ -5,18 +5,18 @@
   "name": "Refresh when input data changes",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin_2"
-    },
-    "lastModifiedOn": 1650375017802
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin_2"
     },
     "lastModifiedOn": 1650375816607
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin_2"
+    },
+    "lastModifiedOn": 1650375817375
   },
   "checklists": {
     "checklists": []
