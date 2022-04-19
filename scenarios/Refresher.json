@@ -12,11 +12,11 @@
     "lastModifiedOn": 1650375017802
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650375017802
+    "lastModifiedOn": 1650375816607
   },
   "checklists": {
     "checklists": []
@@ -27,10 +27,108 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "TDRqJyKh",
+      "type": "ds_modified",
+      "name": "Dataset modified",
+      "delay": 900,
+      "active": true,
+      "params": {
+        "watches": [
+          {
+            "type": "DATASET",
+            "itemId": "unlabelled_data",
+            "partitionsSpec": ""
+          }
+        ],
+        "triggerWhenAllFire": false
+      },
+      "graceDelaySettings": {
+        "delay": 120,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "comp_metrics_d_unlabelled_data",
+        "type": "compute_metrics",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "computes": [
+            {
+              "type": "DATASET",
+              "itemId": "unlabelled_data",
+              "partitionsSpec": ""
+            }
+          ],
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "check_false_d_unlabelled_data",
+        "type": "check_dataset",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "DATASET",
+              "itemId": "unlabelled_data",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": false,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_validation_set_scored",
+        "type": "build_flowitem",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "validation_set_scored",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
