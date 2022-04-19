@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650374467996
+    "lastModifiedOn": 1650374724746
   },
   "creationTag": {
     "versionNumber": 0,
@@ -474,17 +474,31 @@
     "runOnBuild": false,
     "checks": [
       {
-        "minimum": 0.0,
+        "metricId": "records:COUNT_RECORDS",
+        "minimum": 5000.0,
         "maximum": 0.0,
-        "softMinimum": 0.0,
+        "softMinimum": 10000.0,
         "softMaximum": 0.0,
-        "minimumEnabled": false,
+        "minimumEnabled": true,
         "maximumEnabled": false,
-        "softMinimumEnabled": false,
+        "softMinimumEnabled": true,
         "softMaximumEnabled": false,
         "type": "numericRange",
         "meta": {
-          "name": "Value in range"
+          "name": "Value in range",
+          "label": "record_\u003e5000"
+        },
+        "computeOnBuildMode": "PARTITION"
+      },
+      {
+        "metricId": "col_stats:COUNT_NULL:id",
+        "values": [
+          "0"
+        ],
+        "type": "valueSet",
+        "meta": {
+          "name": "Value in set",
+          "label": "No_missing_IDs"
         },
         "computeOnBuildMode": "PARTITION"
       }
