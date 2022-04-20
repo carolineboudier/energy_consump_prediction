@@ -21,6 +21,10 @@
     {
       "objectId": "output_dataset",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_output_dataset",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
