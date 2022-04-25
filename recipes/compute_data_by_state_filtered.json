@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650888562234
+    "lastModifiedOn": 1650888587209
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
     },
     "lastModifiedOn": 1646930751128
   },
-  "shortDesc": "- order construction dates",
+  "shortDesc": "- order commercial count",
   "tags": [],
   "customFields": {},
   "checklists": {
