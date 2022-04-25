@@ -122,11 +122,16 @@
       "site_eui": 100
     },
     "coloring": {
-      "scheme": "MEANING_AND_STATUS",
+      "scheme": "INDIVIDUAL_COLUMNS_VALUES",
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [],
+    "sorting": [
+      {
+        "column": "State_Factor",
+        "ascending": false
+      }
+    ],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
@@ -222,7 +227,9 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "State_11": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
