@@ -2,8 +2,7 @@
   "threshold_classif": 90,
   "selected_state_list": [
     "State_1",
-    "State_2",
-    "State_6"
+    "State_2"
   ],
   "selected_year": 1
 }
