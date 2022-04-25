@@ -343,6 +343,8 @@
   },
   "name": "Energy consumption prediction",
   "projectStatus": "Sandbox",
+  "imgPattern": 7,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -398,11 +400,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "admin_2"
     },
-    "lastModifiedOn": 1649855190239
+    "lastModifiedOn": 1650876326769
   },
   "creationTag": {
     "versionNumber": 0,
