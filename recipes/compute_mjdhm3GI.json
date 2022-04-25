@@ -33,7 +33,7 @@
     "input_dataset": {
       "items": [
         {
-          "ref": "full_data",
+          "ref": "stacked_data",
           "deps": []
         }
       ]
@@ -51,11 +51,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "admin_2"
     },
-    "lastModifiedOn": 1649264063758
+    "lastModifiedOn": 1650879994582
   },
   "creationTag": {
     "versionNumber": 0,
