@@ -42,7 +42,7 @@
     }
   },
   "explicitIdentifiers": [
-    "year_built"
+    "State_Factor"
   ],
   "otherColumns": [],
   "pivots": [
@@ -53,7 +53,7 @@
       "globalCount": true,
       "explicitValues": [],
       "keyColumns": [
-        "State_Factor"
+        "building_class"
       ],
       "valueColumns": []
     }
