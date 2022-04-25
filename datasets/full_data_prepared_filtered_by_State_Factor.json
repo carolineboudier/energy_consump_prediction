@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650880653381
+    "lastModifiedOn": 1650880972568
   },
   "creationTag": {
     "versionNumber": 0,
@@ -70,10 +70,6 @@
       {
         "name": "State_2_count",
         "type": "bigint"
-      },
-      {
-        "name": "State_6_count",
-        "type": "bigint"
       }
     ],
     "userModified": false,
@@ -108,14 +104,6 @@
               "name": "State_2",
               "valueColumns": [],
               "globalCountColumn": "State_2_count"
-            },
-            {
-              "keyValues": [
-                "State_6"
-              ],
-              "name": "State_6",
-              "valueColumns": [],
-              "globalCountColumn": "State_6_count"
             }
           ]
         }
