@@ -1,7 +1,7 @@
 {
   "type": "Filesystem",
   "managed": true,
-  "shortDesc": "- this dataset has been shared with me",
+  "shortDesc": "- this dataset is shared with another project (app as a recipe / plugin)",
   "formatType": "csv",
   "checklists": {
     "checklists": []
@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650888562170
+    "lastModifiedOn": 1650888678516
   },
   "creationTag": {
     "versionNumber": 0,
