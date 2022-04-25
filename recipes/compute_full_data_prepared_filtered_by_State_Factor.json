@@ -31,11 +31,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650888517829
+    "lastModifiedOn": 1650888537951
   },
   "creationTag": {
     "versionNumber": 0,
@@ -44,7 +44,7 @@
     },
     "lastModifiedOn": 1646930653666
   },
-  "shortDesc": "- pivot to obtain number of buildings built by year per state",
+  "shortDesc": "- pivot to obtain number of buildings built by type per state",
   "tags": [],
   "customFields": {},
   "checklists": {
