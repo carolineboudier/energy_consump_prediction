@@ -3,10 +3,6 @@
   "color": "#4cede2",
   "items": [
     {
-      "objectId": "full_data",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_full_data",
       "objectType": "RECIPE"
     },
