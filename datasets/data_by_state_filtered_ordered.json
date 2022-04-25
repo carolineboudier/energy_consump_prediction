@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "admin_2"
     },
-    "lastModifiedOn": 1650888233407
+    "lastModifiedOn": 1650888562170
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,19 +88,15 @@
   "schema": {
     "columns": [
       {
-        "name": "year_built",
-        "type": "double"
+        "name": "State_Factor",
+        "type": "string"
       },
       {
-        "name": "State_1",
+        "name": "Commercial_count",
         "type": "bigint"
       },
       {
-        "name": "State_2",
-        "type": "bigint"
-      },
-      {
-        "name": "State_4_count",
+        "name": "Residential_count",
         "type": "bigint"
       }
     ],
