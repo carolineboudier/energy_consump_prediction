@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650879420220
+    "lastModifiedOn": 1650879451044
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,8 +58,57 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {
+        "name": "year_built",
+        "type": "double"
+      },
+      {
+        "name": "State_1_count",
+        "type": "bigint"
+      },
+      {
+        "name": "State_6_count",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "DSS",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "State_Factor"
+            ],
+            "valueLimit": "TOP_N",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "State_1"
+              ],
+              "name": "State_1",
+              "valueColumns": [],
+              "globalCountColumn": "State_1_count"
+            },
+            {
+              "keyValues": [
+                "State_6"
+              ],
+              "name": "State_6",
+              "valueColumns": [],
+              "globalCountColumn": "State_6_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "dkuProperties": [],
   "metrics": {
