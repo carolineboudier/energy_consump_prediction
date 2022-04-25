@@ -54,7 +54,7 @@
     "main": {
       "items": [
         {
-          "ref": "full_data",
+          "ref": "stacked_data",
           "deps": []
         }
       ]
@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "admin_2"
     },
-    "lastModifiedOn": 1646673435066
+    "lastModifiedOn": 1650879979799
   },
   "creationTag": {
     "versionNumber": 0,
