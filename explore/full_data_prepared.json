@@ -184,21 +184,23 @@
     "globalSearchQuery": "",
     "explorationFilters": [
       {
-        "column": "floor_area",
+        "column": "Year_Factor",
         "type": "columnFilter",
         "currentMode": "FACET",
         "active": true,
         "facet": {
           "type": "facet",
-          "column": "floor_area",
+          "column": "Year_Factor",
           "columnType": "NUMERICAL",
-          "currentMode": "NUMERICAL",
+          "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {}
+          "selectedValues": {
+            "6": true
+          }
         },
         "alphanumFilter": {
           "type": "alphanum",
-          "column": "floor_area",
+          "column": "Year_Factor",
           "values": [],
           "params": {
             "mode": "full_string",
@@ -207,9 +209,9 @@
         },
         "validityFilter": {
           "type": "validity",
-          "column": "floor_area",
+          "column": "Year_Factor",
           "params": {
-            "type": "DoubleMeaning",
+            "type": "LongMeaning",
             "ok": true,
             "nok": true,
             "empty": true
@@ -227,9 +229,7 @@
           "columnType": "ALPHANUM",
           "currentMode": "ALPHANUM",
           "sort": "count",
-          "selectedValues": {
-            "State_11": true
-          }
+          "selectedValues": {}
         },
         "alphanumFilter": {
           "type": "alphanum",
