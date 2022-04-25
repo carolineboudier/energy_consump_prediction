@@ -6,18 +6,18 @@
   "active": false,
   "runAsUser": "admin",
   "creationTag": {
-    "versionNumber": 28,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1646937786077
-  },
-  "versionTag": {
     "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1646938177513
+  },
+  "versionTag": {
+    "versionNumber": 30,
+    "lastModifiedBy": {
+      "login": "admin_2"
+    },
+    "lastModifiedOn": 1650879726952
   },
   "checklists": {
     "checklists": []
@@ -94,12 +94,38 @@
           "builds": [
             {
               "type": "DATASET",
-              "itemId": "data_by_state_filtered_ordered",
+              "itemId": "full_data_prepared_filtered_by_State_Factor",
               "partitionsSpec": ""
             }
           ],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "schema_propagation",
+        "type": "schema_propagation",
+        "name": "Step #5",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "options": {
+            "datasetName": "full_data_prepared_filtered_by_State_Factor",
+            "behavior": "AUTO_WITH_BUILDS",
+            "recipeUpdateOptions": {},
+            "partitionByDim": [],
+            "partitionByComputable": [],
+            "excludedRecipes": [],
+            "markAsOkRecipes": []
+          },
           "proceedOnFailure": false
         }
       },
