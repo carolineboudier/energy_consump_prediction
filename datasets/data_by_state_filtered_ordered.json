@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650887977598
+    "lastModifiedOn": 1650888233407
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,6 +97,10 @@
       },
       {
         "name": "State_2",
+        "type": "bigint"
+      },
+      {
+        "name": "State_4_count",
         "type": "bigint"
       }
     ],
