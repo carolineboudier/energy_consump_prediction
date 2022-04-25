@@ -11,6 +11,9 @@
           "map": {
             "full_data": {
               "repartition": 10
+            },
+            "stacked_data": {
+              "repartition": 10
             }
           }
         },
@@ -72,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650879979799
+    "lastModifiedOn": 1650879981621
   },
   "creationTag": {
     "versionNumber": 0,
