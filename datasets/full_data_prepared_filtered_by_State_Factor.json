@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "admin_2"
     },
-    "lastModifiedOn": 1650888231885
+    "lastModifiedOn": 1650888533749
   },
   "creationTag": {
     "versionNumber": 0,
@@ -60,19 +60,15 @@
   "schema": {
     "columns": [
       {
-        "name": "year_built",
-        "type": "double"
+        "name": "State_Factor",
+        "type": "string"
       },
       {
-        "name": "State_1_count",
+        "name": "Commercial_count",
         "type": "bigint"
       },
       {
-        "name": "State_2_count",
-        "type": "bigint"
-      },
-      {
-        "name": "State_4_count",
+        "name": "Residential_count",
         "type": "bigint"
       }
     ],
@@ -83,7 +79,7 @@
         {
           "pivotElement": {
             "keyColumns": [
-              "State_Factor"
+              "building_class"
             ],
             "valueLimit": "TOP_N",
             "topnLimit": 20,
@@ -95,27 +91,19 @@
           "pivotedModalities": [
             {
               "keyValues": [
-                "State_1"
+                "Commercial"
               ],
-              "name": "State_1",
+              "name": "Commercial",
               "valueColumns": [],
-              "globalCountColumn": "State_1_count"
+              "globalCountColumn": "Commercial_count"
             },
             {
               "keyValues": [
-                "State_2"
+                "Residential"
               ],
-              "name": "State_2",
+              "name": "Residential",
               "valueColumns": [],
-              "globalCountColumn": "State_2_count"
-            },
-            {
-              "keyValues": [
-                "State_4"
-              ],
-              "name": "State_4",
-              "valueColumns": [],
-              "globalCountColumn": "State_4_count"
+              "globalCountColumn": "Residential_count"
             }
           ]
         }
