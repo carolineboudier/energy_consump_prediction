@@ -94,13 +94,6 @@
       },
       {
         "objectRef": {
-          "objectId": "data_by_state_filtered_ordered",
-          "objectType": "DATASET"
-        },
-        "modes": []
-      },
-      {
-        "objectRef": {
           "objectId": "mjdhm3GI",
           "objectType": "MANAGED_FOLDER"
         },
@@ -147,18 +140,7 @@
     ]
   },
   "exposedObjects": {
-    "objects": [
-      {
-        "type": "DATASET",
-        "localName": "data_by_state_filtered_ordered",
-        "rules": [
-          {
-            "targetProject": "USINGAPASARECIPE",
-            "appearOnFlow": true
-          }
-        ]
-      }
-    ]
+    "objects": []
   },
   "projectType": "REGULAR",
   "projectAppType": "APP_TEMPLATE",
@@ -401,11 +383,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 51,
+    "versionNumber": 52,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1650893197969
+    "lastModifiedOn": 1650961651874
   },
   "creationTag": {
     "versionNumber": 0,
