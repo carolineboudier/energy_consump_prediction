@@ -13,9 +13,7 @@ shinyUI(fluidPage(
                   "Number of bins:",
                   min = 1,
                   max = 50,
-                  value = 30)
-    ),
-      sidebarLayout(
+                  value = 30),
     sidebarPanel(
       selectInput("airline", "Product Line",
                   c("Blue Dress", "Red Dress", "Red Knit", 
