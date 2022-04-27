@@ -15,15 +15,13 @@ shinyUI(fluidPage(
                   max = 50,
                   value = 30)
     ),
-
-      
-   sidebarLayout(
+      sidebarLayout(
     sidebarPanel(
       selectInput("airline", "Product Line",
                   c("Blue Dress", "Red Dress", "Red Knit", 
                     "Green Dress","White Knit","Orange Blouse",
                     "Grey Dress", "Black Knit", "ALL"))
-    ),
+    )),
     # Show a plot of the generated distribution
     mainPanel(
       plotOutput("distPlot")
