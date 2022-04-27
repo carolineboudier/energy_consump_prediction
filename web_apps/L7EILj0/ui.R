@@ -9,11 +9,11 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
     sidebarPanel(
-      sliderInput("bins",
-                  "Number of bins:",
-                  min = 1,
-                  max = 50,
-                  value = 30),
+      sliderInput("year_built",
+                  "Date of construction",
+                  min = 1950,
+                  max = 2010,
+                  value = 1975),
     sidebarPanel(
       selectInput("state_factor", "Building State",
                   c("State_1", "State_2", "State_4", 

@@ -32,11 +32,11 @@
   "config": {},
   "name": "Shiny version - Predict building energy use intensity",
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1651078171784
+    "lastModifiedOn": 1651078240594
   },
   "creationTag": {
     "versionNumber": 0,
