@@ -15,10 +15,10 @@ shinyUI(fluidPage(
                   max = 50,
                   value = 30),
     sidebarPanel(
-      selectInput("airline", "Product Line",
-                  c("Blue Dress", "Red Dress", "Red Knit", 
-                    "Green Dress","White Knit","Orange Blouse",
-                    "Grey Dress", "Black Knit", "ALL"))
+      selectInput("state_factor", "Building State",
+                  c("State_1", "State_2", "State_4", 
+                    "State_6","State_8","State_10",
+                    "State_11"))
     )),
     # Show a plot of the generated distribution
     mainPanel(
