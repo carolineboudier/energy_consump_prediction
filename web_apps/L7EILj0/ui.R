@@ -4,7 +4,7 @@ library(shiny)
 shinyUI(fluidPage(
 
   # Application title
-  titlePanel("Hello Shiny!"),
+  titlePanel("Predict Energy Use"),
 
   # Sidebar with a slider input for the number of bins
   sidebarLayout(
@@ -16,9 +16,18 @@ shinyUI(fluidPage(
                   value = 30)
     ),
 
+      
+   sidebarLayout(
+    sidebarPanel(
+      selectInput("airline", "Product Line",
+                  c("Blue Dress", "Red Dress", "Red Knit", 
+                    "Green Dress","White Knit","Orange Blouse",
+                    "Grey Dress", "Black Knit", "ALL"))
+    ),
     # Show a plot of the generated distribution
     mainPanel(
       plotOutput("distPlot")
     )
   )
 ))
+

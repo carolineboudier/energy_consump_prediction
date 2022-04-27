@@ -2,7 +2,7 @@
   "type": "SHINY",
   "hasLegacyBackendURL": false,
   "params": {
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "envSelection": {
       "envMode": "EXPLICIT_ENV",
       "envName": "R_new_environment"
@@ -32,11 +32,11 @@
   "config": {},
   "name": "Shiny version - Predict building energy use intensity",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin_2"
     },
-    "lastModifiedOn": 1651077739045
+    "lastModifiedOn": 1651077930579
   },
   "creationTag": {
     "versionNumber": 0,
