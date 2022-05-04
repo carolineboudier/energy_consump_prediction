@@ -418,7 +418,7 @@
               "top": 2,
               "left": 0,
               "width": 5,
-              "height": 3
+              "height": 4
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -533,7 +533,7 @@
               "top": 2,
               "left": 5,
               "width": 7,
-              "height": 7
+              "height": 5
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -652,6 +652,49 @@
             "insightType": "saved-model_report",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 7,
+              "left": 0,
+              "width": 12,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "i9iP0w3",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "TEXT",
+            "box": {
+              "top": 6,
+              "left": 0,
+              "width": 5,
+              "height": 1
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "text": "## :arrow_down:Training set :arrow_down:\nYou can copy rows as JSON and add them within the interactive scoring comparator",
+              "textAlign": "LEFT",
+              "isTransparent": false
+            },
+            "autoLoad": true,
+            "showTitle": "NO",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -664,11 +707,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 56,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651666855686
+    "lastModifiedOn": 1651667075446
   },
   "creationTag": {
     "versionNumber": 0,
