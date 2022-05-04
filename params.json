@@ -136,6 +136,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "H57yAVS3",
+          "objectType": "SAVED_MODEL"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -383,11 +392,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 52,
+    "versionNumber": 53,
     "lastModifiedBy": {
-      "login": "admin_2"
+      "login": "admin"
     },
-    "lastModifiedOn": 1650961651874
+    "lastModifiedOn": 1651666401054
   },
   "creationTag": {
     "versionNumber": 0,
