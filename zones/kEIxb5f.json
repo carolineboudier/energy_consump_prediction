@@ -1,12 +1,7 @@
 {
   "name": "test_zone",
   "color": "#465A64",
-  "items": [
-    {
-      "objectId": "education_data",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
