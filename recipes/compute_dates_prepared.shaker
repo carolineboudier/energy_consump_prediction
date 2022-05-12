@@ -34,7 +34,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "DateParser",
       "params": {
         "outCol": "date_parsed",
@@ -53,7 +53,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "get(date,0,4)",
@@ -64,7 +64,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "get(date,5,7)",
@@ -73,9 +73,9 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "RegexpExtractor",
       "params": {
         "found_col": false,
@@ -83,6 +83,89 @@
         "prefix": "no_leading_zeros",
         "column": "column_with_leading_zeros",
         "pattern": "^0*(.*)"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "producedColumns": [
+            "account_number0"
+          ]
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ExtractNumbers",
+      "params": {
+        "output": "account_number",
+        "multipleValues": true,
+        "input": "bank_info",
+        "replaceMultipliers": false,
+        "delimiter": "BEST_GUESS",
+        "extractToJson": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "account_number0"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": false,
+        "extractAllOccurrences": false,
+        "prefix": "bank_info_extracted_",
+        "column": "bank_info",
+        "pattern": "((?:USD|EUR))"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "bank",
+        "mapping": [
+          {
+            "from": "((?:USD|EUR))",
+            "to": ""
+          },
+          {
+            "from": "#",
+            "to": ""
+          },
+          {
+            "from": "[0-9]*",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "bank_info"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
       },
       "alwaysShowComment": false
     }
@@ -114,10 +197,16 @@
   "analysisColumnData": {},
   "columnWidthsByName": {
     "date": 100,
+    "bank_info_0": 281,
+    "year": 100,
+    "bank_info": 281,
+    "no_leading_zeros1": 165,
+    "bank": 169,
     "column_with_leading_zeros_extracted_1": 293,
     "month": 100,
-    "year": 100,
-    "no_leading_zeros1": 165,
+    "account_number0": 155,
+    "bank_info_extracted_2": 173,
+    "bank_info_extracted_1": 173,
     "date_parsed": 183,
     "column_with_leading_zeros": 191
   },
