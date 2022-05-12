@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649153876422
+    "lastModifiedOn": 1652345545349
   },
   "creationTag": {
     "versionNumber": 0,
@@ -64,6 +64,10 @@
       },
       {
         "name": "column_with_leading_zeros",
+        "type": "string"
+      },
+      {
+        "name": "bank_info",
         "type": "string"
       }
     ],

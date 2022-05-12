@@ -2,33 +2,40 @@
   "data": [
     [
       "2021003",
-      "00002654"
+      "00002654",
+      "Commerzbank AG FFM # 53884356937 EUR"
     ],
     [
       "2021004",
-      "00243"
+      "00243",
+      "Volksbank KG eG fact USD #263865039479"
     ],
     [
       "2022012",
-      "000000054264715"
+      "000000054264715",
+      "DZ Bank 300316357"
     ],
     [
       "2022010",
-      "00123"
+      "00123",
+      "DZ Bank #24635870"
     ],
     [
       "2017001",
-      "05"
+      "05",
+      "Volksbank KG eg 27273635 USD"
     ],
     [
       "1999011",
-      "00962"
+      "00962",
+      null
     ]
   ],
   "schema": {
     "columns": [
       {"name":"date","type":"string"},
-      {"name":"column_with_leading_zeros","type":"string"}
+      {"name":"column_with_leading_zeros","type":"string"},
+      {"name":"bank_info","type":"string"}
     ],
     "userModified": true
   }
