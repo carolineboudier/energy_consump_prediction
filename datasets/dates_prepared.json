@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1649153914491
+    "lastModifiedOn": 1652350337963
   },
   "creationTag": {
     "versionNumber": 0,
@@ -92,24 +92,24 @@
         "meaning": "DateSource"
       },
       {
-        "name": "month",
-        "type": "object"
-      },
-      {
-        "name": "year",
-        "type": "bigint"
-      },
-      {
-        "name": "date_parsed",
-        "type": "date"
-      },
-      {
         "name": "column_with_leading_zeros",
         "type": "double"
       },
       {
-        "name": "no_leading_zeros1",
-        "type": "double"
+        "name": "bank_info",
+        "type": "string"
+      },
+      {
+        "name": "bank",
+        "type": "string"
+      },
+      {
+        "name": "bank_info_extracted_1",
+        "type": "string"
+      },
+      {
+        "name": "account_number0",
+        "type": "bigint"
       }
     ],
     "userModified": true
