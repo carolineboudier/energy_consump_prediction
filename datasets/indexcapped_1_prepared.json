@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652689542847
+    "lastModifiedOn": 1652689574818
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,6 +97,10 @@
         }
       },
       {
+        "name": "name_xml_text",
+        "type": "string"
+      },
+      {
         "name": "description",
         "type": "map",
         "mapKeys": {
@@ -105,6 +109,10 @@
         "mapValues": {
           "type": "string"
         }
+      },
+      {
+        "name": "description_xml_text",
+        "type": "string"
       }
     ],
     "userModified": true
