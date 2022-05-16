@@ -27,7 +27,7 @@
     "shortTextMode": true,
     "retrievalMode": "simple",
     "ancestorCapture": "none",
-    "rootPath": "/DataSet/Media/Table",
+    "rootPath": "/DataSet/Media/Table/VariableLength/VariableColumn",
     "charset": "utf-8",
     "overrideFileCharset": false,
     "cellContentMapping": [],
@@ -40,11 +40,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652687488742
+    "lastModifiedOn": 1652689682625
   },
   "creationTag": {
     "versionNumber": 0,
@@ -67,23 +67,11 @@
   "schema": {
     "columns": [
       {
-        "name": "Table",
-        "type": "string"
-      },
-      {
         "name": "Description",
         "type": "string"
       },
       {
-        "name": "URL",
-        "type": "string"
-      },
-      {
         "name": "Name",
-        "type": "string"
-      },
-      {
-        "name": "VariableLength",
         "type": "string"
       }
     ],
