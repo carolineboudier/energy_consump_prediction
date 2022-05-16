@@ -18,7 +18,16 @@
   "maxRunningActivities": 0,
   "variables": {},
   "dkuProperties": [],
-  "inputs": {},
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "monthly_time_serie",
+          "deps": []
+        }
+      ]
+    }
+  },
   "outputs": {
     "main": {
       "items": [
@@ -31,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652710290922
+    "lastModifiedOn": 1652710449035
   },
   "creationTag": {
     "versionNumber": 0,
