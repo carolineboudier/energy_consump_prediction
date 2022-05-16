@@ -43,10 +43,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "indexcapped_1_prepared",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_indexcapped_1_prepared",
       "objectType": "RECIPE"
     }
