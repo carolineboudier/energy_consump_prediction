@@ -131,7 +131,7 @@
       "type": "RegexpExtractor",
       "params": {
         "found_col": false,
-        "extractAllOccurrences": false,
+        "extractAllOccurrences": true,
         "prefix": "bank_info_extracted_",
         "column": "bank_info",
         "pattern": "((?:USD|EUR))"
@@ -139,7 +139,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FindReplace",
@@ -166,6 +166,20 @@
         "appliesTo": "SINGLE_COLUMN",
         "stopAfterFirstMatch": false,
         "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": false,
+        "extractAllOccurrences": false,
+        "prefix": "bank_info_extracted_",
+        "column": "bank_info",
+        "pattern": "([A-Z]+)$"
       },
       "alwaysShowComment": false
     }
