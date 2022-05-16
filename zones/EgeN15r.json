@@ -45,6 +45,10 @@
     {
       "objectId": "compute_test",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "monthly_time_serie",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
