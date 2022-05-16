@@ -37,6 +37,10 @@
     {
       "objectId": "compute_indexcapped_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "indexcapped_1",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
