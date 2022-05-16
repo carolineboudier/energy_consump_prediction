@@ -4,7 +4,7 @@ import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
 
-my_dataset = dataiku.Dataset("__FIRST_INPUT__")
+my_dataset = dataiku.Dataset("monthly_time_serie")
 dataset_dataframe = my_dataset.get_dataframe()
 
 
