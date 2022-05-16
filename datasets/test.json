@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652709923606
+    "lastModifiedOn": 1652710509377
   },
   "creationTag": {
     "versionNumber": 0,
@@ -58,8 +58,21 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Source",
+        "type": "string"
+      },
+      {
+        "name": "Date",
+        "type": "string"
+      },
+      {
+        "name": "Mean",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
