@@ -25,6 +25,10 @@
     {
       "objectId": "compute_output_dataset",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "indexcapped",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
