@@ -37,10 +37,6 @@
     {
       "objectId": "compute_indexcapped_prepared",
       "objectType": "RECIPE"
-    },
-    {
-      "objectId": "compute_indexcapped_1_prepared",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
