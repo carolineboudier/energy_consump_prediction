@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652692656897
+    "lastModifiedOn": 1652709885364
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,6 +85,7 @@
     },
     "lastModifiedOn": 1647971172288
   },
+  "shortDesc": "- text extraction",
   "tags": [],
   "customFields": {},
   "checklists": {
