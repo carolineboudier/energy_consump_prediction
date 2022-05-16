@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652350337963
+    "lastModifiedOn": 1652692656776
   },
   "creationTag": {
     "versionNumber": 0,
@@ -105,7 +105,10 @@
       },
       {
         "name": "bank_info_extracted_1",
-        "type": "string"
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
       },
       {
         "name": "account_number0",
