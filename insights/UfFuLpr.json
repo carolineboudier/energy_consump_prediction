@@ -195,7 +195,7 @@
       "animationRepeat": true,
       "colorOptions": {
         "singleColor": "#2678B1",
-        "transparency": 0.75,
+        "transparency": 0.5,
         "colorPalette": "OrRd",
         "ccScaleMode": "NORMAL",
         "customPalette": {
@@ -246,11 +246,11 @@
   "name": "Count by date and store_type on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489410541
+    "lastModifiedOn": 1653489415735
   },
   "creationTag": {
     "versionNumber": 0,
