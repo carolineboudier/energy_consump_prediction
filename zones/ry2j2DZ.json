@@ -5,6 +5,14 @@
     {
       "objectId": "sales_data",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_sales_pivot",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "sales_pivot",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
