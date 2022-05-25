@@ -695,6 +695,29 @@
             "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 10,
+              "left": 0,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "1BiTH4E",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -707,11 +730,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 57,
+    "versionNumber": 58,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1651667075446
+    "lastModifiedOn": 1653467750985
   },
   "creationTag": {
     "versionNumber": 0,
