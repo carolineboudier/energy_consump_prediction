@@ -357,25 +357,7 @@
     {
       "id": "ZAonEFb",
       "grid": {
-        "tiles": [
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 1,
-              "left": 0,
-              "width": 10,
-              "height": 5
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {},
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "cqIpv7b",
-            "insightType": "eda",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          }
-        ]
+        "tiles": []
       },
       "title": "Data exploration (classif)",
       "showTitle": false
@@ -695,29 +677,6 @@
             "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 10,
-              "left": 0,
-              "width": 2,
-              "height": 2
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "showXAxis": true,
-              "showYAxis": true,
-              "showLegend": false,
-              "showTooltips": true,
-              "autoPlayAnimation": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "1BiTH4E",
-            "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -730,11 +689,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 58,
+    "versionNumber": 59,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653467750985
+    "lastModifiedOn": 1653468079125
   },
   "creationTag": {
     "versionNumber": 0,
