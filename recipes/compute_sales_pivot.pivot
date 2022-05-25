@@ -45,15 +45,32 @@
   "otherColumns": [],
   "pivots": [
     {
-      "valueLimit": "TOP_N",
+      "valueLimit": "NO_LIMIT",
       "minOccLimit": 0,
       "topnLimit": 20,
       "globalCount": true,
       "explicitValues": [],
       "keyColumns": [
-        "date"
+        "year",
+        "month"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "holiday",
+          "count": false,
+          "sum": false,
+          "concat": false,
+          "type": "double",
+          "$agg": "avg",
+          "countDistinct": false,
+          "min": false,
+          "avg": true,
+          "stddev": false,
+          "first": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
