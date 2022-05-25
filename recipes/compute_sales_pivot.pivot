@@ -42,7 +42,15 @@
     }
   },
   "explicitIdentifiers": [],
-  "otherColumns": [],
+  "otherColumns": [
+    {
+      "avg": true,
+      "column": "holiday",
+      "$idx": 5,
+      "$selected": false,
+      "type": "double"
+    }
+  ],
   "pivots": [
     {
       "valueLimit": "NO_LIMIT",
@@ -54,23 +62,7 @@
         "year",
         "month"
       ],
-      "valueColumns": [
-        {
-          "last": false,
-          "max": false,
-          "column": "holiday",
-          "count": false,
-          "sum": false,
-          "concat": false,
-          "type": "double",
-          "$agg": "avg",
-          "countDistinct": false,
-          "min": false,
-          "avg": true,
-          "stddev": false,
-          "first": false
-        }
-      ]
+      "valueColumns": []
     }
   ],
   "computedColumns": [],
