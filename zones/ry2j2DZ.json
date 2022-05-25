@@ -1,7 +1,12 @@
 {
   "name": "data_with_dates",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "sales_data",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
