@@ -11,10 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "sales_pivot",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "sales_data_prepared",
       "objectType": "DATASET"
     },
