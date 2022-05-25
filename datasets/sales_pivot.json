@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489999367
+    "lastModifiedOn": 1653490048047
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,295 +87,155 @@
   "schema": {
     "columns": [
       {
-        "name": "2010_2_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_2_count",
         "type": "bigint"
-      },
-      {
-        "name": "2010_3_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2010_3_count",
         "type": "bigint"
       },
       {
-        "name": "2010_4_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_4_count",
         "type": "bigint"
-      },
-      {
-        "name": "2010_5_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2010_5_count",
         "type": "bigint"
       },
       {
-        "name": "2010_6_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_6_count",
         "type": "bigint"
-      },
-      {
-        "name": "2010_7_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2010_7_count",
         "type": "bigint"
       },
       {
-        "name": "2010_8_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_8_count",
         "type": "bigint"
-      },
-      {
-        "name": "2010_9_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2010_9_count",
         "type": "bigint"
       },
       {
-        "name": "2010_10_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_10_count",
         "type": "bigint"
-      },
-      {
-        "name": "2010_11_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2010_11_count",
         "type": "bigint"
       },
       {
-        "name": "2010_12_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2010_12_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_1_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_1_count",
         "type": "bigint"
       },
       {
-        "name": "2011_2_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_2_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_3_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_3_count",
         "type": "bigint"
       },
       {
-        "name": "2011_4_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_4_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_5_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_5_count",
         "type": "bigint"
       },
       {
-        "name": "2011_6_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_6_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_7_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_7_count",
         "type": "bigint"
       },
       {
-        "name": "2011_8_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_8_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_9_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_9_count",
         "type": "bigint"
       },
       {
-        "name": "2011_10_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_10_count",
         "type": "bigint"
-      },
-      {
-        "name": "2011_11_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2011_11_count",
         "type": "bigint"
       },
       {
-        "name": "2011_12_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2011_12_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_1_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_1_count",
         "type": "bigint"
       },
       {
-        "name": "2012_2_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_2_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_3_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_3_count",
         "type": "bigint"
       },
       {
-        "name": "2012_4_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_4_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_5_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_5_count",
         "type": "bigint"
       },
       {
-        "name": "2012_6_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_6_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_7_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_7_count",
         "type": "bigint"
       },
       {
-        "name": "2012_8_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_8_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_9_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_9_count",
         "type": "bigint"
       },
       {
-        "name": "2012_10_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_10_count",
         "type": "bigint"
-      },
-      {
-        "name": "2012_11_holiday_avg",
-        "type": "double"
       },
       {
         "name": "2012_11_count",
         "type": "bigint"
       },
       {
-        "name": "2012_12_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2012_12_count",
         "type": "bigint"
       },
       {
-        "name": "2013_1_holiday_avg",
-        "type": "double"
-      },
-      {
         "name": "2013_1_count",
         "type": "bigint"
+      },
+      {
+        "name": "holiday_avg",
+        "type": "double"
       }
     ],
-    "userModified": false,
+    "userModified": true,
     "metadata": {
       "engineType": "DSS",
       "pivotElementsModalities": [
