@@ -705,6 +705,14 @@
       },
       "title": "Model insights",
       "showTitle": false
+    },
+    {
+      "id": "rk5lcxd",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Experiments",
+      "showTitle": false
     }
   ],
   "owner": "admin",
@@ -712,11 +720,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 60,
+    "versionNumber": 61,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653487116920
+    "lastModifiedOn": 1653489179792
   },
   "creationTag": {
     "versionNumber": 0,
