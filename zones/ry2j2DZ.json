@@ -7,10 +7,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "compute_sales_pivot",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "sales_data_prepared",
       "objectType": "DATASET"
     },
