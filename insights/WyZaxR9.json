@@ -91,46 +91,54 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:4165"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Average of holiday, descending"
+              "label": "Average of holiday, descending",
+              "$$hashKey": "object:4166"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Average of holiday, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:4167"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Count of records, descending"
+              "label": "Count of records, descending",
+              "$$hashKey": "object:4168"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
               "label": "Count of records, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:4169"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
-              "label": "Average of temperature, descending"
+              "label": "Average of temperature, descending",
+              "$$hashKey": "object:4170"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 2,
               "label": "Average of temperature, ascending",
-              "sortAscending": true
+              "sortAscending": true,
+              "$$hashKey": "object:4171"
             }
           ],
           "sort": {
             "type": "NATURAL",
             "label": "Natural ordering",
-            "sortAscending": true
+            "sortAscending": true,
+            "$$hashKey": "object:4165"
           }
         }
       ],
@@ -257,11 +265,11 @@
   "name": "Avg. of holiday by date and store_type on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489739506
+    "lastModifiedOn": 1653489798152
   },
   "creationTag": {
     "versionNumber": 0,
