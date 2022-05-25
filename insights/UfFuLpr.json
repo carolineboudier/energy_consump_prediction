@@ -27,7 +27,7 @@
     },
     "def": {
       "type": "pivot_table",
-      "variant": "normal",
+      "variant": "colored",
       "name": "Count by date and store_type",
       "userEditedName": false,
       "genericDimension0": [],
@@ -196,7 +196,7 @@
       "colorOptions": {
         "singleColor": "#2678B1",
         "transparency": 0.75,
-        "colorPalette": "default",
+        "colorPalette": "OrRd",
         "ccScaleMode": "NORMAL",
         "customPalette": {
           "id": "__dku_custom__",
@@ -246,11 +246,11 @@
   "name": "Count by date and store_type on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489337339
+    "lastModifiedOn": 1653489410541
   },
   "creationTag": {
     "versionNumber": 0,
