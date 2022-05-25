@@ -92,7 +92,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Count by date",
+        "name": "Count by date and store_type",
         "userEditedName": false,
         "genericDimension0": [
           {
@@ -134,7 +134,43 @@
             }
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "store_type",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            }
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -166,7 +202,24 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "DATE_FACET",
+            "column": "date",
+            "columnType": "DATE",
+            "dateFilterType": "YEAR",
+            "minValue": 1.325510252309E12,
+            "maxValue": 1.354646104615E12,
+            "isA": "filter",
+            "excludedValues": {
+              "2010": true,
+              "2011": true,
+              "2013": true
+            },
+            "isAGlobalFilter": false,
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -227,6 +280,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -244,7 +298,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,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",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABTdJREFUeF7tnE1sG0UYhudzHBNC/lTCbnDAjgNx4kOSCqXIdhEHBKEQR1XtcOdCCqhCIJCdE0QCSo0ScYVLBQ0cQMrJNgha9YgEBQQnKhUCSdVcgAutUIkUD1rb+5M4OGvHu96dvDnF7uib+d5n329+dlJi+BFaARI6OyTHAFjwhwCAAVhwBQRPDw4GYMEVEDw9OBiABVdA8PTgYAAWXAHB04ODAVhwBRyUnn8x16kOJxEOd86Gw/8Yhzc7RTs+mxk6HGxGJZvaBBYKZ4nzmNJdb4f31uKJo11a1+RZSUal8/UOBYDrVczC9gBsobhOCA3ATqBg4RgA2EJxnRAagJ1AwcIxALCF4johNAA7gYKFY3A3YM4puFC4qO/r2Bfr5xLLFurlutAiAL5sAJwH4J3PIAC7zpP1DdgM4EA6d4ERSUrkiNz913x87G61F15k783F5S+Nvdp3klUu0XBwDeZmARPR/UqYMbl783Rs1K+GLHI6B8D1mcrW1gBsq9z2dwbA9mtua48AbKvc9nd2KAAH0/mPGbHSi2/O2PpGNvGK/VK3psfDBHiwAvhHAK48bJUX/so2ydWr6IqDDww4mMmvcM7uKMlDtLmRnXm5EV82K46ZvuFgMypV2ihgGGP3lSsB/XQQwM2IY2boAFxSSTkw+fwTTTDOf1jPJpZ2CwjAZUUcd5K1f4nmFMwYTsQYKwBwGaYrTrKsABwZ6LsxHx3hmsuJXUhGZf3NVo36aawEB4mDEq3OneVtUo1FVv0OLoN5sBSzsug62zjgxuI4GnAgU8gyzmV1kBvvJp6tmvPSuTOc0ZT6/fLJh9raPLRdmjW559dUTHrLzMsG6xzcGJhqBzcWx/GAifGHK4P8cz2beGYvwIwopX6/dPLYVhtxXxkwXQbg/RG3bBWtOLjZgKdH7107ERnU5kXOvUtz8f6rRgdHpJ4bz8XDt/XKSp8mo9Il4yLr8VH/2tMRf3UcwzbJTIle/eaPGVbcPqX1xYrLyZj/ZzhYmztzZ+pxsAL4qcjgsCpokXtf2AvwfDy8a+6sBjwT8VfHaQAwFbdf031WfBGADVUnmHYbYOlSIF14X03hiTG/1/igMNZcwIF0/gO1rzG5t+t0bOSW+tnjodVTUfkr4Up0ax1cuxI0G7Cx1I9KvZvPx0e0mxhE9I5jAPd1+m4uTk9eV58+zujbZEz6yI0O3j2XN8PBn319/Ug7+d7U9OH8+2R84LyrAL8xPdGtV2fPhwCsq6EA9lL7qvYNZysAXDpms3uR1bwSrcydHsbuUqD2dfg6Xn9yPAzALV9FNxfw//7hNhxcftbd7mAA3nVU2fp9MBysTSPGkyxlFY1FVkUaotJLi5r7V5RolGjH7YPhYDiY7fc2CXOwg0+y4GA4GA7Wz3JxkoV9sMNeNqBEo0SjRKNEt/pGB06ycJJl8k4WTrL2uFWJfTD2wUy5VWndpTuUaJTow1Oic7Mq7aEjXT0vPRr523iNey42kAtk9DbKv709c9R3Z3v7ltpuLirnAwv5hPZ5IngsPixd0W8+eK8p12aNcR4J3TOcnBxa024fEt1W7kUHMnqc1GRo6nio/7uacYblUHIi8Fs9cTys+ItybXbHePaMI180thns6eh+9bHxm7X0Of6ANJQaD/6utmkj+rd06c6gobk4/UOp8ZAWh3Haat1/o2TMGL/bpoB9fz5qW0royKgAAAv+PAAwAAuugODpwcEALLgCgqcHBwOw4AoInh4cDMCCKyB4enAwAAuugODpwcEALLgCgqcHBwsO+D8Rawb2GPonZwAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
@@ -279,7 +333,7 @@
       "def": {
         "type": "pivot_table",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Count by date and store_type",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
@@ -294,7 +348,8 @@
             "displayAxis": "axis1",
             "displayType": "column",
             "computeMode": "NORMAL",
-            "computeModeDim": 0
+            "computeModeDim": 0,
+            "multiplier": "Auto"
           }
         ],
         "xDimension": [
@@ -305,7 +360,7 @@
               "emptyBinsMode": "AVERAGE"
             },
             "dateParams": {
-              "mode": "MONTH"
+              "mode": "AUTOMATIC"
             },
             "maxValues": 0,
             "generateOthersCategory": true,
@@ -337,7 +392,43 @@
             }
           }
         ],
-        "yDimension": [],
+        "yDimension": [
+          {
+            "column": "store_type",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 6,
+            "generateOthersCategory": false,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of records, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
         "uaXDimension": [],
         "uaYDimension": [],
         "uaSize": [],
@@ -353,7 +444,24 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [],
+        "filters": [
+          {
+            "filterType": "DATE_FACET",
+            "column": "date",
+            "columnType": "DATE",
+            "dateFilterType": "YEAR",
+            "minValue": 1.325032615386E12,
+            "maxValue": 1.355601378462E12,
+            "isA": "filter",
+            "excludedValues": {
+              "2010": true,
+              "2011": true,
+              "2013": true
+            },
+            "isAGlobalFilter": false,
+            "explicitExclude": false
+          }
+        ],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -414,6 +522,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
