@@ -246,11 +246,11 @@
   "name": "Count by date and store_type on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489415735
+    "lastModifiedOn": 1653489431759
   },
   "creationTag": {
     "versionNumber": 0,
