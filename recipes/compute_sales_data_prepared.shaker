@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -53,7 +56,19 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 183,
+    "month": 100,
+    "year": 100,
+    "temperature": 100,
+    "discount": 106,
+    "store": 100,
+    "store_type": 100,
+    "department": 100,
+    "holiday": 100,
+    "fuel_price": 100,
+    "sales": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
