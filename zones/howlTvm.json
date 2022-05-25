@@ -37,6 +37,10 @@
     {
       "objectId": "split_classif_train_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "1eWOjM9X",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
