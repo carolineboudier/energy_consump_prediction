@@ -41,14 +41,14 @@
         "columns": [
           "date"
         ],
-        "part": "YEAR",
+        "part": "MONTH_OF_YEAR",
         "values": [],
-        "relativeMax": 1,
+        "relativeMax": 0,
         "timezone_id": "UTC",
-        "relativeMin": 1,
-        "action": "KEEP_ROW",
+        "relativeMin": 0,
+        "action": "REMOVE_ROW",
         "appliesTo": "SINGLE_COLUMN",
-        "filterType": "RANGE",
+        "filterType": "RELATIVE",
         "option": "THIS"
       },
       "alwaysShowComment": false
