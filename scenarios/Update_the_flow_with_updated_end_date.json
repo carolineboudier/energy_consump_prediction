@@ -5,18 +5,18 @@
   "name": "Update the flow with updated end date",
   "active": false,
   "creationTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1653902273680
-  },
-  "versionTag": {
     "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1653902453507
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1653902601093
   },
   "checklists": {
     "checklists": []
@@ -45,7 +45,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataikuapi\nimport dataiku \nimport datetime\n\nproject_handle \u003d dataiku.api_client().get_project(dataiku.default_project_key())\nvariables\u003dproject_handle.get_variables()\n\n# compute today\u0027s date\nnow\u003ddatetime.datetime.now()\n\n# remove ten days\nten_days_before\u003dnow-datetime.timedelta(days\u003d10)\nten_days_before\n\n# update variables\nvariables[\u0027last_end_date\u0027]\u003dten_days_before.strftime(\"%Y-%m-%d\")",
+          "script": "import dataikuapi\nimport dataiku \nimport datetime\n\nproject_handle \u003d dataiku.api_client().get_project(dataiku.default_project_key())\nvariables\u003dproject_handle.get_variables()\n\n# compute today\u0027s date\nnow\u003ddatetime.datetime.now()\n\n# remove ten days\nten_days_before\u003dnow-datetime.timedelta(days\u003d10)\nten_days_before\n\n# update variables\nvariables[\u0027last_scenario_end_date\u0027]\u003dten_days_before.strftime(\"%Y-%m-%d\")",
           "envSelection": {
             "envMode": "INHERIT"
           },
