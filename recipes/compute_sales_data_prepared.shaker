@@ -30,7 +30,30 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnDate",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "date"
+        ],
+        "part": "YEAR",
+        "values": [],
+        "relativeMax": 1,
+        "timezone_id": "UTC",
+        "relativeMin": 1,
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "filterType": "RANGE",
+        "option": "THIS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
