@@ -5,18 +5,18 @@
   "name": "Update the flow with updated end date",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1653901898757
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1653902239825
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1653902268300
   },
   "checklists": {
     "checklists": []
@@ -55,7 +55,7 @@
       {
         "id": "build_0_true",
         "type": "build_flowitem",
-        "name": "Step #2",
+        "name": "Build output dataset",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -66,8 +66,14 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [],
-          "jobType": "RECURSIVE_BUILD",
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "sales_data_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
