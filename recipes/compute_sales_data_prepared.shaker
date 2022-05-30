@@ -59,6 +59,7 @@
       "disabled": false,
       "type": "FilterOnCustomFormula",
       "params": {
+        "expression": "diff(date,variables[\"last_end_date\"])\u003e\u003d0",
         "action": "KEEP_ROW"
       },
       "alwaysShowComment": false
