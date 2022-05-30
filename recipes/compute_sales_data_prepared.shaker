@@ -32,7 +32,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnDate",
@@ -50,6 +50,16 @@
         "appliesTo": "SINGLE_COLUMN",
         "filterType": "RANGE",
         "option": "THIS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnCustomFormula",
+      "params": {
+        "action": "KEEP_ROW"
       },
       "alwaysShowComment": false
     }
