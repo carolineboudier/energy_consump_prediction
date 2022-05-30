@@ -5,18 +5,18 @@
   "name": "Update the flow with updated end date",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1653901871317
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1653901898757
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1653902239825
   },
   "checklists": {
     "checklists": []
@@ -34,7 +34,7 @@
       {
         "id": "custom_python",
         "type": "custom_python",
-        "name": "Step #1",
+        "name": "Compute last end date",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -45,7 +45,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "",
+          "script": "import dataikuapi\nimport dataiku \nimport datetime\n\nproject_handle \u003d dataiku.api_client().get_project(dataiku.default_project_key())\nvariables\u003dproject_handle.get_variables()\n\n# compute today\u0027s date\nnow\u003ddatetime.datetime.now()\n\n# remove ten days\nten_days_before\u003dnow-datetime.timedelta(days\u003d10)\nten_days_before\n\n# update variables\nvariables[\u0027last_end_date\u0027]\u003dten_days_before.strftime(\"%Y-%m-%d\")",
           "envSelection": {
             "envMode": "INHERIT"
           },
