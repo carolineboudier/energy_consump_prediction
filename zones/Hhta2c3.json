@@ -25,10 +25,6 @@
     {
       "objectId": "stacked_data",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "to_del_test",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
