@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654078295940
+    "lastModifiedOn": 1654078329365
   },
   "creationTag": {
     "versionNumber": 0,
@@ -51,7 +51,7 @@
     "normalizeDoubles": true,
     "table": "${projectKey}_to_del_test",
     "schema": "caroline_boudier",
-    "tableCreationMode": "auto",
+    "tableCreationMode": "custom",
     "customCreateStatement": "CREATE TABLE \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_to_del_test\" (\n)",
     "writeInsertBatchSize": 10000,
     "writeJDBCBadDataBehavior": "DISCARD_ROW",
@@ -317,7 +317,7 @@
         "type": "bigint"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
