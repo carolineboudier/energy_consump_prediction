@@ -29,6 +29,10 @@
     {
       "objectId": "to_del_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_to_del_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
