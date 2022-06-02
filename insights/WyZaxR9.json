@@ -28,7 +28,7 @@
     "def": {
       "type": "pivot_table",
       "variant": "normal",
-      "name": "Count by date and holiday",
+      "name": "Count by date and temperature",
       "userEditedName": false,
       "genericDimension0": [],
       "genericDimension1": [],
@@ -45,17 +45,6 @@
           "computeMode": "NORMAL",
           "computeModeDim": 0,
           "multiplier": "Auto"
-        },
-        {
-          "column": "temperature",
-          "function": "AVG",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
         }
       ],
       "xDimension": [
@@ -89,17 +78,6 @@
               "measureIdx": 0,
               "label": "Count of records, ascending",
               "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of temperature, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of temperature, ascending",
-              "sortAscending": true
             }
           ],
           "sort": {
@@ -111,7 +89,7 @@
       ],
       "yDimension": [
         {
-          "column": "holiday",
+          "column": "temperature",
           "type": "NUMERICAL",
           "numParams": {
             "mode": "FIXED_NB",
@@ -139,17 +117,6 @@
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Count of records, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of temperature, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of temperature, ascending",
               "sortAscending": true
             }
           ],
@@ -279,14 +246,14 @@
   },
   "owner": "admin",
   "listed": false,
-  "name": "Count by date and holiday on sales_data",
+  "name": "Count by date and temperature on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654178120271
+    "lastModifiedOn": 1654178515833
   },
   "creationTag": {
     "versionNumber": 0,
