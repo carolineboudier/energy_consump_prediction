@@ -36,7 +36,7 @@ def scoring_api_call(params):
     
     print('record_to_predict',record_to_predict)
     
-    client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "vMPmPc6oc5QsYPmNuQ7C8w7edaQu9HKY")
+    client = dataikuapi.APINodeClient("http://localhost:11300/", "Energy_consumption", "A0zXvOCN5dM8TFZIceXNO7a8QaMtclUu:")
 
     prediction = client.predict_record("predict_energy_use_intensity", record_to_predict)
     print("prediction sent back to JS",prediction)
