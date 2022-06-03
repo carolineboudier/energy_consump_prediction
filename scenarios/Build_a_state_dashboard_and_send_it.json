@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654250880073
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654250881071
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654250977430
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,42 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "mail_local_instance",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "recipient": "caroline.boudier@dataiku.com",
+          "sendAsHTML": false,
+          "attachments": [
+            {
+              "type": "DASHBOARD_EXPORT",
+              "params": {
+                "exportFormat": {
+                  "paperSize": "A4",
+                  "orientation": "LANDSCAPE",
+                  "fileType": "PDF",
+                  "width": 1920,
+                  "height": 1358
+                },
+                "dashboardId": "Lf3yqtX"
+              }
+            }
+          ],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "xYqjy1lX",
+      "runConditionEnabled": false,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
