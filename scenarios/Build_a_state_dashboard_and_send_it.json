@@ -12,11 +12,11 @@
     "lastModifiedOn": 1654250761666
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654250761666
+    "lastModifiedOn": 1654250880073
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,78 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "create_dashboard_export_Lf3yqtX",
+        "type": "create_dashboard_export",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "dashboardId": "Lf3yqtX",
+          "exportFormat": {
+            "paperSize": "SCREEN_16_9",
+            "orientation": "LANDSCAPE",
+            "fileType": "PDF",
+            "width": 1920,
+            "height": 1080
+          },
+          "folderSmartId": "xtJHWex9",
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "reporta6d78840c91424fa92272fb2b8760dda",
+        "type": "send_report",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "failOnMessageNotSent": true,
+          "messaging": {
+            "type": "mail-scenario",
+            "configuration": {
+              "channelId": "mail_local_instance",
+              "subject": "DSS scenario ${scenarioName}: ${outcome}",
+              "recipient": "caroline.boudier@dataiku.com",
+              "sendAsHTML": false,
+              "attachments": [
+                {
+                  "type": "DASHBOARD_EXPORT",
+                  "params": {
+                    "exportFormat": {
+                      "paperSize": "A4",
+                      "orientation": "LANDSCAPE",
+                      "fileType": "PNG",
+                      "width": 1920,
+                      "height": 1358
+                    },
+                    "dashboardId": "Lf3yqtX"
+                  }
+                }
+              ],
+              "messageSource": "TEMPLATE_FILE",
+              "templateFormat": "FREEMARKER",
+              "templateName": "default.ftl"
+            }
+          }
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
