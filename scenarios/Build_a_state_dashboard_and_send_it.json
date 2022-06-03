@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654251695726
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654251761705
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654251762829
   },
   "checklists": {
     "checklists": []
