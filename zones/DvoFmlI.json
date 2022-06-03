@@ -1,7 +1,12 @@
 {
   "name": "Stored_dashboards",
   "color": "#C54F00",
-  "items": [],
+  "items": [
+    {
+      "objectId": "xtJHWex9",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
