@@ -282,14 +282,14 @@
   ],
   "owner": "admin",
   "listed": false,
-  "name": "Year level dashboard ${variable}",
+  "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654251786952
+    "lastModifiedOn": 1654251813658
   },
   "creationTag": {
     "versionNumber": 0,
