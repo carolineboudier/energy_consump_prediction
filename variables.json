@@ -2,7 +2,9 @@
   "threshold_classif": 90,
   "selected_state_list": [
     "State_1",
-    "State_2"
+    "State_2",
+    "State_6",
+    "State_5"
   ],
   "selected_year": 6,
   "last_end_date": "2022-05-20",
