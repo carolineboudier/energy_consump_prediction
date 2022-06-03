@@ -163,6 +163,15 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "stacked_data",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -410,11 +419,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 59,
+    "versionNumber": 60,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654171214788
+    "lastModifiedOn": 1654252489907
   },
   "creationTag": {
     "versionNumber": 0,
