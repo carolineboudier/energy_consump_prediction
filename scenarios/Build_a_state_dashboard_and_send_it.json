@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 11,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654864905771
-  },
-  "versionTag": {
     "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654864966252
+  },
+  "versionTag": {
+    "versionNumber": 13,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654865112933
   },
   "checklists": {
     "checklists": []
@@ -156,9 +156,9 @@
             "type": "mail-scenario",
             "configuration": {
               "channelId": "mail_local_instance",
-              "subject": "DSS scenario ${scenarioName}: ${selected_year}",
+              "subject": "You received your dashboard ! (year ${selected_year})",
               "recipient": "caroline.boudier@dataiku.com",
-              "sendAsHTML": false,
+              "sendAsHTML": true,
               "attachments": [
                 {
                   "type": "DASHBOARD_EXPORT",
@@ -174,9 +174,10 @@
                   }
                 }
               ],
-              "messageSource": "TEMPLATE_FILE",
+              "messageSource": "INLINE",
               "templateFormat": "FREEMARKER",
-              "templateName": "default.ftl"
+              "templateName": "default.ftl",
+              "message": "\u003ch1\u003e\n    Find your up-to-date dashboard here\n\u003c/h1\u003e\n\n\u003cp\u003e\n    For any questions, feel free to answer to this email directly. \n\u003c/p\u003e\n"
             }
           }
         }
