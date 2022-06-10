@@ -204,38 +204,5 @@
     "key": "UF003ATSycLuiiMfsWJkDrSJUuZgMcGn",
     "label": "Key for Web app Predict building energy use intensity(2JY0YEG)",
     "createdOn": 1647437667324
-  },
-  {
-    "execSQLLike": false,
-    "localDatasets": [
-      {
-        "datasets": [],
-        "privileges": [
-          "READ_DATA",
-          "READ_METADATA",
-          "READ_SCHEMA"
-        ]
-      }
-    ],
-    "projectPrivileges": {
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "shareToWorkspaces": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    },
-    "onBehalf": "JVRfFYC",
-    "id": "eIS3ZDBcL0OMB0EE",
-    "key": "yUWMVCP8RGGZLE1St1rmonydt4PVnYER",
-    "label": "Key for Web app Plugin skin(JVRfFYC)",
-    "createdOn": 1654870262596
   }
 ]
