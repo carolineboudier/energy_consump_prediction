@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 10,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654864903349
-  },
-  "versionTag": {
     "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654864905771
+  },
+  "versionTag": {
+    "versionNumber": 12,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654864966252
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,7 @@
   "triggers": [],
   "reporters": [
     {
-      "active": true,
+      "active": false,
       "messaging": {
         "type": "mail-scenario",
         "configuration": {
