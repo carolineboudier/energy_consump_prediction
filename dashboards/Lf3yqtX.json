@@ -76,7 +76,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 18,
+              "top": 16,
               "left": 0,
               "width": 7,
               "height": 5
@@ -99,7 +99,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 18,
+              "top": 16,
               "left": 7,
               "width": 5,
               "height": 5
@@ -202,7 +202,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 16,
+              "top": 14,
               "left": 0,
               "width": 7,
               "height": 2
@@ -221,7 +221,7 @@
           {
             "tileType": "TEXT",
             "box": {
-              "top": 16,
+              "top": 14,
               "left": 7,
               "width": 5,
               "height": 2
@@ -323,11 +323,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 19,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654865301846
+    "lastModifiedOn": 1654865315569
   },
   "creationTag": {
     "versionNumber": 0,
