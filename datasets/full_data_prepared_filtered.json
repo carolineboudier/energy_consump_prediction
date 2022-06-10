@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654865234688
+    "lastModifiedOn": 1654865239358
   },
   "creationTag": {
     "versionNumber": 0,
@@ -468,7 +468,8 @@
       "columns": [],
       "metrics": [
         "basic:COUNT_COLUMNS",
-        "records:COUNT_RECORDS"
+        "records:COUNT_RECORDS",
+        "adv_col_stats:MODE:Year_Factor"
       ]
     }
   },
