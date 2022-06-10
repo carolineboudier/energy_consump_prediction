@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654865232651
+    "lastModifiedOn": 1654865234688
   },
   "creationTag": {
     "versionNumber": 0,
@@ -383,7 +383,7 @@
       {
         "type": "adv_col_stats",
         "enabled": true,
-        "computeOnBuildMode": "NO",
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Most frequent values",
           "level": 3
