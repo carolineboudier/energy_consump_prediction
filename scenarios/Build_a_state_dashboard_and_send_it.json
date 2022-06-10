@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 6,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654251761705
-  },
-  "versionTag": {
     "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654251762829
+  },
+  "versionTag": {
+    "versionNumber": 8,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1654849695511
   },
   "checklists": {
     "checklists": []
@@ -67,9 +67,9 @@
   "params": {
     "steps": [
       {
-        "id": "create_dashboard_export_Lf3yqtX",
-        "type": "create_dashboard_export",
-        "name": "Step #1",
+        "id": "build_1_true_d_full_data_prepared_filtered",
+        "type": "build_flowitem",
+        "name": "Build filtered dataset",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -80,15 +80,60 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "dashboardId": "Lf3yqtX",
-          "exportFormat": {
-            "paperSize": "SCREEN_16_9",
-            "orientation": "LANDSCAPE",
-            "fileType": "PDF",
-            "width": 1920,
-            "height": 1080
-          },
-          "folderSmartId": "xtJHWex9",
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "full_data_prepared_filtered",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "NON_RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_f_s6qy0GK5",
+        "type": "build_flowitem",
+        "name": "Build the rest",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "MANAGED_FOLDER",
+              "itemId": "s6qy0GK5",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "refresh_chart_cache",
+        "type": "refresh_chart_cache",
+        "name": "Refresh dashboards",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": false,
+          "dashboards": [],
           "proceedOnFailure": false
         }
       },
