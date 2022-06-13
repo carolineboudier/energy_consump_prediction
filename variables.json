@@ -9,7 +9,5 @@
   "selected_year": 5,
   "last_end_date": "2022-06-03",
   "variable": "name",
-  "nested_var": {
-    "var_1": "test"
-  }
+  "nested_var": "{\u0027var_1\u0027: \u0027test\u0027}"
 }
