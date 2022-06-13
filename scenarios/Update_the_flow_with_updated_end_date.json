@@ -5,18 +5,18 @@
   "name": "Update the flow with updated end date",
   "active": false,
   "creationTag": {
-    "versionNumber": 12,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655123135321
-  },
-  "versionTag": {
     "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655123135800
+  },
+  "versionTag": {
+    "versionNumber": 14,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655123269921
   },
   "checklists": {
     "checklists": []
@@ -35,7 +35,7 @@
         "id": "custom_python",
         "type": "custom_python",
         "name": "Compute last end date",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -56,32 +56,6 @@
         "id": "build_0_true",
         "type": "build_flowitem",
         "name": "Build output dataset",
-        "runConditionType": "DISABLED",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "builds": [
-            {
-              "type": "DATASET",
-              "itemId": "sales_data_prepared",
-              "partitionsSpec": ""
-            }
-          ],
-          "jobType": "RECURSIVE_FORCED_BUILD",
-          "refreshHiveMetastore": true,
-          "proceedOnFailure": false
-        }
-      },
-      {
-        "id": "build_0_true_d_PARTITION_DEMO.input_by_Block",
-        "type": "build_flowitem",
-        "name": "Step #3",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -95,8 +69,7 @@
           "builds": [
             {
               "type": "DATASET",
-              "projectKey": "PARTITION_DEMO",
-              "itemId": "input_by_Block",
+              "itemId": "sales_data_prepared",
               "partitionsSpec": ""
             }
           ],
