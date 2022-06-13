@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655124013638
+    "lastModifiedOn": 1655124343242
   },
   "creationTag": {
     "versionNumber": 0,
@@ -62,10 +62,6 @@
       {
         "name": "Block",
         "type": "bigint"
-      },
-      {
-        "name": "Date_first",
-        "type": "string"
       },
       {
         "name": "count_per_block",
