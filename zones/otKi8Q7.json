@@ -10,10 +10,6 @@
     {
       "objectId": "copy_shared_dataset",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_copy_shared_dataset",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
