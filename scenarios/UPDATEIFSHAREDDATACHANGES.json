@@ -3,7 +3,7 @@
   "id": "UPDATEIFSHAREDDATACHANGES",
   "type": "step_based",
   "name": "Update if shared data changes",
-  "active": false,
+  "active": true,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
@@ -12,11 +12,11 @@
     "lastModifiedOn": 1655123295410
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655123295410
+    "lastModifiedOn": 1655123331584
   },
   "checklists": {
     "checklists": []
@@ -27,7 +27,25 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "93mnIqG5",
+      "type": "sql_query",
+      "name": "SQL query change",
+      "delay": 60,
+      "active": true,
+      "params": {
+        "connection": "postgreSQL",
+        "sql": "",
+        "hasLimit": true,
+        "limit": 10000
+      },
+      "graceDelaySettings": {
+        "delay": 60,
+        "checkAgainAfterGraceDelay": true
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": []
