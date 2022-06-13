@@ -3,20 +3,20 @@
   "id": "UPDATEIFSHAREDDATACHANGES",
   "type": "step_based",
   "name": "Update if shared data changes",
-  "active": true,
+  "active": false,
   "creationTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655124400346
-  },
-  "versionTag": {
     "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655124559550
+  },
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655124679307
   },
   "checklists": {
     "checklists": []
