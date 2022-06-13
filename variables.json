@@ -7,7 +7,8 @@
     "State_5"
   ],
   "foo": {
-    "bar": 10
+    "bar": 10,
+    "trial": 8
   },
   "selected_year": 7,
   "last_end_date": "2022-05-20",
