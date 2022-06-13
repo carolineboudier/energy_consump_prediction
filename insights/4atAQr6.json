@@ -1,0 +1,29 @@
+{
+  "type": "filters",
+  "params": {
+    "datasetSmartName": "classif_eval"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Filters on classif_eval",
+  "dashboardCreationId": "FiM4pP5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655133939092
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655133939092
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
