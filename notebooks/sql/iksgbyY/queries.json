@@ -66,6 +66,28 @@
         },
         "sql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\"",
         "expandedSql": "SELECT * \nFROM \"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows\"\"caroline_boudier\".\"ENERGYCONSUMPTIONPREDICTION_full_data_enriched_windows_prepared_bis\""
+      },
+      {
+        "mode": "SQL",
+        "id": "VH1bPmLOGTLN",
+        "runOn": 1655123545627,
+        "runIn": 48,
+        "runBy": "admin",
+        "connection": "postgreSQL",
+        "state": "RUNNING",
+        "futureId": "3ncAOVC0",
+        "hash": "45312f597fcc461172ef28d7333bdf0a",
+        "querySettings": {
+          "addLimitToStatement": true,
+          "statementsOutOfTransaction": false,
+          "inheritConf": "default",
+          "extraConf": [],
+          "addDkuUdf": false,
+          "statementsParseMode": "SPLIT",
+          "statementsExecutionMode": "PREPARED"
+        },
+        "sql": "SELECT *\nFROM \"PARTITION_DEMO_input_by_block\"",
+        "expandedSql": "SELECT *\nFROM \"PARTITION_DEMO_input_by_block\""
       }
     ]
   }
