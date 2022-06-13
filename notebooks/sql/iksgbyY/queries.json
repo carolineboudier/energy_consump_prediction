@@ -71,10 +71,10 @@
         "mode": "SQL",
         "id": "VH1bPmLOGTLN",
         "runOn": 1655123545627,
-        "runIn": 48,
+        "runIn": 90,
         "runBy": "admin",
         "connection": "postgreSQL",
-        "state": "RUNNING",
+        "state": "DONE",
         "futureId": "3ncAOVC0",
         "hash": "45312f597fcc461172ef28d7333bdf0a",
         "querySettings": {
