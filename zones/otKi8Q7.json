@@ -1,7 +1,21 @@
 {
   "name": "Shared Dataset",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "input_by_Block",
+      "objectType": "DATASET",
+      "projectKey": "PARTITION_DEMO"
+    },
+    {
+      "objectId": "copy_shared_dataset",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_copy_shared_dataset",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
