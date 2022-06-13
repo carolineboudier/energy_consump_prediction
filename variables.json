@@ -6,6 +6,9 @@
     "State_6",
     "State_5"
   ],
+  "foo": {
+    "bar": 10
+  },
   "selected_year": 7,
   "last_end_date": "2022-05-20",
   "variable": "name"
