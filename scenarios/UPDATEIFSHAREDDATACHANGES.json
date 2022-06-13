@@ -5,18 +5,18 @@
   "name": "Update if shared data changes",
   "active": true,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655123561893
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655124038533
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655124400346
   },
   "checklists": {
     "checklists": []
@@ -32,7 +32,7 @@
       "id": "93mnIqG5",
       "type": "sql_query",
       "name": "SQL query change",
-      "delay": 60,
+      "delay": 10,
       "active": true,
       "params": {
         "connection": "postgreSQL",
@@ -41,7 +41,7 @@
         "limit": 10000
       },
       "graceDelaySettings": {
-        "delay": 60,
+        "delay": 10,
         "checkAgainAfterGraceDelay": true
       }
     }
