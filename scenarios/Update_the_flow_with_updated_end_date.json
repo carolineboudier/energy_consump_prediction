@@ -5,18 +5,18 @@
   "name": "Update the flow with updated end date",
   "active": false,
   "creationTag": {
-    "versionNumber": 10,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655122844166
-  },
-  "versionTag": {
     "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655122844886
+  },
+  "versionTag": {
+    "versionNumber": 12,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655123135321
   },
   "checklists": {
     "checklists": []
@@ -100,7 +100,7 @@
               "partitionsSpec": ""
             }
           ],
-          "jobType": "RECURSIVE_BUILD",
+          "jobType": "RECURSIVE_FORCED_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
