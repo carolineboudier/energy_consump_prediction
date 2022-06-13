@@ -5,18 +5,18 @@
   "name": "Build a state dashboard and send it",
   "active": false,
   "creationTag": {
-    "versionNumber": 13,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654865112933
-  },
-  "versionTag": {
     "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654865114289
+  },
+  "versionTag": {
+    "versionNumber": 15,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655113695010
   },
   "checklists": {
     "checklists": []
@@ -141,7 +141,7 @@
         "id": "reporta6d78840c91424fa92272fb2b8760dda",
         "type": "send_report",
         "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -180,6 +180,53 @@
               "message": "\u003ch1\u003e\n    Find your up-to-date dashboard here\n\u003c/h1\u003e\n\n\u003cp\u003e\n    For any questions, feel free to answer to this email directly. \n\u003c/p\u003e\n"
             }
           }
+        }
+      },
+      {
+        "id": "create_dashboard_export_Lf3yqtX",
+        "type": "create_dashboard_export",
+        "name": "Step #5",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "dashboardId": "Lf3yqtX",
+          "exportFormat": {
+            "paperSize": "SCREEN_16_9",
+            "orientation": "LANDSCAPE",
+            "fileType": "PDF",
+            "width": 1920,
+            "height": 1080
+          },
+          "folderSmartId": "xtJHWex9",
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "custom_python_IPXUZrXlj2NlhGAyOWGEHQ",
+        "type": "custom_python",
+        "name": "Step #6",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "# import packages\nimport dataiku\n\n# get the project handle \nprojecthandle\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\n# get the current variable (country for you, year for me)\nmy_vars\u003dprojecthandle.get_variables()\nyear\u003dmy_vars[\"standard\"][\"selected_year\"]\n\n# get the final folder (you will find the folder ID in the URL that appears when you\u0027re in the folder)\nfolder_handle\u003ddataiku.Folder(\"xtJHWex9\")\n\n# path of your original dashboard (basically the name of the file preceded by a \"/\")\npath\u003d\"/Year-level-dashboard.pdf\"\n\n# new path for the new file (here I put the year (country for you) + \n# the current timestamp but it\u0027s up to you how you name it)\nfrom datetime import datetime\nnow\u003ddatetime.now()\nformatted_now\u003dstr(now.year)+\"-\"+str(now.month)+\"-\"+str(now.day)\nnew_path\u003d\"/year_\"+str(year)+\"_dashboard_exported_on_\"+formatted_now+\".pdf\"\n\n# copy the original file with a new file name that corresponds to country and date\n\nwith folder_handle.get_download_stream(path) as f:\n    data\u003df.read()\n\nwith folder_handle.get_writer(new_path) as w:\n    w.write(data)",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
+          "proceedOnFailure": false
         }
       }
     ]
