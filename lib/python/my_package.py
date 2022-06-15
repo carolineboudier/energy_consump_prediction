@@ -4,3 +4,6 @@ def calc_missing_vals(input_df):
     missing_df=input_df.isnull().sum()/N*100
     missing_df=missing_df[missing_df!=0]
     return(missing_df)
+
+def only_here_she_is(test):
+    print(test)
