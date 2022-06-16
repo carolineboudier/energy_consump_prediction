@@ -911,16 +911,16 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 9,
-              "left": 9,
-              "width": 2,
-              "height": 2
+              "top": 12,
+              "left": 0,
+              "width": 12,
+              "height": 5
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -942,11 +942,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 75,
+    "versionNumber": 76,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655387181813
+    "lastModifiedOn": 1655387194598
   },
   "creationTag": {
     "versionNumber": 0,
