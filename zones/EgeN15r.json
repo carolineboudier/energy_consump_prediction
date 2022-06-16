@@ -53,6 +53,14 @@
     {
       "objectId": "to_pivot",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "to_pivot_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_to_pivot_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
