@@ -63,9 +63,9 @@
   ],
   "schema": {
     "columns": [
-      {"name":"new_column","type":"string"},
-      {"name":"new_column_1","type":"string"}
+      {"name":"keys","type":"string"},
+      {"name":"values","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   }
 }
