@@ -826,91 +826,6 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 9,
-              "left": 6,
-              "width": 3,
-              "height": 3
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "filters": [
-                {
-                  "filterType": "ALPHANUM_FACET",
-                  "column": "State_Factor",
-                  "columnType": "ALPHANUM",
-                  "isA": "filter",
-                  "excludedValues": {},
-                  "selectedValues": {
-                    "State_1": true,
-                    "State_10": true,
-                    "State_11": true,
-                    "State_2": true,
-                    "State_4": true,
-                    "State_8": true
-                  },
-                  "isAGlobalFilter": true,
-                  "explicitExclude": false
-                },
-                {
-                  "filterType": "ALPHANUM_FACET",
-                  "column": "building_class",
-                  "columnType": "ALPHANUM",
-                  "isA": "filter",
-                  "excludedValues": {},
-                  "selectedValues": {
-                    "Commercial": true,
-                    "Residential": true
-                  },
-                  "isAGlobalFilter": true,
-                  "explicitExclude": false
-                },
-                {
-                  "filterType": "NUMERICAL_FACET",
-                  "column": "Year_Factor",
-                  "columnType": "NUMERICAL",
-                  "minValue": 7.0,
-                  "maxValue": 7.0,
-                  "isA": "filter",
-                  "excludedValues": {},
-                  "isAGlobalFilter": true,
-                  "explicitExclude": false
-                }
-              ],
-              "engineType": "SQL",
-              "refreshableSelection": {
-                "selection": {
-                  "useMemTable": false,
-                  "filter": {
-                    "distinct": false,
-                    "enabled": false
-                  },
-                  "partitionSelectionMethod": "ALL",
-                  "latestPartitionsN": 1,
-                  "ordering": {
-                    "enabled": false,
-                    "rules": []
-                  },
-                  "samplingMethod": "HEAD_SEQUENTIAL",
-                  "maxRecords": 10000,
-                  "targetRatio": 0.02,
-                  "withinFirstN": -1,
-                  "maxReadUncompressedBytes": -1
-                },
-                "autoRefreshSample": false,
-                "_refreshTrigger": 0
-              },
-              "copySelectionFromScript": true
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "4atAQr6",
-            "insightType": "filters",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "INSIGHT",
-            "box": {
               "top": 12,
               "left": 0,
               "width": 12,
@@ -930,6 +845,68 @@
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 17,
+              "left": 0,
+              "width": 3,
+              "height": 3
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "filters": [
+                {
+                  "filterType": "DATE_FACET",
+                  "column": "date",
+                  "columnType": "DATE",
+                  "dateFilterType": "YEAR",
+                  "minValue": 1.265328E12,
+                  "maxValue": 1.3584672E12,
+                  "isA": "filter",
+                  "excludedValues": {},
+                  "selectedValues": {
+                    "2010": true,
+                    "2011": true,
+                    "2012": true,
+                    "2013": true
+                  },
+                  "isAGlobalFilter": true,
+                  "explicitExclude": false
+                }
+              ],
+              "engineType": "LINO",
+              "refreshableSelection": {
+                "selection": {
+                  "useMemTable": false,
+                  "filter": {
+                    "distinct": false,
+                    "enabled": false
+                  },
+                  "partitionSelectionMethod": "ALL",
+                  "latestPartitionsN": 1,
+                  "ordering": {
+                    "enabled": false,
+                    "rules": []
+                  },
+                  "samplingMethod": "FULL",
+                  "maxRecords": 10000,
+                  "targetRatio": 0.02,
+                  "withinFirstN": -1,
+                  "maxReadUncompressedBytes": -1
+                },
+                "autoRefreshSample": false,
+                "_refreshTrigger": 3
+              },
+              "copySelectionFromScript": true
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "c93rJ2i",
+            "insightType": "filters",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -942,11 +919,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 76,
+    "versionNumber": 77,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655387194598
+    "lastModifiedOn": 1655387237585
   },
   "creationTag": {
     "versionNumber": 0,
