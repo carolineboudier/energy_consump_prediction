@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655370941001
+    "lastModifiedOn": 1655373485791
   },
   "creationTag": {
     "versionNumber": 0,
@@ -87,13 +87,16 @@
   "schema": {
     "columns": [
       {
-        "name": "new_column",
+        "name": "author",
         "type": "string"
       },
       {
-        "name": "new_column_1",
-        "type": "string",
-        "meaning": "Text"
+        "name": "publication_date",
+        "type": "bigint"
+      },
+      {
+        "name": "title",
+        "type": "string"
       }
     ],
     "userModified": true
