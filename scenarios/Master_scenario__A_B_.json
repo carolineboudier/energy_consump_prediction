@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655395537397
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655395538455
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655395593636
   },
   "checklists": {
     "checklists": []
@@ -69,7 +69,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import time\nimport dataiku\n\n# get project handle\nproject\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nscenarios_ids_to_run \u003d [\"Subscenario_A\", \"Subscenario_B\"]\n\nscenario_runs \u003d []\n\nfor scenario_id in scenarios_ids_to_run:\n    scenario \u003d project.get_scenario(scenario_id)\n\n    trigger_fire \u003d scenario.run()\n    # Wait for the trigger fire to have actually started a scenario\n    scenario_run \u003d trigger_fire.wait_for_scenario_run()\n    scenario_runs.append(scenario_run)\n\n# Poll all scenario runs, until all of them have completed\nwhile True:\n    any_not_complete \u003d False\n    for scenario_run in scenario_runs:\n        # Update the status from the DSS API\n        scenario_run.refresh()\n        if scenario_run.running:\n            any_not_complete \u003d True\n\n    if any_not_complete:\n        print(\"At least a scenario is still running...\")\n    else:\n        print(\"All scenarios are complete\")\n        break\n\n    # Wait a bit before checking again\n    time.sleep(30)\n\nprint(\"Scenario run ids and outcomes: %s\" % ([(sr.id, sr.outcome) for sr in scenario_runs]))",
+          "script": "import time\nimport dataiku\n\n# get project handle\nproject\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nscenarios_ids_to_run \u003d [\"Subscenario_A\", \"Subscenario_B\"]\n\nscenario_runs \u003d []\n\nfor scenario_id in scenarios_ids_to_run:\n    scenario \u003d project.get_scenario(scenario_id)\n\n    trigger_fire \u003d scenario.run()\n    # Wait for the trigger fire to have actually started a scenario\n    scenario_run \u003d trigger_fire.wait_for_scenario_run()\n    scenario_runs.append(scenario_run)\n\n# Poll all scenario runs, until all of them have completed\nwhile True:\n    any_not_complete \u003d False\n    for scenario_run in scenario_runs:\n        # Update the status from the DSS API\n        scenario_run.refresh()\n        if scenario_run.running:\n            any_not_complete \u003d True\n\n    if any_not_complete:\n        print(\"At least a scenario is still running...\")\n    else:\n        print(\"All scenarios are complete\")\n        break\n\n    # Wait a bit before checking again\n    time.sleep(2)\n\nprint(\"Scenario run ids and outcomes: %s\" % ([(sr.id, sr.outcome) for sr in scenario_runs]))",
           "envSelection": {
             "envMode": "INHERIT"
           },
