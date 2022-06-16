@@ -5,18 +5,18 @@
   "name": "Build a list of dashboards",
   "active": false,
   "creationTag": {
-    "versionNumber": 2,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1654852986786
-  },
-  "versionTag": {
     "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1654852998632
+  },
+  "versionTag": {
+    "versionNumber": 4,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655389442619
   },
   "checklists": {
     "checklists": []
@@ -45,7 +45,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\n\n# define a list\nyear_list\u003d[1,2,3,4,5,6,7]\n\n# get project handle\nprojecthandle\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nfor year in year_list:\n    \n    # UPDATE THE VARIABLE\n\n    # get variables\n    my_vars\u003dprojecthandle.get_variables()\n    \n    \n    # update variable value\n    my_vars[\"standard\"][\"selected_year\"]\u003dyear\n\n    # update project variables\n    projecthandle.set_variables(my_vars)\n    \n    \n    # RUN THE SCENARIO\n    scenario \u003d projecthandle.get_scenario(\"Build_a_state_dashboard_and_send_it\")\n    scenario.run_and_wait()",
+          "script": "import dataiku\n\n# define a list\nyear_list\u003d[1,2,3]\n\n# get project handle\nprojecthandle\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nfor year in year_list:\n    \n    # UPDATE THE VARIABLE\n\n    # get variables\n    my_vars\u003dprojecthandle.get_variables()\n    \n    \n    # update variable value\n    my_vars[\"standard\"][\"selected_year\"]\u003dyear\n\n    # update project variables\n    projecthandle.set_variables(my_vars)\n    \n    \n    # RUN THE SCENARIO\n    scenario \u003d projecthandle.get_scenario(\"Build_a_state_dashboard_and_send_it\")\n    scenario.run_and_wait()",
           "envSelection": {
             "envMode": "INHERIT"
           },
