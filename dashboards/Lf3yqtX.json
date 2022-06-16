@@ -316,8 +316,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 21,
+              "left": 0,
               "width": 2,
               "height": 2
             },
@@ -342,11 +342,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 21,
+    "versionNumber": 22,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655389271652
+    "lastModifiedOn": 1655389272563
   },
   "creationTag": {
     "versionNumber": 0,
