@@ -1,3 +1,71 @@
 {
-  "data": []
+  "data": [
+    [
+      "title",
+      "Cats and dogs"
+    ],
+    [
+      "author",
+      "Smith"
+    ],
+    [
+      "publication_date",
+      "1986"
+    ],
+    [
+      "title",
+      "Farming"
+    ],
+    [
+      "author",
+      "jane"
+    ],
+    [
+      "publication_date",
+      "2038"
+    ],
+    [
+      "title",
+      "Grey sky"
+    ],
+    [
+      "author",
+      "Paul"
+    ],
+    [
+      "publication_date",
+      "1875"
+    ],
+    [
+      "title",
+      "Paris and London"
+    ],
+    [
+      "author",
+      "Pierre Gautier"
+    ],
+    [
+      "publication_date",
+      "1538"
+    ],
+    [
+      "title",
+      "Coming Home"
+    ],
+    [
+      "author",
+      "Stark"
+    ],
+    [
+      "publication_date",
+      "1875"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"new_column","type":"string"},
+      {"name":"new_column_1","type":"string"}
+    ],
+    "userModified": false
+  }
 }
