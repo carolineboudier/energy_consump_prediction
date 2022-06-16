@@ -12,11 +12,11 @@
     "lastModifiedOn": 1655395063674
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655395063674
+    "lastModifiedOn": 1655395110098
   },
   "checklists": {
     "checklists": []
@@ -34,7 +34,7 @@
       {
         "id": "build_2_true_d_training_full_data",
         "type": "build_flowitem",
-        "name": "Force rebuild Default",
+        "name": "Force rebuild Data Exp",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -47,8 +47,8 @@
         "params": {
           "builds": [
             {
-              "type": "DATASET",
-              "itemId": "training_full_data",
+              "type": "MANAGED_FOLDER",
+              "itemId": "5YbetAty",
               "partitionsSpec": ""
             }
           ],
