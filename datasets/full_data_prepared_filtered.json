@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655388875985
+    "lastModifiedOn": 1655388908664
   },
   "creationTag": {
     "versionNumber": 0,
@@ -425,7 +425,7 @@
       {
         "type": "python",
         "enabled": true,
-        "computeOnBuildMode": "NO",
+        "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "Python probe",
           "level": 8
