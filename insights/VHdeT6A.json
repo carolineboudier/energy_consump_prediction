@@ -1,0 +1,31 @@
+{
+  "type": "metrics",
+  "params": {
+    "objectSmartId": "full_data_prepared_filtered",
+    "objectType": "DATASET",
+    "metricId": "python:minute-second:Python probe"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "minute-second (Python probe) of full_data_prepared_filtered",
+  "dashboardCreationId": "Lf3yqtX",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655389271647
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655389271647
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

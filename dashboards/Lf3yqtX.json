@@ -312,6 +312,25 @@
             "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": -1,
+              "left": -1,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "displayMode": "LAST_VALUE"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "VHdeT6A",
+            "insightType": "metrics",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -323,11 +342,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654865315569
+    "lastModifiedOn": 1655389271652
   },
   "creationTag": {
     "versionNumber": 0,
