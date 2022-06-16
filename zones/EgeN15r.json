@@ -49,6 +49,10 @@
     {
       "objectId": "monthly_time_serie",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "to_pivot",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
