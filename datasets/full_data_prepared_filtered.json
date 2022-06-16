@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654865239358
+    "lastModifiedOn": 1655388875985
   },
   "creationTag": {
     "versionNumber": 0,
@@ -420,6 +420,21 @@
         },
         "configuration": {
           "aggregates": []
+        }
+      },
+      {
+        "type": "python",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Python probe",
+          "level": 8
+        },
+        "configuration": {
+          "code": "# Define here a function that returns the metric.\ndef process(dataset, partition_id):\n    # dataset is a dataiku.Dataset object\n    return {\u0027metric_name1\u0027 : 42, \u0027metric_name2\u0027 : True}\n",
+          "envSelection": {
+            "envMode": "INHERIT"
+          }
         }
       }
     ],
