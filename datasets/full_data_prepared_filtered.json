@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655389198179
+    "lastModifiedOn": 1655389234481
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1646923575933
   },
-  "tags": [],
+  "tags": [
+    "custom_metric"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/full_data_prepared_filtered",
