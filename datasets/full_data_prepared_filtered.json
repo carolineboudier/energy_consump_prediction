@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655388914785
+    "lastModifiedOn": 1655389172768
   },
   "creationTag": {
     "versionNumber": 0,
@@ -431,7 +431,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\ndef process(dataset, partition_id):\n    # dataset is a dataiku.Dataset object\n    return {\u0027metric_name1\u0027 : 42, \u0027metric_name2\u0027 : True}\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset, partition_id):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027minute-second\u0027:date}\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
