@@ -30,7 +30,70 @@
   "exploreUIParams": {
     "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "PythonUDF",
+      "params": {
+        "mode": "CELL",
+        "envSelection": {
+          "envMode": "INHERIT"
+        },
+        "stopOnError": true,
+        "pythonSourceCode": "count \u003d -1\ndef process(row):\n    global count\n    count \u003d count + 1\n    return count\n",
+        "useKernel": false,
+        "column": "row_number",
+        "sourceColumnsList": [],
+        "usePythonUnicode": true,
+        "vectorSize": 256,
+        "vectorize": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "row_number//3",
+        "column": "row_index"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "Pivot",
+      "params": {
+        "labelsColumn": "keys",
+        "otherColumnsAction": "KEEP_FIRST",
+        "indexColumn": "row_index",
+        "valuesColumn": "values"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "keys",
+          "values",
+          "row_number",
+          "row_index"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,8 +120,18 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "python": 100,
+    "row_index": 100,
+    "keys": 127,
+    "author": 100,
+    "values": 127,
     "new_column_1": 105,
-    "new_column": 127
+    "newcolumn_expression": 165,
+    "publication_date": 135,
+    "row_number": 100,
+    "new_column": 127,
+    "title": 100,
+    "prev_title": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
