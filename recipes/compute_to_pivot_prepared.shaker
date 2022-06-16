@@ -26,7 +26,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -53,7 +56,10 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "new_column_1": 105,
+    "new_column": 127
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
