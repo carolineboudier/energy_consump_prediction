@@ -243,7 +243,7 @@
       "readProjectContent": false,
       "writeProjectContent": false,
       "exportDatasetsData": false,
-      "readDashboards": false,
+      "readDashboards": true,
       "writeDashboards": false,
       "moderateDashboards": false,
       "shareToWorkspaces": false,
@@ -428,11 +428,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 65,
+    "versionNumber": 66,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655390000207
+    "lastModifiedOn": 1655458473477
   },
   "creationTag": {
     "versionNumber": 0,
