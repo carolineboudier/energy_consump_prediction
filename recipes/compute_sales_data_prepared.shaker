@@ -34,7 +34,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FilterOnDate",
       "params": {
         "booleanMode": "AND",
@@ -54,13 +54,35 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FilterOnCustomFormula",
       "params": {
         "expression": "diff(date,variables[\"last_end_date\"])\u003c\u003d0",
         "action": "KEEP_ROW"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
+      "type": "FilterOnDate",
+      "params": {
+        "booleanMode": "AND",
+        "columns": [
+          "date"
+        ],
+        "part": "MONTH_OF_YEAR",
+        "values": [],
+        "relativeMax": 1,
+        "timezone_id": "UTC",
+        "relativeMin": 1,
+        "action": "REMOVE_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "filterType": "RELATIVE",
+        "option": "THIS"
       },
       "alwaysShowComment": false
     }
