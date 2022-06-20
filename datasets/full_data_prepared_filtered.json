@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 42,
+    "versionNumber": 43,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713883669
+    "lastModifiedOn": 1655713931541
   },
   "creationTag": {
     "versionNumber": 0,
@@ -433,7 +433,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (full_str_date)\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"new_min_hour\":full_str_date})\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
