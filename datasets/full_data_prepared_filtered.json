@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655712641369
+    "lastModifiedOn": 1655712655577
   },
   "creationTag": {
     "versionNumber": 0,
@@ -504,7 +504,14 @@
         "adv_col_stats:MODE:Year_Factor",
         "python:minute-second:Python probe",
         "python:metric_name1:Python probe",
-        "python:metric_name2:Python probe"
+        "python:metric_name2:Python probe",
+        "reporting:BUILD_START_DATE",
+        "reporting:BUILD_DURATION",
+        "reporting:WARNING_COUNT",
+        "reporting:BUILD_SUCCESS",
+        "basic:COUNT_FILES",
+        "reporting:METRICS_COMPUTATION_DURATION",
+        "basic:SIZE"
       ]
     }
   },
