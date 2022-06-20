@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 25,
+    "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713026484
+    "lastModifiedOn": 1655713079908
   },
   "creationTag": {
     "versionNumber": 0,
@@ -453,6 +453,21 @@
           "envSelection": {
             "envMode": "EXPLICIT_ENV",
             "envName": "DSSInternalMetrics"
+          }
+        }
+      },
+      {
+        "type": "python",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Python probe",
+          "level": 8
+        },
+        "configuration": {
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return {\u0027ter_minute-second\u0027:date}\n",
+          "envSelection": {
+            "envMode": "INHERIT"
           }
         }
       }
