@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713085980
+    "lastModifiedOn": 1655713124900
   },
   "creationTag": {
     "versionNumber": 0,
@@ -435,7 +435,7 @@
         "configuration": {
           "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027minute-second\u0027:date}\n",
           "envSelection": {
-            "envMode": "EXPLICIT_ENV",
+            "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
           }
         }
@@ -451,7 +451,7 @@
         "configuration": {
           "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return {\u0027bis_minute-second\u0027:date}\n",
           "envSelection": {
-            "envMode": "EXPLICIT_ENV",
+            "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
           }
         }
@@ -467,7 +467,7 @@
         "configuration": {
           "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return {\u0027ter_minute-second\u0027:date}\n",
           "envSelection": {
-            "envMode": "INHERIT"
+            "envMode": "USE_BUILTIN_MODE"
           }
         }
       }
