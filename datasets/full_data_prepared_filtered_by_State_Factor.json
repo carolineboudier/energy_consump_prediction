@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714157057
+    "lastModifiedOn": 1655714171409
   },
   "creationTag": {
     "versionNumber": 0,
@@ -202,7 +202,7 @@
         "enabled": true,
         "computeOnBuildMode": "NO",
         "meta": {
-          "name": "Python probe",
+          "name": "Python probe - V2",
           "level": 8
         },
         "configuration": {
