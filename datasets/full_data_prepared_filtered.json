@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 29,
+    "versionNumber": 30,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713184263
+    "lastModifiedOn": 1655713215672
   },
   "creationTag": {
     "versionNumber": 0,
@@ -465,7 +465,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return {\u0027ter_minute-second\u0027:date}\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return (date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE"
           }
