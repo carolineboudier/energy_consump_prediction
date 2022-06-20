@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714056589
+    "lastModifiedOn": 1655714079205
   },
   "creationTag": {
     "versionNumber": 0,
@@ -191,7 +191,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    mini_str_date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027metric_name1\u0027 : full_str_date, \u0027metric_name2\u0027 : mini_str_date}\n",
+          "code": "\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    mini_str_date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027day_minute_second\u0027 : full_str_date, \u0027minute_second\u0027 : mini_str_date}\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
