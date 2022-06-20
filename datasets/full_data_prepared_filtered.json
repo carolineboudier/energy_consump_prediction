@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 31,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713281855
+    "lastModifiedOn": 1655713449028
   },
   "creationTag": {
     "versionNumber": 0,
@@ -433,7 +433,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027minute-second\u0027:date}\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (full_str_date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
@@ -449,23 +449,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (str_date)\n",
-          "envSelection": {
-            "envMode": "USE_BUILTIN_MODE",
-            "envName": "DSSInternalMetrics"
-          }
-        }
-      },
-      {
-        "type": "python",
-        "enabled": true,
-        "computeOnBuildMode": "PARTITION",
-        "meta": {
-          "name": "Python probe",
-          "level": 8
-        },
-        "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%D-%M-%S\")\n    return (date)\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (min_str_date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE"
           }
