@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 49,
+    "versionNumber": 50,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714427798
+    "lastModifiedOn": 1655714481444
   },
   "creationTag": {
     "versionNumber": 0,
@@ -433,7 +433,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"new_min_hour\":full_str_date})\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"new_min_hour\":full_str_date})\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
@@ -449,7 +449,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (min_str_date)\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (min_str_date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE"
           }
