@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 47,
+    "versionNumber": 48,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714314404
+    "lastModifiedOn": 1655714398864
   },
   "creationTag": {
     "versionNumber": 0,
@@ -426,7 +426,7 @@
       },
       {
         "type": "python",
-        "enabled": true,
+        "enabled": false,
         "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "first_python_probe",
@@ -442,7 +442,7 @@
       },
       {
         "type": "python",
-        "enabled": true,
+        "enabled": false,
         "computeOnBuildMode": "PARTITION",
         "meta": {
           "name": "second_python_probe",
