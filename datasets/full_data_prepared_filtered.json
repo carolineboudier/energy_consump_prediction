@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655389234481
+    "lastModifiedOn": 1655712606556
   },
   "creationTag": {
     "versionNumber": 0,
@@ -487,7 +487,9 @@
         "basic:COUNT_COLUMNS",
         "records:COUNT_RECORDS",
         "adv_col_stats:MODE:Year_Factor",
-        "python:minute-second:Python probe"
+        "python:minute-second:Python probe",
+        "python:metric_name1:Python probe",
+        "python:metric_name2:Python probe"
       ]
     }
   },
