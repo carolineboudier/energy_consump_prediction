@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 51,
+    "versionNumber": 52,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655715116166
+    "lastModifiedOn": 1655715854757
   },
   "creationTag": {
     "versionNumber": 0,
@@ -429,11 +429,11 @@
         "enabled": true,
         "computeOnBuildMode": "PARTITION",
         "meta": {
-          "name": "first_python_probe",
+          "name": "Python probe",
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"new_min_hour\":full_str_date})\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (full_str_date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE",
             "envName": "DSSInternalMetrics"
@@ -445,11 +445,11 @@
         "enabled": true,
         "computeOnBuildMode": "PARTITION",
         "meta": {
-          "name": "second_python_probe",
+          "name": "Python probe",
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"second_min_hour\":min_str_date})\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_ter(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (min_str_date)\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE"
           }
@@ -500,8 +500,9 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "python:value:second_python_probe",
-        "python:new_min_hour:first_python_probe"
+        "python:new_min_hour:first_python_probe",
+        "python:second_min_hour:second_python_probe",
+        "python:value:second_python_probe"
       ]
     }
   },
