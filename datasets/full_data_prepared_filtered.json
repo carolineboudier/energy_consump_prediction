@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 50,
+    "versionNumber": 51,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714481444
+    "lastModifiedOn": 1655715116166
   },
   "creationTag": {
     "versionNumber": 0,
@@ -449,7 +449,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return (min_str_date)\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(my_dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    min_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    return ({\"second_min_hour\":min_str_date})\n",
           "envSelection": {
             "envMode": "USE_BUILTIN_MODE"
           }
