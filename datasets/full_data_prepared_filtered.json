@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 22,
+    "versionNumber": 23,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655712796334
+    "lastModifiedOn": 1655712829654
   },
   "creationTag": {
     "versionNumber": 0,
@@ -450,7 +450,8 @@
         "configuration": {
           "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset, partition_id):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027bis_minute-second\u0027:date}\n",
           "envSelection": {
-            "envMode": "INHERIT"
+            "envMode": "EXPLICIT_ENV",
+            "envName": "DSSInternalMetrics"
           }
         }
       }
