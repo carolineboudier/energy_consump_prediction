@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655712698576
+    "lastModifiedOn": 1655712731168
   },
   "creationTag": {
     "versionNumber": 0,
@@ -448,7 +448,7 @@
           "level": 8
         },
         "configuration": {
-          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process(dataset, partition_id):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027bis_minute-second\u0027:date}\n",
+          "code": "# Define here a function that returns the metric.\nimport datetime\n\ndef process_bis(dataset, partition_id):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027bis_minute-second\u0027:date}\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
