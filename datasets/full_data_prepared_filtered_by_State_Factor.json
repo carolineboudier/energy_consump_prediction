@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655714097690
+    "lastModifiedOn": 1655714157057
   },
   "creationTag": {
     "versionNumber": 0,
@@ -192,6 +192,21 @@
         },
         "configuration": {
           "code": "\nimport datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    mini_str_date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027day_minute_second\u0027 : full_str_date, \u0027minute_second\u0027 : mini_str_date}\n",
+          "envSelection": {
+            "envMode": "INHERIT"
+          }
+        }
+      },
+      {
+        "type": "python",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Python probe",
+          "level": 8
+        },
+        "configuration": {
+          "code": "import datetime\n\ndef process(dataset):\n    # compute accurate value\n    now\u003ddatetime.datetime.now()\n    full_str_date\u003dnow.strftime(\"%D-%M-%S\")\n    mini_str_date\u003dnow.strftime(\"%M-%S\")\n    return {\u0027other_day_minute_second\u0027 : full_str_date}\n",
           "envSelection": {
             "envMode": "INHERIT"
           }
