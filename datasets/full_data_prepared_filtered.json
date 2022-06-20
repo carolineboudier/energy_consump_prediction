@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 41,
+    "versionNumber": 42,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713874426
+    "lastModifiedOn": 1655713883669
   },
   "creationTag": {
     "versionNumber": 0,
@@ -502,7 +502,9 @@
       "metrics": [
         "python:ter_minute-second:Python probe",
         "python:bis_minute-second:Python probe",
-        "python:minute-second:Python probe"
+        "python:minute-second:Python probe",
+        "python:metric_name1:Python probe",
+        "python:metric_name2:Python probe"
       ]
     }
   },
