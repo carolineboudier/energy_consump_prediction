@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 33,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655713449028
+    "lastModifiedOn": 1655713485143
   },
   "creationTag": {
     "versionNumber": 0,
@@ -500,8 +500,6 @@
       "partition": "NP",
       "columns": [],
       "metrics": [
-        "python:minute-second:Python probe",
-        "python:bis_minute-second:Python probe",
         "python:ter_minute-second:Python probe"
       ]
     }
