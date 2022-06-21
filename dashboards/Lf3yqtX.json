@@ -314,25 +314,6 @@
             "resizeImageMode": "FIT_SIZE"
           },
           {
-            "tileType": "INSIGHT",
-            "box": {
-              "top": 0,
-              "left": 10,
-              "width": 2,
-              "height": 2
-            },
-            "clickAction": "OPEN_INSIGHT",
-            "tileParams": {
-              "displayMode": "LAST_VALUE"
-            },
-            "autoLoad": true,
-            "showTitle": "YES",
-            "insightId": "VHdeT6A",
-            "insightType": "metrics",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
             "tileType": "TEXT",
             "box": {
               "top": 0,
@@ -350,6 +331,25 @@
             "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 10,
+              "width": 2,
+              "height": 2
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "displayMode": "LAST_VALUE"
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "NC4p9qO",
+            "insightType": "metrics",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
           }
         ]
       },
@@ -361,11 +361,11 @@
   "name": "Year level dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 27,
+    "versionNumber": 28,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655458503201
+    "lastModifiedOn": 1655799730399
   },
   "creationTag": {
     "versionNumber": 0,
