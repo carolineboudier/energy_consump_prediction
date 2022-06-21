@@ -8,7 +8,15 @@
       "columnsSelection": {
         "mode": "ALL"
       },
-      "columnWidthsByName": {},
+      "columnWidthsByName": {
+        "date": 100,
+        "column_with_leading_zeros": 203,
+        "bank_info": 183,
+        "bank": 106,
+        "bank_info_extracted_1": 173,
+        "account_number0": 128,
+        "mix_num_text": 105
+      },
       "coloring": {
         "scheme": "MEANING_AND_STATUS",
         "individualColumns": [],
@@ -61,7 +69,9 @@
         "autoRefreshSample": false,
         "_refreshTrigger": 0
       },
-      "exploreUIParams": {},
+      "exploreUIParams": {
+        "autoRefresh": true
+      },
       "globalSearchQuery": "",
       "explorationFilters": [],
       "previewMode": "ALL_ROWS"
@@ -72,11 +82,11 @@
   "name": "dates_prepared",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655800391722
+    "lastModifiedOn": 1655800443967
   },
   "creationTag": {
     "versionNumber": 0,
