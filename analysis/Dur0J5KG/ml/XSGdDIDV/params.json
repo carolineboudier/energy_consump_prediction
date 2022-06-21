@@ -6316,7 +6316,7 @@
     "testOnLargerValues": true,
     "kfold": true,
     "nFolds": 5,
-    "instanceIdRefresher": 2,
+    "instanceIdRefresher": 1,
     "subSamplingSeed": 1337
   },
   "id": "XSGdDIDV",
@@ -6359,7 +6359,8 @@
   "backendType": "PY_MEMORY",
   "maxConcurrentModelTraining": 2,
   "envSelection": {
-    "envMode": "USE_BUILTIN_MODE"
+    "envMode": "EXPLICIT_ENV",
+    "envName": "pygam_env"
   },
   "containerSelection": {
     "containerMode": "INHERIT"
