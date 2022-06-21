@@ -36,11 +36,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653404661781
+    "lastModifiedOn": 1655800029840
   },
   "creationTag": {
     "versionNumber": 0,
@@ -68,6 +68,10 @@
       },
       {
         "name": "bank_info",
+        "type": "string"
+      },
+      {
+        "name": "mix_num_text",
         "type": "string"
       }
     ],
