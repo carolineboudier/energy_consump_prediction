@@ -376,8 +376,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 31,
+              "left": 6,
               "width": 6,
               "height": 3
             },
@@ -967,11 +967,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 83,
+    "versionNumber": 84,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655800391724
+    "lastModifiedOn": 1655800392842
   },
   "creationTag": {
     "versionNumber": 0,
