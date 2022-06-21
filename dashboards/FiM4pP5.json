@@ -813,8 +813,8 @@
               "showDescription": true,
               "showCustomFields": true,
               "showStorageType": false,
-              "showMeaning": false,
-              "showProgressBar": false
+              "showMeaning": true,
+              "showProgressBar": true
             },
             "autoLoad": true,
             "showTitle": "YES",
@@ -919,11 +919,11 @@
   "name": "Energy consumption prediction\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 77,
+    "versionNumber": 78,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655387237585
+    "lastModifiedOn": 1655799780289
   },
   "creationTag": {
     "versionNumber": 0,
