@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1652692656776
+    "lastModifiedOn": 1655800052909
   },
   "creationTag": {
     "versionNumber": 0,
@@ -113,6 +113,11 @@
       {
         "name": "account_number0",
         "type": "bigint"
+      },
+      {
+        "name": "mix_num_text",
+        "type": "string",
+        "meaning": "Text"
       }
     ],
     "userModified": true
