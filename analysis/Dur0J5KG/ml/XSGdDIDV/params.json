@@ -6316,7 +6316,7 @@
     "testOnLargerValues": true,
     "kfold": true,
     "nFolds": 5,
-    "instanceIdRefresher": 1,
+    "instanceIdRefresher": 2,
     "subSamplingSeed": 1337
   },
   "id": "XSGdDIDV",
