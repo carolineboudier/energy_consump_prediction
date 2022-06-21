@@ -249,11 +249,11 @@
   "name": "Count by date and temperature on sales_data",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1654252597398
+    "lastModifiedOn": 1655799752481
   },
   "creationTag": {
     "versionNumber": 0,
