@@ -6147,51 +6147,29 @@
     },
     "custom_python": [],
     "plugin_python": {
-      "CustomPyPredAlgo_fraud-monitoring_fraud-monitoring_my-model": {
-        "pluginId": "fraud-monitoring",
+      "CustomPyPredAlgo_ccfraud-plugin_ccfraud-plugin_ada-boost": {
+        "pluginId": "ccfraud-plugin",
         "pluginVersion": "0.0.1",
-        "elementId": "fraud-monitoring_my-model",
-        "name": "Custom algo fraud-monitoring_my-model",
+        "elementId": "ccfraud-plugin_ada-boost",
+        "name": "AdaBoostRegressor-caroline",
         "params": {
           "n_estimators": [
-            50,
-            100
+            50.0,
+            100.0
           ],
           "learning_rate": [
-            0.2
-          ],
-          "loss": [
-            "linear"
-          ],
-          "random_state": 1337
-        },
-        "supportsSampleWeights": false,
-        "acceptsSparseMatrix": false,
-        "enabled": false
-      },
-      "CustomPyPredAlgo_cc-fraud-advanced-plugin_cc-fraud-advanced-plugin_advanced-pred-model": {
-        "pluginId": "cc-fraud-advanced-plugin",
-        "pluginVersion": "0.0.1",
-        "elementId": "cc-fraud-advanced-plugin_advanced-pred-model",
-        "name": "AdaBoostRegressor-Caroline",
-        "params": {
-          "n_estimators": [
-            50,
-            100
-          ],
-          "learning_rate": [
-            1
+            1.0
           ],
           "loss": [
             "linear"
           ],
           "base_estimator": "decisiontree",
-          "max_depth_tree": 3,
-          "min_samples_split_tree": 2,
-          "min_samples_leaf_tree": 1,
-          "max_depth_gbm": -1,
-          "n_estimators_gbm": 100,
-          "min_child_samples_gbm": 20,
+          "max_depth_tree": 3.0,
+          "min_samples_split_tree": 2.0,
+          "min_samples_leaf_tree": 1.0,
+          "max_depth_gbm": -1.0,
+          "n_estimators_gbm": 100.0,
+          "min_child_samples_gbm": 20.0,
           "learning_rate_gbm": 0.1
         },
         "supportsSampleWeights": false,
