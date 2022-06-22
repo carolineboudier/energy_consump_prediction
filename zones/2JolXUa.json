@@ -1,7 +1,12 @@
 {
   "name": "Excel import",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Yid36A8x",
+      "objectType": "MANAGED_FOLDER"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
