@@ -1,0 +1,32 @@
+{
+  "displayName": "to_delete",
+  "predictionType": "REGRESSION",
+  "comparedModels": [],
+  "displayParams": {
+    "pinnedMetrics": [],
+    "yLabels": [],
+    "alsoDisplayedLabels": [],
+    "sortDescending": false,
+    "showConfidenceIntervals": true,
+    "disabledMERunIds": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655890156825
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655890156826
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
