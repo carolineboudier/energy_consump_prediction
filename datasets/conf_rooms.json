@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655887636161
+    "lastModifiedOn": 1655887728847
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,57 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Location Name",
+        "type": "string"
+      },
+      {
+        "name": "Geo - City",
+        "type": "string"
+      },
+      {
+        "name": "Room Name ",
+        "type": "string"
+      },
+      {
+        "name": "Room Capacity ",
+        "type": "bigint"
+      },
+      {
+        "name": "Start Date UTC",
+        "type": "string"
+      },
+      {
+        "name": "Start Time UTC",
+        "type": "string"
+      },
+      {
+        "name": "End Date UTC",
+        "type": "string"
+      },
+      {
+        "name": "End Time UTC",
+        "type": "string"
+      },
+      {
+        "name": "Minutes Booked",
+        "type": "bigint"
+      },
+      {
+        "name": "Total Credits",
+        "type": "double"
+      },
+      {
+        "name": "Desks Occupied by Account (copy)",
+        "type": "bigint"
+      },
+      {
+        "name": "origin",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
