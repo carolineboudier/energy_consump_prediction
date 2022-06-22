@@ -35,7 +35,11 @@
     "outputs": {
       "items": [
         {
-          "ref": "excel_output",
+          "ref": "conf_rooms",
+          "appendMode": false
+        },
+        {
+          "ref": "square_feet",
           "appendMode": false
         }
       ]
@@ -43,11 +47,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655887612442
+    "lastModifiedOn": 1655887651674
   },
   "creationTag": {
     "versionNumber": 0,
