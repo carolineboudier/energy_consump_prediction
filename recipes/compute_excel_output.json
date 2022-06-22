@@ -3,7 +3,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "sheet_name": "Keycard Swipes All"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +39,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655886755698
+    "lastModifiedOn": 1655886842783
   },
   "creationTag": {
     "versionNumber": 0,
