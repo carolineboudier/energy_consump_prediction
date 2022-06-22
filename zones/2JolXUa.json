@@ -5,6 +5,10 @@
     {
       "objectId": "Yid36A8x",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "excel_output",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
