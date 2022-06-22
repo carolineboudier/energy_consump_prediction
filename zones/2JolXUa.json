@@ -13,6 +13,10 @@
     {
       "objectId": "compute_excel_output",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "conf_rooms",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
