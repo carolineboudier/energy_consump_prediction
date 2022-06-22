@@ -6,9 +6,9 @@
     "customConfig": {
       "sheet_name": "Conf Room Bookings;Sq. Ft. Report",
       "usecols": "E:O;A:C",
-      "skiprows": "0,0",
-      "nrows": "10000,10000",
-      "header": "0,0"
+      "skiprows": "0;0",
+      "nrows": "10000;10000",
+      "header": "0;0"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -47,11 +47,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655887654388
+    "lastModifiedOn": 1655887710533
   },
   "creationTag": {
     "versionNumber": 0,
