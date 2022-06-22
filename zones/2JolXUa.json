@@ -17,6 +17,10 @@
     {
       "objectId": "conf_rooms",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "square_feet",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
