@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655886753434
+    "lastModifiedOn": 1655886956730
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,49 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "1/31/2022",
+        "type": "string"
+      },
+      {
+        "name": "Dataiku",
+        "type": "string"
+      },
+      {
+        "name": "Christine Hutchens",
+        "type": "string"
+      },
+      {
+        "name": "christine.hutchens@dataiku.com",
+        "type": "string"
+      },
+      {
+        "name": "One Glenwood",
+        "type": "string"
+      },
+      {
+        "name": "Raleigh",
+        "type": "string"
+      },
+      {
+        "name": "WW-RDU01-3rdFl Elevator Lobby N READER",
+        "type": "string"
+      },
+      {
+        "name": "1/31/2022.1",
+        "type": "string"
+      },
+      {
+        "name": "8:07:05 AM",
+        "type": "string"
+      },
+      {
+        "name": "origin",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
