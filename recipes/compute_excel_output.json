@@ -4,7 +4,11 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "sheet_name": "Keycard Swipes All"
+      "sheet_name": "Keycard Swipes All",
+      "usecols": "A:Z",
+      "skiprows": "1",
+      "nrows": "200",
+      "header": "0"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -39,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655886842783
+    "lastModifiedOn": 1655886937793
   },
   "creationTag": {
     "versionNumber": 0,
