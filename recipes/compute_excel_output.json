@@ -4,11 +4,11 @@
   "optionalDependencies": false,
   "params": {
     "customConfig": {
-      "sheet_name": "Keycard Swipes All",
-      "usecols": "A:Z",
-      "skiprows": "1",
-      "nrows": "200",
-      "header": "0"
+      "sheet_name": "Conf Room Bookings;Sq. Ft. Report",
+      "usecols": "E:O;A:C",
+      "skiprows": "0,0",
+      "nrows": "10000,10000",
+      "header": "0,0"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -43,11 +43,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655886937793
+    "lastModifiedOn": 1655887610929
   },
   "creationTag": {
     "versionNumber": 0,
