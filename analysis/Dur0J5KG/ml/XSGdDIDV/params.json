@@ -6181,6 +6181,32 @@
         "supportsSampleWeights": false,
         "acceptsSparseMatrix": false,
         "enabled": false
+      },
+      "CustomPyPredAlgo_generalized-linear-models_generalized-linear-models_regression": {
+        "pluginId": "generalized-linear-models",
+        "pluginVersion": "1.0.1",
+        "elementId": "generalized-linear-models_regression",
+        "name": "Generalized Linear Model Regression",
+        "params": {
+          "penalty": [
+            0.0
+          ],
+          "family_name": "gaussian",
+          "binomial_link": "logit",
+          "gamma_link": "inverse_power",
+          "gaussian_link": "identity",
+          "inverse_gaussian_link": "inverse_squared",
+          "poisson_link": "log",
+          "negative_binomial_link": "log",
+          "tweedie_link": "log",
+          "offset_mode": "BASIC",
+          "alpha": 1.0,
+          "power": 1.0,
+          "var_power": 1.0
+        },
+        "supportsSampleWeights": false,
+        "acceptsSparseMatrix": false,
+        "enabled": false
       }
     },
     "keras": {
