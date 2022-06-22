@@ -9,6 +9,10 @@
     {
       "objectId": "excel_output",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_excel_output",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
