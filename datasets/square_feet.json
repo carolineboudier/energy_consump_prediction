@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655887649915
+    "lastModifiedOn": 1655887729007
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,25 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "City",
+        "type": "string"
+      },
+      {
+        "name": "Building",
+        "type": "string"
+      },
+      {
+        "name": "Reservable",
+        "type": "string"
+      },
+      {
+        "name": "origin",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
