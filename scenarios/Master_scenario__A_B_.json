@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 25,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655990521584
-  },
-  "versionTag": {
     "versionNumber": 26,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655990534040
+  },
+  "versionTag": {
+    "versionNumber": 27,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655990921756
   },
   "checklists": {
     "checklists": []
@@ -31,6 +31,27 @@
   "reporters": [],
   "params": {
     "steps": [
+      {
+        "id": "custom_python_LJRmfKl7wuRRY3Fv6V1r8g",
+        "type": "custom_python",
+        "name": "Step #5",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "from dataiku.scenario import Scenario\n\nScenario().set_scenario_variables(pythonStepResult\u003d\u0027FAILED\u0027)",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
+          "proceedOnFailure": false
+        }
+      },
       {
         "id": "comp_metrics_d_classif_eval",
         "type": "compute_metrics",
@@ -80,7 +101,7 @@
         "id": "custom_python_i4qPYVTNOxuJSjJXpsi6lw",
         "type": "custom_python",
         "name": "Step #4",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
