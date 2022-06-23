@@ -5,18 +5,18 @@
   "name": "Build a list of dashboards",
   "active": false,
   "creationTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655389442619
-  },
-  "versionTag": {
     "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655389443379
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655992269845
   },
   "checklists": {
     "checklists": []
@@ -45,7 +45,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataiku\n\n# define a list\nyear_list\u003d[1,2,3]\n\n# get project handle\nprojecthandle\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nfor year in year_list:\n    \n    # UPDATE THE VARIABLE\n\n    # get variables\n    my_vars\u003dprojecthandle.get_variables()\n    \n    \n    # update variable value\n    my_vars[\"standard\"][\"selected_year\"]\u003dyear\n\n    # update project variables\n    projecthandle.set_variables(my_vars)\n    \n    \n    # RUN THE SCENARIO\n    scenario \u003d projecthandle.get_scenario(\"Build_a_state_dashboard_and_send_it\")\n    scenario.run_and_wait()",
+          "script": "import dataiku\n\n# define a list\nyear_list\u003d[1,2,3]\nassociated_emails\u003d{1:[\u0027ehfiuzehf\u0027],2:[\"dyazveydvzj\"],3:[\"izbfzib\"]}\nassociated_emails\u003d{1:[\u0027ehfiuzehf\u0027],2:[\"dyazveydvzj\"]}\n\nif set(year_list)!\u003dset(associated_emails.keys()):\n    raise Exception(\"The email list is not complete - the scenario cannot run - please fix the issue\")\n\n# get project handle\nprojecthandle\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nfor year in year_list:\n    \n    # UPDATE THE VARIABLE\n\n    # get variables\n    my_vars\u003dprojecthandle.get_variables()\n    \n    \n    # update variable value\n    my_vars[\"standard\"][\"selected_year\"]\u003dyear\n\n    # update project variables\n    projecthandle.set_variables(my_vars)\n    \n    \n    # RUN THE SCENARIO\n    scenario \u003d projecthandle.get_scenario(\"Build_a_state_dashboard_and_send_it\")\n    scenario.run_and_wait()",
           "envSelection": {
             "envMode": "INHERIT"
           },
