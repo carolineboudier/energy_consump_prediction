@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 7,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655989511665
-  },
-  "versionTag": {
     "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655989514605
+  },
+  "versionTag": {
+    "versionNumber": 9,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655989631897
   },
   "checklists": {
     "checklists": []
@@ -90,7 +90,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "condition\u003dFalse\n\nif condition:\n    print(\"the scenario can run properly\")\n    \nelse :\n    print(\"the scenario cannot run properly\")\n    outcome\u003d\u0027FAILED\u0027\n    # update the status of the scenario to failed\n    \n# this should not run if the condition is not satisfied\nprint(\u0027All the scenario has been executed\u0027)",
+          "script": "import dataikuapi\n\ncondition\u003dFalse\n\nif condition:\n    print(\"the scenario can run properly\")\n    \nelse :\n    print(\"the scenario cannot run properly\")\n    outcome\u003d\u0027FAILED\u0027\n    dataikuapi.dss.DSSProject.get_scenario(\"Master_scenario__A_B_\").abort()\n    # update the status of the scenario to failed\n    \n# this should not run if the condition is not satisfied\nprint(\u0027All the scenario has been executed\u0027)",
           "envSelection": {
             "envMode": "INHERIT"
           },
