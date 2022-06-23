@@ -5,18 +5,18 @@
   "name": "Build a list of dashboards",
   "active": false,
   "creationTag": {
-    "versionNumber": 12,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655992576992
-  },
-  "versionTag": {
     "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655992578148
+  },
+  "versionTag": {
+    "versionNumber": 14,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655992711724
   },
   "checklists": {
     "checklists": []
@@ -77,9 +77,10 @@
         "id": "reportbc63c6d732629252874566073a2f6e53",
         "type": "send_report",
         "name": "Step #2",
-        "runConditionType": "DISABLED",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
-          "FAILED"
+          "SUCCESS",
+          "WARNING"
         ],
         "runConditionExpression": "",
         "resetScenarioStatus": false,
