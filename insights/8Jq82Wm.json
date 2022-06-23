@@ -12,7 +12,7 @@
         "Year_Factor": 100,
         "State_Factor": 105,
         "building_class": 148,
-        "facility_type": 281,
+        "facility_type": 85,
         "public_found": 105,
         "warehouse_found": 128,
         "office_found": 105,
@@ -155,11 +155,11 @@
   "name": "classif_eval",
   "dashboardCreationId": "FiM4pP5",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1655799842099
+    "lastModifiedOn": 1655993086107
   },
   "creationTag": {
     "versionNumber": 0,
