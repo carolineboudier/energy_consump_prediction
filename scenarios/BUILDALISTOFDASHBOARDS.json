@@ -5,18 +5,18 @@
   "name": "Build a list of dashboards",
   "active": false,
   "creationTag": {
-    "versionNumber": 10,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655992445687
-  },
-  "versionTag": {
     "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655992446605
+  },
+  "versionTag": {
+    "versionNumber": 12,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655992576992
   },
   "checklists": {
     "checklists": []
@@ -28,7 +28,28 @@
   },
   "tags": [],
   "triggers": [],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "mail-scenario",
+        "configuration": {
+          "channelId": "mail_local_instance",
+          "subject": "DSS scenario ${scenarioName}: ${outcome}",
+          "recipient": "caroline.boudier@dataiku.com",
+          "sendAsHTML": false,
+          "attachments": [],
+          "messageSource": "TEMPLATE_FILE",
+          "templateFormat": "FREEMARKER",
+          "templateName": "default.ftl"
+        }
+      },
+      "id": "FCGMtSkh",
+      "runConditionEnabled": true,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
@@ -56,7 +77,7 @@
         "id": "reportbc63c6d732629252874566073a2f6e53",
         "type": "send_report",
         "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "FAILED"
         ],
