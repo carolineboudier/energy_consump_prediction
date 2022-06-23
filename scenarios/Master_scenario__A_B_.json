@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 15,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655989953593
-  },
-  "versionTag": {
     "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655989954214
+  },
+  "versionTag": {
+    "versionNumber": 17,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655989970980
   },
   "checklists": {
     "checklists": []
@@ -90,7 +90,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "import dataikuapi\nimport dataiku\n\n#project\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nscenario \u003d Scenario()\n\ncondition\u003dFalse\n\nif condition:\n    print(\"the scenario can run properly\")\n    \nelse :\n    print(\"the scenario cannot run properly\")\n    outcome\u003d\u0027FAILED\u0027\n    scenario.abort()\n    # update the status of the scenario to failed\n    \n# this should not run if the condition is not satisfied\nprint(\u0027All the scenario has been executed\u0027)",
+          "script": "import dataikuapi\nimport dataiku\nfrom dataiku.scenario import Scenario\n\n#project\u003ddataiku.api_client().get_project(dataiku.default_project_key())\n\nscenario \u003d Scenario()\n\ncondition\u003dFalse\n\nif condition:\n    print(\"the scenario can run properly\")\n    \nelse :\n    print(\"the scenario cannot run properly\")\n    outcome\u003d\u0027FAILED\u0027\n    scenario.abort()\n    # update the status of the scenario to failed\n    \n# this should not run if the condition is not satisfied\nprint(\u0027All the scenario has been executed\u0027)",
           "envSelection": {
             "envMode": "INHERIT"
           },
