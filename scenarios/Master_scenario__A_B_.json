@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 4,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655395618681
-  },
-  "versionTag": {
     "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655395627723
+  },
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655989497850
   },
   "checklists": {
     "checklists": []
@@ -59,7 +59,7 @@
         "id": "custom_python_UxJKxEJA2Ml+FhL0AMtF5Q",
         "type": "custom_python",
         "name": "Step #3",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "DISABLED",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
@@ -92,6 +92,27 @@
         "params": {
           "force": true,
           "dashboards": [],
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "custom_python_i4qPYVTNOxuJSjJXpsi6lw",
+        "type": "custom_python",
+        "name": "Step #4",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "condition\u003dFalse\n\nif condition:\n    print(\"the scenario can run properly\")\n    \nelse :\n    print(\"the scenario cannot run properly\")\n    outcome\u003d\u0027FAILED\u0027\n    # update the status of the scenario to failed\n    \n# this should not run if the condition is not satisfied\nprint(\u0027All the scenario has been executed\u0027)",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
           "proceedOnFailure": false
         }
       }
