@@ -7,8 +7,20 @@
     }
   ],
   "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "Year_Factor",
+          "col": "State_Factor",
+          "num": 1,
+          "operator": "\u003d\u003d [number]"
+        }
+      ]
+    },
+    "$status": {},
     "distinct": false,
-    "enabled": false
+    "enabled": true
   },
   "defaultOutputIndex": 1,
   "seed": 1337,
