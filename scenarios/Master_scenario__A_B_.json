@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 33,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655991075278
-  },
-  "versionTag": {
     "versionNumber": 34,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655991079587
+  },
+  "versionTag": {
+    "versionNumber": 35,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655991542942
   },
   "checklists": {
     "checklists": []
@@ -45,7 +45,7 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "script": "from dataiku.scenario import Scenario\n\nScenario().set_scenario_variables(pythonStepResult\u003d\u0027OK\u0027)",
+          "script": "from dataiku.scenario import Scenario\n\nraise Exception(\"Sorry, no numbers below zero\")",
           "envSelection": {
             "envMode": "INHERIT"
           },
