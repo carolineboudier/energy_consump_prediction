@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 32,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655991056902
-  },
-  "versionTag": {
     "versionNumber": 33,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655991075278
+  },
+  "versionTag": {
+    "versionNumber": 34,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655991079587
   },
   "checklists": {
     "checklists": []
