@@ -5,18 +5,18 @@
   "name": "Master scenario (A/B)",
   "active": false,
   "creationTag": {
-    "versionNumber": 5,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1655395627723
-  },
-  "versionTag": {
     "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1655989497850
+  },
+  "versionTag": {
+    "versionNumber": 7,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1655989511665
   },
   "checklists": {
     "checklists": []
@@ -77,25 +77,6 @@
         }
       },
       {
-        "id": "refresh_chart_cache",
-        "type": "refresh_chart_cache",
-        "name": "Step #2",
-        "runConditionType": "RUN_IF_STATUS_MATCH",
-        "runConditionStatuses": [
-          "SUCCESS",
-          "WARNING"
-        ],
-        "runConditionExpression": "",
-        "resetScenarioStatus": false,
-        "delayBetweenRetries": 10,
-        "maxRetriesOnFail": 0,
-        "params": {
-          "force": true,
-          "dashboards": [],
-          "proceedOnFailure": false
-        }
-      },
-      {
         "id": "custom_python_i4qPYVTNOxuJSjJXpsi6lw",
         "type": "custom_python",
         "name": "Step #4",
@@ -113,6 +94,25 @@
           "envSelection": {
             "envMode": "INHERIT"
           },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "refresh_chart_cache",
+        "type": "refresh_chart_cache",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "force": true,
+          "dashboards": [],
           "proceedOnFailure": false
         }
       }
