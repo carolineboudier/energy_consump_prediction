@@ -25,10 +25,6 @@
     {
       "objectId": "stacked_data",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "split_stacked_data",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
