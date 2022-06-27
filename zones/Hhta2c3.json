@@ -29,6 +29,10 @@
     {
       "objectId": "to_del_test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_stacked_data",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
