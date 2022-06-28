@@ -65,6 +65,10 @@
     {
       "objectId": "ba79Rxaf",
       "objectType": "MANAGED_FOLDER"
+    },
+    {
+      "objectId": "peyton",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
