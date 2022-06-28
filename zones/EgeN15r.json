@@ -61,6 +61,10 @@
     {
       "objectId": "compute_to_pivot_prepared",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "ba79Rxaf",
+      "objectType": "MANAGED_FOLDER"
     }
   ],
   "shared": [],
