@@ -3,20 +3,20 @@
   "id": "Update_dataset_whenever_folder_changes",
   "type": "step_based",
   "name": "Update dataset whenever folder changes",
-  "active": false,
+  "active": true,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1656422742515
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1656422775497
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1656422878756
   },
   "checklists": {
     "checklists": []
