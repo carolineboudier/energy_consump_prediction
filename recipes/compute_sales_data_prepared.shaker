@@ -85,6 +85,17 @@
         "option": "THIS"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "variables[\"nested_var\"][\"var°1\"]",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -117,6 +128,7 @@
     "month": 100,
     "year": 100,
     "temperature": 100,
+    "newcolumn_expression": 165,
     "discount": 106,
     "store": 100,
     "store_type": 100,
