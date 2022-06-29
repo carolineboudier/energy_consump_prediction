@@ -92,7 +92,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "variables[\"nested_var\"][\"var°1\"]",
+        "expression": "variables[\"nested_var\"][\"var_1\"]",
         "column": "newcolumn_expression"
       },
       "alwaysShowComment": false
