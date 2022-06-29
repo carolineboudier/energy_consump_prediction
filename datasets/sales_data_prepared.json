@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1653489894044
+    "lastModifiedOn": 1656497083667
   },
   "creationTag": {
     "versionNumber": 0,
@@ -129,6 +129,10 @@
       {
         "name": "sales",
         "type": "bigint"
+      },
+      {
+        "name": "newcolumn_expression",
+        "type": "string"
       }
     ],
     "userModified": true
