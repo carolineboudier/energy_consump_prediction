@@ -12,5 +12,6 @@
   "nested_var": {
     "var_1": "sales_data_prepared",
     "var_2": "State_2"
-  }
+  },
+  "tracker.active_company": "sales_data_prepared"
 }
