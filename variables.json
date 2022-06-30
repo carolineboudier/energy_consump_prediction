@@ -9,9 +9,8 @@
   "selected_year": 1,
   "last_end_date": "2022-06-03",
   "variable": "name",
-  "nested_var": {
-    "var_1": "sales_data_prepared",
+  "nestedvar": {
+    "var1": "sales_data_prepared",
     "var_2": "State_2"
-  },
-  "tracker.active_company": "sales_data_prepared"
+  }
 }
